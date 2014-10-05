@@ -1,0 +1,12 @@
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.header-tab {
+    background-color: #6495ed;
+}
+
+.header-tab:hover {
+    background-color: yellow;
+} 

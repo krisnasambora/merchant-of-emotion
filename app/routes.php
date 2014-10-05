@@ -13,5 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('homesite.home');
 });
+
+Route::get('about', array('as' =>'about', function(){
+	return View::make('homesite.about');
+}));
