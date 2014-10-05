@@ -37,4 +37,7 @@ Route::get('social', array('as' =>'social', function(){
 
 Route::post('newsubscriber', 'HomesiteController@insertNewSubscriber');
 
+Route::post('newcollaborator', 'HomesiteController@insertNewCollaborator');
+
+
 

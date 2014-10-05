@@ -10,5 +10,15 @@ class HomesiteController extends BaseController{
 
 		return Redirect::route('/');
 	}
+
+	public function insertNewCollaborator(){
+		$member = new Collaborator;
+		$member->name = Input::get('name');
+		$member->mail = Input::get('mail');
+		$member->desc = Input::get('desc');
+		$member->save();
+
+		return Redirect::route('/');
+	}
 }
 
