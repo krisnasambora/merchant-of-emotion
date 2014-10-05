@@ -22,7 +22,7 @@
 			</div>
 			<div class="form-group">	
 				{{Form::label('desc', 'Description')}}<br/>
-				{{Form::text('desc','', array('class' => 'form-control'))}}
+				{{Form::textarea('desc','', array('class' => 'form-control'))}}
 			</div>
 			{{Form::submit('Submit', array('class' => 'btn btn-default'))}}
 		{{Form::close()}}
