@@ -39,5 +39,9 @@ Route::post('newsubscriber', 'HomesiteController@insertNewSubscriber');
 
 Route::post('newcollaborator', 'HomesiteController@insertNewCollaborator');
 
+Route::get('sunset', array('as' =>'sunset', function(){
+	return View::make('sunset.sunset');
+}));
+
 
 
