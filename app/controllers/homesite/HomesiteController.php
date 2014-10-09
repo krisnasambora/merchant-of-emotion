@@ -10,7 +10,7 @@ class HomesiteController extends BaseController{
 
 		Mail::send('emails.homesite.greetsubscriber', array('recipient' => Input::get('name')), function($msg) {
 		   $msg->from('merchantofemotiondummy@gmail.com', 'MoE Admin');
-		   $msg->to(Input::get('mail'));
+		   $msg->to(Input::get('mail'))->subject('Thank you for subscribing to MOE!');
 		});
 
 		return Redirect::route('/');
