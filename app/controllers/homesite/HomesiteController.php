@@ -23,6 +23,11 @@ class HomesiteController extends BaseController{
 		$member->desc = Input::get('desc');
 		$member->save();
 
+		Mail::send('emails.homesite.greetcollaborator', array('recipient' => Input::get('name')), function($msg) {
+		   $msg->from('merchantofemotiondummy@gmail.com', 'MoE Admin');
+		   $msg->to(Input::get('mail'))->subject('Thank you for subscribing to MOE!');
+		});
+
 		return Redirect::route('/');
 	}
 }
