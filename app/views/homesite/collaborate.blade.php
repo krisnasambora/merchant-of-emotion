@@ -5,7 +5,7 @@
 @stop
 
 @section('tab-title')
-	<title>Welcome</title>
+	<title>Collaborate</title>
 @stop
 
 @section('content')
