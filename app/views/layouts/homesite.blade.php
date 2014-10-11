@@ -49,9 +49,9 @@
 			  	</div>
 			  </div>
 			  <div class="col-md-2 nopadding">
-			  	<div class="header-tab social">
-			  		<a href="{{URL::route('social')}}">
-			  			<h1 class="text-center nopadding">social</h1>
+			  	<div class="header-tab partners">
+			  		<a href="{{URL::route('partners')}}">
+			  			<h1 class="text-center nopadding">partners</h1>
 			  		</a>
 			  	</div>
 			  </div>

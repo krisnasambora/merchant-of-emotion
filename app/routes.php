@@ -31,8 +31,8 @@ Route::get('shop', array('as' =>'shop', function(){
 	return View::make('homesite.shop');
 }));
 
-Route::get('social', array('as' =>'social', function(){
-	return View::make('homesite.social');
+Route::get('partners', array('as' =>'partners', function(){
+	return View::make('homesite.partners');
 }));
 
 Route::post('newsubscriber', 'HomesiteController@insertNewSubscriber');
