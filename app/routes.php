@@ -12,7 +12,7 @@
 */
 
 Route::get('/', array('as' =>'/', function(){
-	return View::make('homesite.home');
+	return View::make('homesite.under_construction');
 }));
 
 Route::get('about', array('as' =>'about', function(){

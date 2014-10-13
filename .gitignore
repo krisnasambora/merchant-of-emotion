@@ -21,3 +21,4 @@ Thumbs.db
 /app/config/services.php
 /app/config/session.php
 /app/config/view.php
+/public/videos
