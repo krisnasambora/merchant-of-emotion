@@ -9,7 +9,7 @@
 		{{ HTML::script('js/homesite/under_construction.js'); }}
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
-		<title>MERCHANT OF EMOTION</title>
+		<title>Merchant of Emotion</title>
 	</head>
     <body id="under_construction">
         <div class="content">
