@@ -7,16 +7,19 @@
 		{{ HTML::script('//code.jquery.com/jquery-1.11.0.min.js'); }}
 		{{ HTML::style('css/homesite/under_construction.css'); }}
 		{{ HTML::script('js/homesite/under_construction.js'); }}
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
 		<title>MERCHANT OF EMOTION</title>
 	</head>
-    <body>
+    <body id="under_construction">
         <div class="content">
             <video autoplay loop muted id="bgvid">
-				<source src="../public/videos/montagebw03.mp4" type="video/mp4">
+				<source src="http://merchantofemotion.com/videos/montagebw03.webm" type="video/webm">
 				Your browser does not support the video tag.
 			</video>
-			<div class="col-md-4 col-md-offset-4 centered" id="announcement">
-				<p class="text-center"><strong>MERCHANTOFEMOTION.COM IS UNDER CONSTRUCTION</strong></p>
+			<div class="col-md-6 col-md-offset-3 centered" id="announcement">
+				<h1 class="text-center">MERCHANTOFEMOTION.COM</h1>
+				<h4 class="text-center">IS UNDER CONSTRUCTION</h4>
 			</div>
         </div>
     </body>

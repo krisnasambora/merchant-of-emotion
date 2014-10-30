@@ -15,7 +15,7 @@ Route::get('/', array('as' =>'/', function(){
 	return View::make('homesite.under_construction');
 }));
 
-Route::get('about', array('as' =>'about', function(){
+/*Route::get('about', array('as' =>'about', function(){
 	return View::make('homesite.about');
 }));
 
@@ -42,6 +42,4 @@ Route::post('newcollaborator', 'HomesiteController@insertNewCollaborator');
 Route::get('sunset', array('as' =>'sunset', function(){
 	return View::make('sunset.sunset');
 }));
-
-
-
+*/
