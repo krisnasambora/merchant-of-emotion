@@ -12,10 +12,11 @@
 */
 
 Route::get('/', array('as' =>'/', function(){
-	return View::make('homesite.under_construction');
+	return View::make('sunset.sunset');
 }));
 
-/*Route::get('about', array('as' =>'about', function(){
+/*
+Route::get('about', array('as' =>'about', function(){
 	return View::make('homesite.about');
 }));
 
