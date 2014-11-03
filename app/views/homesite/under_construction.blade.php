@@ -15,6 +15,7 @@
         <div class="content">
             <video autoplay loop muted id="bgvid">
 				<source src="http://merchantofemotion.com/videos/montagebw03.webm" type="video/webm">
+				<source src="http://merchantofemotion.com/videos/montagebw03.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
 			<div class="col-md-6 col-md-offset-3 centered" id="announcement">

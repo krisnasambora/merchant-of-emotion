@@ -16,7 +16,7 @@
 				<p class="text-center">eng | ind</p>
 			</div>
 		</div>
-		<div class = "row">
+		<div class = "row" id = "story">
 				<div class = "col-md-1 centered">
 					<div id = "get-prev">
 						<p class="text-center">prev</p>
@@ -33,6 +33,11 @@
 						<p class="text-center">next</p>
 					</div>
 				</div>
+		</div>
+		<div class  = "row" id = "hashtag">
+			<div class="col-md-4 col-md-offset-4 centered">
+				<p class="text-center"><strong>#thingslostandforgotten</strong></p>
+			</div>
 		</div>
 	</div>
 @stop
