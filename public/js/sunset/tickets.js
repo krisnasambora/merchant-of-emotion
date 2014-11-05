@@ -1,0 +1,4 @@
+$(function(){
+	$.jInvertScroll(['.scroll']);
+});
+

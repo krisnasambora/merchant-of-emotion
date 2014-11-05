@@ -15,6 +15,10 @@ Route::get('/', array('as' =>'/', function(){
 	return View::make('sunset.sunset');
 }));
 
+Route::get('tickets', array('as' =>'tickets', function(){
+	return View::make('sunset.tickets');
+}));
+
 /*
 Route::get('about', array('as' =>'about', function(){
 	return View::make('homesite.about');
