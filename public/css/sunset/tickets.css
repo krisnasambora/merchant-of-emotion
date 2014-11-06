@@ -3,3 +3,44 @@
 	z-index: 1;
 	width: 2569px;
 }
+
+.front {
+	/*this width is override by jquery*/
+    width: 4000px;
+    z-index: 500;
+}
+
+.description
+{
+	/*left: 350px;*/
+} 
+
+.page
+{
+	/*top: 0px;*/
+	width: 500px;
+	background: white;
+	padding: 10px 30px;
+	border: 1px #eee solid;
+	position: absolute;
+}
+
+.excerpt{
+	/*left: 1750px;*/
+	/*top: 0px;*/
+	width: 500px;
+	background: white;
+	padding: 10px 30px;
+	border: 1px #eee solid;
+	position: absolute;
+}
+
+.tickets{
+	/*left: 3150px;*/
+	/*top: 0px;*/
+	width: 500px;
+	background: white;
+	padding: 10px 30px;
+	border: 1px #eee solid;
+	position: absolute;
+}

@@ -15,6 +15,20 @@
             <div class="horizon scroll">
 				<img alt="" src="{{asset('images/bg.jpg')}}">
 			</div>
+			<div class="front scroll" id = "front-scroll">
+				<div class="description page" id ="description">
+					<h2>WHOOP-DEE-DOO</h2>
+					<p>WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.</p>
+				</div>
+				<div class="excerpt" id = "excerpt">
+					<h2>WHOOP-DEE-DOO</h2>
+					<p>WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.</p>
+				</div>
+				<div class="tickets" id = "tickets">
+					<h2>WHOOP-DEE-DOO</h2>
+					<p>WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.</p>
+				</div>
+			</div>
         </div>
     </body>
 </html>
