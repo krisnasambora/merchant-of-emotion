@@ -13,20 +13,25 @@
     <body>
         <div class="content">
             <div class="horizon scroll">
-				<img alt="" src="{{asset('images/bg.jpg')}}">
+				<img alt="" src="{{asset('images/chapter01/titik-titik.png')}}">
 			</div>
-			<div class="front scroll" id = "front-scroll">
-				<div class="description page" id ="description">
-					<h2>WHOOP-DEE-DOO</h2>
-					<p>WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.</p>
+			<div class="middle scroll" id = "lights">
+				<div class="element02 page">   
+					<img alt="" src="{{asset('images/chapter01/cahaya.png')}}">
 				</div>
-				<div class="excerpt" id = "excerpt">
-					<h2>WHOOP-DEE-DOO</h2>
-					<p>WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.</p>
+				<div class="element03 page">
+					<img alt="" src="{{asset('images/chapter01/nameless.png')}}">
 				</div>
-				<div class="tickets" id = "tickets">
-					<h2>WHOOP-DEE-DOO</h2>
-					<p>WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.WHOOP-DEE-DOO.</p>
+			</div>
+			<div class="front scroll">
+				<div class="element01 page">
+					<img alt="" src="{{asset('images/chapter01/teks 1.png')}}">
+				</div>
+				<div class="element04 page">
+					<img alt="" src="{{asset('images/chapter01/teks 2.png')}}">
+				</div>
+				<div class="element05 page">
+					<img alt="" src="{{asset('images/chapter01/teks 3.png')}}">
 				</div>
 			</div>
         </div>

@@ -1,46 +1,61 @@
 .horizon
 {
+	line-height: 0;
 	z-index: 1;
-	width: 2569px;
+	width: 2509px;
+}
+
+.horizon img{
+	opacity: 0.1;
+}
+
+.middle {
+    width: 3200px;
+    z-index: 250;
+    top: 0px;
+}
+
+.middle img{
+
 }
 
 .front {
-	/*this width is override by jquery*/
-    width: 4000px;
+    width: 6500px;
     z-index: 500;
+    top: 0px;
 }
-
-.description
-{
-	/*left: 350px;*/
-} 
 
 .page
 {
-	/*top: 0px;*/
-	width: 500px;
-	background: white;
-	padding: 10px 30px;
-	border: 1px #eee solid;
 	position: absolute;
 }
 
-.excerpt{
-	/*left: 1750px;*/
-	/*top: 0px;*/
-	width: 500px;
-	background: white;
-	padding: 10px 30px;
-	border: 1px #eee solid;
-	position: absolute;
-}
+.element01
+{
+	top: 400px;
+	left: 525px;
+} 
 
-.tickets{
-	/*left: 3150px;*/
-	/*top: 0px;*/
-	width: 500px;
-	background: white;
-	padding: 10px 30px;
-	border: 1px #eee solid;
-	position: absolute;
-}
+.element02
+{
+	top: -130px;
+	left: 1050px;
+} 
+
+.element03
+{
+	top: 220px;
+	left: 1290px;
+} 
+
+.element04
+{
+	top: 220px;
+	left: 3040px;
+} 
+
+.element05
+{
+	top: 220px;
+	left: 5440px;
+} 
