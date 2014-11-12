@@ -1,4 +1,4 @@
-@extends('layouts.sunset.sunset-master')
+@extends('layouts.sunset.the-beginning-of-sunset-deity')
 
 @section('head-data')
 	{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-01.js'); }}
