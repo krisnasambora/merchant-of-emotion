@@ -15,10 +15,6 @@
     top: 0px;
 }
 
-.middle img{
-
-}
-
 .front {
     width: 6500px;
     z-index: 500;
@@ -39,19 +35,19 @@
 .element02
 {
 	top: -130px;
-	left: 1050px;
+	left: 1175px;
 } 
 
 .element03
 {
 	top: 220px;
-	left: 1290px;
+	left: 1420px;
 } 
 
 .element04
 {
 	top: 220px;
-	left: 3040px;
+	left: 3500px;
 } 
 
 .element05

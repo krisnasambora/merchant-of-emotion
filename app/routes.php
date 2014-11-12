@@ -12,39 +12,9 @@
 */
 
 Route::get('/', array('as' =>'/', function(){
-	return View::make('sunset.sunset');
+	return Redirect::to('the-beginning-of-sunset-deity/01');
 }));
 
-Route::get('tickets', array('as' =>'tickets', function(){
-	return View::make('sunset.tickets');
+Route::get('the-beginning-of-sunset-deity/01', array('as' =>'the-beginning-of-sunset-deity/01', function(){
+	return View::make('sunset.the-beginning-of-sunset-deity-01');
 }));
-
-/*
-Route::get('about', array('as' =>'about', function(){
-	return View::make('homesite.about');
-}));
-
-Route::get('collaborate', array('as' =>'collaborate', function(){
-	return View::make('homesite.collaborate');
-}));
-
-Route::get('press', array('as' =>'press', function(){
-	return View::make('homesite.press');
-}));
-
-Route::get('shop', array('as' =>'shop', function(){
-	return View::make('homesite.shop');
-}));
-
-Route::get('partners', array('as' =>'partners', function(){
-	return View::make('homesite.partners');
-}));
-
-Route::post('newsubscriber', 'HomesiteController@insertNewSubscriber');
-
-Route::post('newcollaborator', 'HomesiteController@insertNewCollaborator');
-
-Route::get('sunset', array('as' =>'sunset', function(){
-	return View::make('sunset.sunset');
-}));
-*/
