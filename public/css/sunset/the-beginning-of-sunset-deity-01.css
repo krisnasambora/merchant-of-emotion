@@ -55,3 +55,16 @@
 	top: 220px;
 	left: 5440px;
 } 
+
+#loader{
+	position:fixed;
+	top:0;
+	width:100%;
+	background-color:white;
+	height:100%;
+	text-align:center;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	z-index: 600;
+}

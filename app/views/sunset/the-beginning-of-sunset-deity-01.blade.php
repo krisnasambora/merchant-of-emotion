@@ -10,6 +10,9 @@
 @stop
 
 @section('content')
+	<div id="loader">
+	    <img src="{{asset('images/mario.gif')}}" width="40%">
+	</div>   
 	<div class="horizon scroll">
 		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/titik-titik.png')}}">
 	</div>

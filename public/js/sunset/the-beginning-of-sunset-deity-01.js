@@ -1,5 +1,6 @@
 $(function(){
 	$.jInvertScroll(['.scroll']);
+	$("body").css("overflow-y", "hidden");
 });
 
 $(document).ready( function () {
@@ -14,4 +15,7 @@ $(document).ready( function () {
 	anim();
 });
 
-
+$(window).load(function() {
+    $("#loader").fadeOut("fast");
+    $("body").css("overflow-y", "scroll");
+});
