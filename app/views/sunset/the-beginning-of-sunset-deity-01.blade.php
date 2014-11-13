@@ -26,13 +26,13 @@
 	</div>
 	<div class="front scroll">
 		<div class="element01 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/teks 1.png')}}">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/1.png')}}">
 		</div>
 		<div class="element04 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/teks 2.png')}}">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/2.png')}}">
 		</div>
 		<div class="element05 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/teks 3.png')}}">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/3.png')}}">
 		</div>
 	</div>
 @stop
