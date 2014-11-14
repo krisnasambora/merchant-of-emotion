@@ -9,7 +9,7 @@
 .element03{top: 220px;left: 1420px;} 
 .element04{top: 75px;left: 3500px;} 
 .element05{top: 220px;left: 5440px;} 
-#loader{position:fixed;top:0;width:100%;background-color:white;height:100%;text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
+#loader{position:fixed;top:0;width:100%;background-color:black;height:100%;text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
