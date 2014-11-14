@@ -14,7 +14,7 @@
 	    <img src="{{asset('images/mario.gif')}}" width="40%">
 	</div>   
 	<div class="horizon scroll">
-		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/titik-titik.png')}}">
+		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/titik-titik.jpg')}}">
 	</div>
 	<div class="middle scroll" id = "lights">
 		<div class="element02 page">   
@@ -26,13 +26,13 @@
 	</div>
 	<div class="front scroll">
 		<div class="element01 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/1.png')}}">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/1.gif')}}">
 		</div>
 		<div class="element04 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/2.png')}}">
 		</div>
 		<div class="element05 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/3.png')}}">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/3.gif')}}">
 		</div>
 	</div>
 @stop

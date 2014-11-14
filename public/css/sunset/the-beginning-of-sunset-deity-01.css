@@ -4,13 +4,13 @@
 .middle {width: 3200px;z-index: 250;top: 0px;}
 .front {width: 6500px;z-index: 500;top: 0px;}
 .page{position: absolute;}
-.element01{top: -50px;left: 510px;} .element02{top: -130px;left: 1175px;} 
+.element01{top: -50px;left: 510px;}
+.element02{top: -130px;left: 1175px;} 
 .element03{top: 220px;left: 1420px;} 
 .element04{top: 75px;left: 3500px;} 
 .element05{top: 220px;left: 5440px;} 
 #loader{position:fixed;top:0;width:100%;background-color:white;height:100%;text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
 
-/*OTHER SCREEN SETTINGS*/
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 	.horizon{width: 5006px;}
@@ -27,4 +27,95 @@
 	.element04 img{width: 418px;} 
 	.element05{top: 220px;left: 7235px;} 
 	.element05 img{width: 216px;} 
+}
+
+/* Smartphones (iphone landscape) ----------- */
+@media only screen and (max-width : 480px) and (max-height : 320px){
+	.horizon{width: 878px;}
+	.horizon img{width: 878px;}
+	.middle {width: 1120px;z-index: 87;}
+	.front {width: 2275px;z-index:175;}
+	.element01{top: 0px;left: 178px;} 
+	.element01 img{width: 74px;} 
+	.element02{top: 0px;left: 411px;} 
+	.element02 img{width: 224px;} 
+	.element03{top: 125px;left: 497px;} 
+	.element03 img{width: 81px;} 
+	.element04{top: 70px;left: 1225px;} 
+	.element04 img{width: 110px;} 
+	.element05{top: 100px;left: 1904px;} 
+	.element05 img{width: 58px;} 
+}
+
+/* Smartphones (iphone portrait) ----------- */
+@media only screen and (max-width : 320px) and (max-height : 480px) {
+	.horizon{width: 577px;}
+	.horizon img{width: 577px;}
+	.middle {width: 736px;z-index: 57;}
+	.front {width: 1495px;z-index:115;}
+	.element01{top: 0px;left: 117px;} 
+	.element01 img{width: 48px;} 
+	.element02{top: 110px;left: 270px;} 
+	.element02 img{width: 147px;} 
+	.element03{top: 190px;left: 326px;} 
+	.element03 img{width: 53px;} 
+	.element04{top: 160px;left: 805px;} 
+	.element04 img{width: 72px;} 
+	.element05{top: 220px;left: 1251px;} 
+	.element05 img{width: 38px;} 
+}
+
+
+/* iPad portrait */
+@media only screen and (max-device-width : 768px)and (max-device-height : 1024px){
+	.horizon{width: 1405px;}
+	.horizon img{width: 1405px;}
+	.middle {width: 1792px;z-index: 140;}
+	.front {width: 3640px;z-index:280;}
+	.element01{top: -66px;left: 285px;} 
+	.element01 img{width: 118px;} 
+	.element02{top: -35px;left: 645px;} 
+	.element02 img{width: 362px;} 
+	.element03{top: 170px;left: 795px;} 
+	.element03 img{width: 93px;} 
+	.element04{top: 75px;left: 1960px;} 
+	.element04 img{width: 177px;} 
+	.element05{top: 220px;left: 3046px;} 
+	.element05 img{width: 93px;} 
+} 
+
+/* Smartphones (iphone5 landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation: landscape){
+	.horizon{width: 878px;}
+	.horizon img{width: 878px;}
+	.middle {width: 1120px;z-index: 87;}
+	.front {width: 2275px;z-index:175;}
+	.element01{top: 0px;left: 178px;} 
+	.element01 img{width: 74px;} 
+	.element02{top: -90px;left: 411px;} 
+	.element02 img{width: 224px;} 
+	.element03{top: 35px;left: 497px;} 
+	.element03 img{width: 81px;} 
+	.element04{top: 30px;left: 1225px;} 
+	.element04 img{width: 110px;} 
+	.element05{top: 40px;left: 1904px;} 
+	.element05 img{width: 58px;} 
+}
+
+/* Smartphones (iphone5 portrait) ----------- */
+@media only screen (max-device-width : 320px) and (max-device-height : 568px){
+	.horizon{width: 577px;}
+	.horizon img{width: 577px;}
+	.middle {width: 736px;z-index: 57;}
+	.front {width: 1495px;z-index:115;}
+	.element01{top: 0px;left: 117px;} 
+	.element01 img{width: 48px;} 
+	.element02{top: 110px;left: 270px;} 
+	.element02 img{width: 147px;} 
+	.element03{top: 190px;left: 326px;} 
+	.element03 img{width: 53px;} 
+	.element04{top: 160px;left: 805px;} 
+	.element04 img{width: 72px;} 
+	.element05{top: 220px;left: 1251px;} 
+	.element05 img{width: 38px;} 
 }
