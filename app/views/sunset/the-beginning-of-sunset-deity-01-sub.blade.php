@@ -7,7 +7,13 @@
 		{{ HTML::style('css/bootstrap.min.css'); }}
 		{{ HTML::script('js/bootstrap.min.js'); }}
 		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-01-sub.css'); }}
+		{{ HTML::style('css/jquery.countdown.css'); }}
+		{{ HTML::script('js/jquery.plugin.js'); }}
+		{{ HTML::script('js/jquery.countdown.min.js'); }}
+		{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-01-sub.js'); }}
+		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 		<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+		<title>Subscribe</title>
 	</head>
     <body>
     	<div class="container-fluid">
@@ -15,7 +21,7 @@
 				<div class="container-fluid">
 					<div class="row back">
 						<div class="col-md-2 text-center" >
-				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/back.png')}}" class="center-block img-responsive">
+				    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/back.png')}}" class="center-block img-responsive"></a>
 						</div>
 					</div>
 					<div class="row">
@@ -28,11 +34,12 @@
 				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/logo.png')}}" class="center-block img-responsive">
 						</div>
 					</div>
-					<div class="row">
+					<div class="row count">
 						<div class="col-md-2 col-md-offset-5" >
+							<div id = "timer"></div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row count-img">
 						<div class="col-md-6 col-md-offset-3" >
 							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/count.png')}}" class="center-block">
 						</div>
@@ -62,9 +69,9 @@
 					</div>
 					<div class="row socmed">
 						<div class="col-md-4 col-md-offset-4 text-center">
-							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/facebook.png')}}" class="socmed">
-							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/instagram.png')}}" class="socmed">
-							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/twitter.png')}}" class="socmed">
+							<a href="http://facebook.com/pages/Merchant-of-Emotion/917903188237791"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/facebook.png')}}" class="socmed"></a>
+							<a href="http://instagram.com/merchofemotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/instagram.png')}}" class="socmed"></a>
+							<a href="http://twitter.com/MerchofEmotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/twitter.png')}}" class="socmed"></a>
 						</div>
 					</div>
 					<div class="row hashtag">

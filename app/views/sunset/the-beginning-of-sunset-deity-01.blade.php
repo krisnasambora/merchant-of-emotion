@@ -3,6 +3,7 @@
 @section('head-data')
 	{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-01.js'); }}
 	{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-01.css'); }}
+	<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 @stop
 
 @section('tab-title')
@@ -33,6 +34,9 @@
 		</div>
 		<div class="element05 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/3.gif')}}">
+		</div>
+		<div class="element06 page">
+			<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01-sub"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/next.png')}}"></a>
 		</div>
 	</div>
 @stop

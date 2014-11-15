@@ -19,6 +19,10 @@ html {
 	padding-right: 40px;
 }
 
+.row .count-img{
+  margin-top: 20px
+}
+
 .row .form{
 	margin-top: 10px;
 }
@@ -70,4 +74,9 @@ input[type="text"].underlined
 
 body{
 	font-family: 'Alegreya', serif !important;
+}
+
+#timer{
+  background-color: rgba(0,0,0,0);
+  border: 0px;
 }

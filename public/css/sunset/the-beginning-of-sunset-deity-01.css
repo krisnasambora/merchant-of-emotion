@@ -9,6 +9,7 @@
 .element03{top: 220px;left: 1420px;} 
 .element04{top: 75px;left: 3500px;} 
 .element05{top: 220px;left: 5440px;} 
+.element06{top: 255px;left: 6360px;} 
 #loader{position:fixed;top:0;width:100%;background-color:black;height:100%;text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
 
 /* Large screens ----------- */
@@ -27,9 +28,11 @@
 	.element04 img{width: 418px;} 
 	.element05{top: 220px;left: 7235px;} 
 	.element05 img{width: 216px;} 
+	.element06{top: 490px;left: 8458px;} 
+	.element06 img{width: 91px;} 
 }
 
-/* Smartphones (iphone landscape) ----------- */
+/* Smartphones (iphone landscape) ----------- 
 @media only screen and (max-width : 480px) and (max-height : 320px){
 	.horizon{width: 878px;}
 	.horizon img{width: 878px;}
@@ -45,9 +48,11 @@
 	.element04 img{width: 110px;} 
 	.element05{top: 100px;left: 1904px;} 
 	.element05 img{width: 58px;} 
+	.element06{top: 40px;left: 2098px;} 
+	.element06 img{width: 22px;} 
 }
 
-/* Smartphones (iphone portrait) ----------- */
+/* Smartphones (iphone portrait) ----------- 
 @media only screen and (max-width : 320px) and (max-height : 480px) {
 	.horizon{width: 577px;}
 	.horizon img{width: 577px;}
@@ -63,7 +68,9 @@
 	.element04 img{width: 72px;} 
 	.element05{top: 220px;left: 1251px;} 
 	.element05 img{width: 38px;} 
-}
+	.element06{top: 40px;left: 1462px;} 
+	.element06 img{width: 15px;} 
+}*/
 
 
 /* iPad portrait */
@@ -82,6 +89,8 @@
 	.element04 img{width: 177px;} 
 	.element05{top: 220px;left: 3046px;} 
 	.element05 img{width: 93px;} 
+	.element06{top: 220px;left: 3561px;} 
+	.element06 img{width: 38px;}
 } 
 
 /* Smartphones (iphone5 landscape) ----------- */
@@ -100,6 +109,8 @@
 	.element04 img{width: 110px;} 
 	.element05{top: 40px;left: 1904px;} 
 	.element05 img{width: 58px;} 
+	.element06{top: 40px;left: 2162px;} 
+	.element06 img{width: 23px;} 
 }
 
 /* Smartphones (iphone5 portrait) ----------- */
@@ -118,4 +129,7 @@
 	.element04 img{width: 72px;} 
 	.element05{top: 220px;left: 1251px;} 
 	.element05 img{width: 38px;} 
+	.element06{top: 40px;left: 2544px;} 
+	.element06 img{width: 22px;} 
+}
 }
