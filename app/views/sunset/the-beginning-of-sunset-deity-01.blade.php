@@ -4,6 +4,9 @@
 	{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-01.js'); }}
 	{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-01.css'); }}
 	<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="At first, I was a boy. Stranded as the first thing The Creator created, long before the living world that we know today. Even before time.">
+
 @stop
 
 @section('tab-title')
@@ -13,7 +16,7 @@
 @section('content')
 	<div id="loader">
 	    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/loading.gif')}}" width="40%">
-	</div>   
+	</div> 
 	<div class="horizon scroll">
 		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/titik-titik.jpg')}}">
 	</div>
@@ -26,7 +29,7 @@
 		</div>
 	</div>
 	<div class="front scroll">
-		<div class="element01 page">
+		<div class="element01 page" id = "element-01">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/1.gif')}}">
 		</div>
 		<div class="element04 page">

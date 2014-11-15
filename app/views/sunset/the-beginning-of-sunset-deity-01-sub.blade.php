@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		{{ HTML::script('js/jquery.min.js'); }}
 		{{ HTML::style('css/bootstrap.min.css'); }}
 		{{ HTML::script('js/bootstrap.min.js'); }}
@@ -15,37 +15,35 @@
 		<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
 		<title>Subscribe</title>
 	</head>
-    <body>
-    	<div class="container-fluid">
-			<div class="row sub" style="background:url('../../images/sunset/the-beginning-of-sunset-deity-01/sub/background.jpg')">
+    <body style="background:url('../../images/sunset/the-beginning-of-sunset-deity-01/sub/background.jpg')">
+    	<div class="container sunset-sub">
+			<div class="row sub">
 				<div class="container-fluid">
-					<div class="row back">
-						<div class="col-md-2 text-center" >
+					<div class="row">
+						<div class="col-xs-4 col-xs-offset-4 text-center clock" >
+				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/jam-45.gif')}}" class="center-block img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2 col-md-2 text-center back" >
 				    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/back.png')}}" class="center-block img-responsive"></a>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-md-offset-4" >
-				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/jam-45.gif')}}" class="center-block">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-md-offset-4" >
+						<div class="col-xs-8 " >
 				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/logo.png')}}" class="center-block img-responsive">
 						</div>
 					</div>
 					<div class="row count">
-						<div class="col-md-2 col-md-offset-5" >
+						<div class="col-xs-8 col-xs-offset-2" >
 							<div id = "timer"></div>
 						</div>
 					</div>
 					<div class="row count-img">
-						<div class="col-md-6 col-md-offset-3" >
-							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/count.png')}}" class="center-block">
+						<div class="col-xs-8 col-xs-offset-2" >
+							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/count.png')}}" class="center-block img-responsive">
 						</div>
 					</div>
 					<div class="row form">
-				    	<div class="col-md-4 col-md-offset-4 text-center">
+				    	<div class="col-xs-8 col-xs-offset-2 text-center">
 				    		{{Form::open(array('url' => 'newtbsdsub', 'method' => 'POST', 'class' => 'form-inline'))}}
 								<div class="form-group">	
 									{{Form::text('mail','', array('class' => 'form-control underlined', 'placeholder' => 'email address'))}}
@@ -55,7 +53,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-md-offset-4 text-center">
+						<div class="col-xs-8 col-xs-offset-2 text-center">
 							@if(Session::has('success'))
 							    <div class="alert-box success">
 							        <h6>{{ Session::get('success') }}</h6>
@@ -68,14 +66,14 @@
 						</div>
 					</div>
 					<div class="row socmed">
-						<div class="col-md-4 col-md-offset-4 text-center">
+						<div class="col-xs-8 col-xs-offset-2 text-center">
 							<a href="http://facebook.com/pages/Merchant-of-Emotion/917903188237791"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/facebook.png')}}" class="socmed"></a>
 							<a href="http://instagram.com/merchofemotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/instagram.png')}}" class="socmed"></a>
 							<a href="http://twitter.com/MerchofEmotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/twitter.png')}}" class="socmed"></a>
 						</div>
 					</div>
 					<div class="row hashtag">
-				    	<div class="col-md-4 col-md-offset-4 text-center">
+				    	<div class="col-xs-8 col-xs-offset-2 text-center">
 				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/hashtag.png')}}" class="center-block img-responsive">
 						</div>
 					</div>

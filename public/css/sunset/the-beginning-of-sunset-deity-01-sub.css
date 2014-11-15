@@ -1,9 +1,13 @@
 html { 
-	background: url(../../images/sunset/the-beginning-of-sunset-deity-01/sub/background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+.sunset-sub{
+  width: 100%;
+  height: 100%;
 }
 
 .sub {background-size:100% auto;}
@@ -12,6 +16,10 @@ html {
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+.clock{
+  padding-top: 50px !important;
 }
 
 .row .back{
@@ -48,13 +56,13 @@ input[type="text"].underlined
 }
 
 .submit-button{
-     background: url(../../images/sunset/the-beginning-of-sunset-deity-01/sub/sub.png) no-repeat;
-     width: 114px;
-     height: 45px;
-     color: rgba(0,0,0,0);
-     margin      : 0;
-	 padding     : 0;
-	 border      : 0;
+   background: url(../../images/sunset/the-beginning-of-sunset-deity-01/sub/sub.png) no-repeat;
+   width: 114px;
+   height: 45px;
+   color: rgba(0,0,0,0);
+   margin      : 0;
+   padding     : 0;
+   border      : 0;
      /*border: 1px solid #e8e8e8;
      display: block;
      float: right;
@@ -79,4 +87,8 @@ body{
 #timer{
   background-color: rgba(0,0,0,0);
   border: 0px;
+}
+
+.back{
+  padding-top: 45px !important;
 }

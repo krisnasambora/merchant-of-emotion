@@ -1,9 +1,7 @@
-$(function(){
+$(document).ready( function () {
 	$.jInvertScroll(['.scroll']);
 	$("body").css("overflow-y", "hidden");
-});
 
-$(document).ready( function () {
 	function anim(){
 		$("#lights img").animate({
 			opacity : 0.2
