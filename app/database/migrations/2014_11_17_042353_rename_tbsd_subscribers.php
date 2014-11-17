@@ -23,22 +23,7 @@ class RenameTbsdSubscribers extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('subscribers');
-		Schema::create('subscribers', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->string('name');
-			$table->string('mail');
-
-			$table->timestamps();
-		});
-		Schema::create('tbsd-subscribers', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->string('mail');
-
-			$table->timestamps();
-		});
+		
 	}
 
 }
