@@ -30,7 +30,7 @@
 	</div>
 	<div class="front scroll">
 		<div class="element01 page" id = "element-01">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/1.gif')}}">
+			<img alt="" src="">
 		</div>
 		<div class="element04 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/2.png')}}">
@@ -39,7 +39,7 @@
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/3.gif')}}">
 		</div>
 		<div class="element06 page">
-			<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01-sub"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/next.png')}}"></a>
+			<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/sub"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/next.png')}}"></a>
 		</div>
 	</div>
 @stop

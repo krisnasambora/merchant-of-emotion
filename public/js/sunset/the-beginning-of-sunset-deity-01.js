@@ -14,6 +14,7 @@ $(document).ready( function () {
 });
 
 $(window).load(function() {
+    $("#element-01 img").attr("src","http://merchantofemotion.com/images/sunset/the-beginning-of-sunset-deity-01/1.gif");
     $("#loader").fadeOut("fast");
     $("body").css("overflow-y", "scroll");
 });

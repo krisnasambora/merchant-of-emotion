@@ -19,8 +19,8 @@ Route::get('the-beginning-of-sunset-deity/01', array('as' =>'the-beginning-of-su
 	return View::make('sunset.the-beginning-of-sunset-deity-01');
 }));
 
-Route::any('the-beginning-of-sunset-deity/01-sub', array('as' =>'the-beginning-of-sunset-deity/01-sub', function(){
-	return View::make('sunset.the-beginning-of-sunset-deity-01-sub');
+Route::any('the-beginning-of-sunset-deity/sub', array('as' =>'the-beginning-of-sunset-deity/sub', function(){
+	return View::make('sunset.the-beginning-of-sunset-deity-sub');
 }));
 
 Route::post('newtbsdsub', 'SunsetController@insertTBSDsubscriber');

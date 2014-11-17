@@ -25,7 +25,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-2 col-md-2 text-center back" >
+						<div class="col-xs-2 text-center back" >
 				    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/back.png')}}" class="center-block img-responsive"></a>
 						</div>
 						<div class="col-xs-8 " >
