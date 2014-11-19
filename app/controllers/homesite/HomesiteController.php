@@ -3,32 +3,22 @@
 class HomesiteController extends BaseController{
 
 	public function insertNewSubscriber(){
-		$member = new Subscriber;
-		$member->name = Input::get('name');
-		$member->mail = Input::get('mail');
-		$member->save();
+		$subber = DB::table('subscribers')
+			    ->where('mail', Input::get('mail'))
+			    ->first();
 
-		Mail::send('emails.homesite.greetsubscriber', array('recipient' => Input::get('name')), function($msg) {
-		   $msg->from('merchantofemotiondummy@gmail.com', 'MoE Admin');
-		   $msg->to(Input::get('mail'))->subject('Thank you for subscribing to MOE!');
-		});
+		if (is_null($subber)) {
+		    $subber = new Subscriber;
+			$subber->mail = Input::get('mail');
+			$subber->save();
 
-		return Redirect::route('/');
-	}
+			Session::flash('success', 'You have been successfully registered!');
+			return Redirect::to('the-beginning-of-sunset-deity/sub');
+		} else {
+		    Session::flash('failure', 'You have already been registered.');
+			return Redirect::to('the-beginning-of-sunset-deity/sub');
 
-	public function insertNewCollaborator(){
-		$member = new Collaborator;
-		$member->name = Input::get('name');
-		$member->mail = Input::get('mail');
-		$member->desc = Input::get('desc');
-		$member->save();
-
-		Mail::send('emails.homesite.greetcollaborator', array('recipient' => Input::get('name')), function($msg) {
-		   $msg->from('merchantofemotiondummy@gmail.com', 'MoE Admin');
-		   $msg->to(Input::get('mail'))->subject('Thank you for subscribing to MOE!');
-		});
-
-		return Redirect::route('/');
+		}
 	}
 }
 

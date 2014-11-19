@@ -23,8 +23,7 @@ html {
 }
 
 .row .back{
-	padding-top: 10px;
-	padding-right: 40px;
+	padding-bottom: 30px;
 }
 
 .row .count-img{
@@ -41,7 +40,6 @@ html {
 
 .hashtag{
 	margin-top: 20px;
-	padding-bottom: 20px;
 }
 
 input[type="text"].underlined
