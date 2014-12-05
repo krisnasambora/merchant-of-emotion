@@ -1,0 +1,12 @@
+/*UTILITIES*/
+.horizon img{opacity: 0.1;}
+.page{position: absolute;}
+
+@media only screen and (min-width : 1366px) {
+	.horizon{line-height: 0;z-index: 1;width: 2509px;}
+	.horizon img{opacity: 0.1;}
+	.middle {width: 3200px;z-index: 250;top: 0px;}
+	.front {width: 6500px;z-index: 500;top: 0px;}
+	.element_a{top: 50px;left: 210px;}
+	.element_b{top: 50px;left: 510px;}
+}
