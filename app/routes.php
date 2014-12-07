@@ -12,16 +12,19 @@
 */
 
 Route::get('/', array('as' =>'/', function(){
-	return Redirect::to('the-beginning-of-sunset-deity/01');
+	return Redirect::to('the-beginning-of-sunset-deity/announcement');
 }));
 
+Route::any('the-beginning-of-sunset-deity/announcement', array('as' =>'the-beginning-of-sunset-deity/announcement', function(){
+	return View::make('sunset.the-beginning-of-sunset-deity-announcement');
+}));
 Route::get('the-beginning-of-sunset-deity/01', array('as' =>'the-beginning-of-sunset-deity/01', 'uses' => 'SunsetController@showTBSD01'));
-
 Route::get('the-beginning-of-sunset-deity/02', array('as' =>'the-beginning-of-sunset-deity/02', 'uses' => 'SunsetController@showTBSD02'));
 
 Route::any('the-beginning-of-sunset-deity/tickets', array('as' =>'the-beginning-of-sunset-deity/tickets', function(){
 	return View::make('sunset.the-beginning-of-sunset-deity-tickets');
 }));
+Route::post('new_TBSD_order', 'SunsetController@insertNewTBSDorder');
 
 Route::group(array('before' => 'tbsd_admins'), function()
 {
@@ -33,10 +36,9 @@ Route::get('tbsd_admin/login', array('as' => 'tbsd_admin/login', 'uses' => 'Suns
 Route::post('tbsd_admin/store', array('as' => 'tbsd_admin/store', 'uses' => 'SunsetController@store'));
 Route::get('tbsd_admin/destroy', array('as' => 'tbsd_admin/destroy', 'uses' => 'SunsetController@destroy'));
 
-
 Route::any('the-beginning-of-sunset-deity/sub', array('as' =>'the-beginning-of-sunset-deity/sub', function(){
 	return View::make('sunset.the-beginning-of-sunset-deity-sub');
 }));
 Route::post('newtbsdsub', 'HomesiteController@insertNewSubscriber');
 
-Route::post('new_TBSD_order', 'SunsetController@insertNewTBSDorder');
+
