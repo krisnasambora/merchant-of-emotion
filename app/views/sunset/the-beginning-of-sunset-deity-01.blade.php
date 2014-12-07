@@ -39,7 +39,7 @@
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/3.gif')}}">
 		</div>
 		<div class="element06 page">
-			<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/sub"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/next.png')}}"></a>
+			<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/announcement"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/next.png')}}"></a>
 		</div>
 	</div>
 @stop

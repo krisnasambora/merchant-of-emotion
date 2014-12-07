@@ -7,7 +7,7 @@
 		{{ HTML::style('css/bootstrap.min.css'); }}
 		{{ HTML::script('js/bootstrap.min.js'); }}
 		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-announcement.css'); }}
-		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
+		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-announcement/favicon.jpg') }}">
 		<link href='http://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
 		<title>Announcement</title>
 	</head>
@@ -19,7 +19,7 @@
     		<div class="row">
 	    		<div class="col-md-4 col-md-offset-1 desc">
 		    		<p>
-		    			Merchant of Emotion, sebagai sebuah transformasi dari tim Teater EPIK yang sukses dengan pementasan Taraksa 2013 lalu, akan menghadirkan pertunjukan teatrikal terbarunya, Sunset Deity, Januari 2015 mendatang. Sunset Deity adalah Pementasan Teater Lintasmedia yang mengusung penggabungan teater, koreografi, serta video mapping & spatial augmented reality sebagai sebuah bahasa pementasan baru.
+		    			Merchant of Emotion, sebagai sebuah transformasi dari tim Teater EPIK yang sukses dengan pementasan Taraksa 2013 lalu, akan menghadirkan pertunjukan teatrikal terbarunya, Sunset Deity, Januari 2015 mendatang. Sunset Deity adalah Pementasan Teater Lintasmedia yang mengusung penggabungan teater, koreografi serta video mapping sebagai sebuah bahasa pementasan baru.
 		    		</p>
 				</div>
 				<div class="col-md-4 desc">
@@ -33,7 +33,7 @@
 		    		</p>
 				</div>
 				<div class="col-md-2 storybook">
-		    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button.png')}}" class="center-block img-responsive">
+		    		<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button.png')}}" class="center-block img-responsive"></a>
 				</div>
 			</div>
 			<div class="row line">

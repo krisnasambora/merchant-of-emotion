@@ -13,10 +13,10 @@ class HomesiteController extends BaseController{
 			$subber->save();
 
 			Session::flash('success', 'You have been successfully registered!');
-			return Redirect::to('the-beginning-of-sunset-deity/sub');
+			return Redirect::to('the-beginning-of-sunset-deity/announcement');
 		} else {
 		    Session::flash('failure', 'You have already been registered.');
-			return Redirect::to('the-beginning-of-sunset-deity/sub');
+			return Redirect::to('the-beginning-of-sunset-deity/announcement');
 
 		}
 	}
