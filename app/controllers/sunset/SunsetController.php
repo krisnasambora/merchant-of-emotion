@@ -49,31 +49,81 @@ class SunsetController extends BaseController{
 				return Redirect::to('the-beginning-of-sunset-deity/tickets');
 			}
 			else{
-				date_default_timezone_set('Asia/Bangkok');
-				$order = DB::table('tbsd_orders')
-				    ->where('mail', Input::get('mail'))
-				    ->first();
-
-				if (is_null($order)) {
-					//validasi available seats dulu
-				    $order = new Tbsd_order;
-					$order->name = Input::get('name');
-					$order->mail = Input::get('mail');
-					$order->phone = Input::get('phone');					
-					$order->show_id = (int)Input::get('show_id');
-					$order->class = (int)Input::get('class');
-					$order->amount = (int)Input::get('amount');
-					$order->confirmed = false;				
-					$order->save();
-
-					Session::flash('success', 'Your order has been successfully registered!');
+				$show = DB::table('tbsd_shows')->where('show_id', (int)Input::get('show_id'))->where('class', (int)Input::get('class'))->get();
+				if(($show[0]->confirmed + (int)Input::get('amount')) > $show[0]->capacity){
+					Session::flash('failure', 'The show you ordered ticket for is full');
 					return Redirect::to('the-beginning-of-sunset-deity/tickets');
-				} else {
-				    Session::flash('failure', 'The email you entered has already been registered.');
-					return Redirect::to('the-beginning-of-sunset-deity/tickets');
+				}else{
+					$order = DB::table('tbsd_orders')
+					    ->where('mail', Input::get('mail'))
+					    ->first();
+
+					if (is_null($order)) {
+						//validasi available seats dulu
+					    $order = new Tbsd_order;
+						$order->name = Input::get('name');
+						$order->mail = Input::get('mail');
+						$order->phone = Input::get('phone');					
+						$order->show_id = (int)Input::get('show_id');
+						$order->class = (int)Input::get('class');
+						$order->amount = (int)Input::get('amount');
+						$order->confirmed = false;				
+						$order->save();
+
+						Session::flash('success', 'Your order has been successfully registered!');
+						return Redirect::to('the-beginning-of-sunset-deity/tickets');
+					} else {
+					    Session::flash('failure', 'The email you entered has already been registered.');
+						return Redirect::to('the-beginning-of-sunset-deity/tickets');
+					}
 				}
 			}
 			
+		}
+
+		public function ticketing(){
+			$orders = Tbsd_order::all();
+			$view = View::make('sunset.the-beginning-of-sunset-deity-ticketing', array(
+				'orders' => $orders
+			));
+
+			return $view;
+		}
+
+		public function deleteOrder($mail){
+			DB::table('tbsd_orders')->where('mail', $mail)->delete();
+
+			return Redirect::route('ticketing');
+		}
+
+		public function confirmOrder($show_id, $class, $amount, $mail){
+			DB::table('tbsd_shows')->where('show_id', $show_id)->where('class', $class)->increment('confirmed', $amount);
+			DB::table('tbsd_orders')->where('mail', $mail)->update(array('confirmed' => true));
+			
+			return Redirect::route('ticketing');
+		}
+
+		public function showLoginPage(){
+			return View::make('sunset.the-beginning-of-sunset-deity-login');
+		}
+
+		public function store(){
+			$input = Input::all();
+
+			if (Auth::attempt(array('username' => $input['username'], 'password' => $input['password']), true))
+			{
+			    // The user is being remembered...
+			    Session::flash('success', 'logged in as '.Auth::user()->username);
+			    return Redirect::intended('ticketing');
+			}
+			
+			dd('problem');	
+		}
+
+		public function destroy(){
+			Auth::logout();
+
+			return Redirect::route('ticketing');
 		}
 }
 
