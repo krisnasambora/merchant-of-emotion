@@ -12,8 +12,9 @@
 		<title>Announcement</title>
 	</head>
     <body>
-    	<div class="col-md-12 padding-0">
-    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/banner.jpg')}}" class="img-responsive">
+    	<div class="col-md-12 text-center padding-0">
+    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/banner.jpg')}}" class="center-block img-responsive">
+		</div>
 		</div>
     	<div class="container">
     		<div class="row">
@@ -23,7 +24,6 @@
 		    		</p>
 				</div>
 				<div class="col-md-4 desc">
-
 		    		<p>
 						“Waktu” menjadi tema besar dari rangkaian cerita yang akan diangkat pada pementasan. Cerita berputar pada proses pendewasaan yang dialami seorang Bocah Tanpa Nama sebagai entitas pertama yang hadir di awal penciptaan dunia.
 		    		</p>
@@ -33,7 +33,7 @@
 		    		</p>
 				</div>
 				<div class="col-md-2 storybook">
-		    		<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button.png')}}" class="center-block img-responsive"></a>
+		    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button.png')}}" class="center-block img-responsive"></a>
 				</div>
 			</div>
 			<div class="row line">

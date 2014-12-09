@@ -12,7 +12,7 @@ class SeedTbsdShowsTable extends Migration {
 	 */
 	public function up()
 	{
-		DB::table('tbsd_shows')->insert(array(
+		DB::table('TBSD_shows')->insert(array(
 		    array('show_id' => 1, 'class' => 1, 'confirmed' => 0, 'capacity' => 300),
 		    array('show_id' => 1, 'class' => 2, 'confirmed' => 0, 'capacity' => 200),
 		    array('show_id' => 2, 'class' => 1, 'confirmed' => 0, 'capacity' => 300),

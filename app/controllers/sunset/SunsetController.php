@@ -49,12 +49,12 @@ class SunsetController extends BaseController{
 				return Redirect::to('the-beginning-of-sunset-deity/tickets');
 			}
 			else{
-				$show = DB::table('tbsd_shows')->where('show_id', (int)Input::get('show_id'))->where('class', (int)Input::get('class'))->get();
+				$show = DB::table('TBSD_shows')->where('show_id', (int)Input::get('show_id'))->where('class', (int)Input::get('class'))->get();
 				if(($show[0]->confirmed + (int)Input::get('amount')) > $show[0]->capacity){
 					Session::flash('failure', 'The show you ordered ticket for is full');
 					return Redirect::to('the-beginning-of-sunset-deity/tickets');
 				}else{
-					$order = DB::table('tbsd_orders')
+					$order = DB::table('TBSD_orders')
 					    ->where('mail', Input::get('mail'))
 					    ->first();
 
@@ -91,14 +91,14 @@ class SunsetController extends BaseController{
 		}
 
 		public function deleteOrder($mail){
-			DB::table('tbsd_orders')->where('mail', $mail)->delete();
+			DB::table('TBSD_orders')->where('mail', $mail)->delete();
 
 			return Redirect::route('ticketing');
 		}
 
 		public function confirmOrder($show_id, $class, $amount, $mail){
-			DB::table('tbsd_shows')->where('show_id', $show_id)->where('class', $class)->increment('confirmed', $amount);
-			DB::table('tbsd_orders')->where('mail', $mail)->update(array('confirmed' => true));
+			DB::table('TBSD_shows')->where('show_id', $show_id)->where('class', $class)->increment('confirmed', $amount);
+			DB::table('TBSD_orders')->where('mail', $mail)->update(array('confirmed' => true));
 			
 			return Redirect::route('ticketing');
 		}

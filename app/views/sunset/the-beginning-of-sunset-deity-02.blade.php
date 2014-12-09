@@ -13,99 +13,216 @@
 @stop
 
 @section('content')
-	<div class="horizon scroll">
-		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/background/BG4.jpg')}}">
+	<div class="main_bg scroll">
+		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/background/BG.png')}}">
 	</div>
-	<div class="horizon_b scroll">
-		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/background/langit4.png')}}">
+	<div class="transition_bg1 scroll">
+		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/background/langit terpanjang.png')}}">
 	</div>
-	<div class="horizon_d scroll">
+	<div class="shirt scroll">
 		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/7/3.png')}}">
 	</div>
-	<div class="horizon_e scroll">
+	<div class="arms scroll">
 		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/7/2.png')}}">
 	</div>
-	<div class="horizon_f scroll">
+	<div class="head scroll">
 		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/7/1.png')}}">
 	</div>
-	<div class="horizon_h scroll">
+	<div class="transition_bg2 scroll">
 		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/4.png')}}">
 	</div>
-	<div class="horizon_g scroll">
+	<div class="transition_bg3 scroll">
 		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/3.png')}}">
 	</div>
-	<div class="middle scroll">
+	<div class="sun scroll">
+		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/4.png')}}">
 	</div>
-	<div class="front scroll">
-		<div class="element_a page">
+	<div class="transition_bg4 scroll">
+		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/7.png')}}">
+	</div>
+	<div class="transition_bg5 scroll">
+		<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/9.png')}}">
+	</div>
+	<!-- width: 100000px; z-index: 500; -->
+	<div class="l01 scroll">
+		<div class="s1_a page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/1/animasi-a.gif')}}">
 		</div>
-		<div class="element_b page">
+		<div class="s1_b page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/1/animasi-b.gif')}}">
 		</div>
-		<div class="element_c page">
+		<div class="s1_boy page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/1/1.png')}}">
+		</div>
+		<div class="s1_c page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/1/animasi-c.gif')}}">
 		</div>
-		<div class="element_d1 page">
+		<div class="s1_d1 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/1/animasi-d1.gif')}}">
 		</div>
-		<div class="element_d2 page">
+		<div class="s1_d2 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/1/animasi-d2.gif')}}">
 		</div>
-		<div class="element_d3 page">
+		<div class="s1_d3 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/1/animasi-d3.gif')}}">
 		</div>
-		<div class="element_e page">
+		<div class="s2_a page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/1.png')}}">
 		</div>
-		<div class="element_f page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/2.png')}}">
-		</div>
-		<div class="element_g1 page">
+		<div class="s2_c1 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/4.png')}}">
 		</div>
-		<div class="element_g2 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/3.png')}}">
-		</div>
-		<div class="element_g3 page">
+		<div class="s2_c3 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/2.png')}}">
 		</div>
-		<div class="element_g5 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/3.png')}}">
-		</div>
-		<div class="element_g4 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/1.png')}}">
-		</div>
-		<div class="element_g6 page">
+		<div class="s2_c6 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/10.png')}}">
 		</div>
-		<div class="element_g7 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/2.png')}}">
-		</div>
-		<div class="element_h page">
+		<div class="s2_d page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/5/1.png')}}">
 		</div>
-		<div class="element_i1 page">
+		<div class="s2_e1 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/3.png')}}">
 		</div>
-		<div class="element_i2 page">
+		<div class="s2_e2 page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/1.png')}}">
 		</div>
-		<div class="element_j1 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/1.png')}}">
-		</div>
-		<div class="element_j2 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/2.png')}}">
-		</div>
-		<div class="element_j3 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/3.png')}}">
-		</div>
-		<div class="element_j4 page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/1.png')}}">
-		</div>
-		<div class="element_k1 page">
+		<div class="s3_b page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/2.png')}}">
 		</div>
 	</div>
+	<!-- width: 110000px; z-index: 495; -->
+	<div class="l02 scroll">
+		<div class="s2_sun page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/2.png')}}">
+		</div>
+		<div class="s2_pohon-c page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/7.png')}}">
+		</div>
+		<div class="s2_pohon-d page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/6.png')}}">
+		</div>
+		<div class="s2_pohon-e page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/9.png')}}">
+		</div>
+		<div class="s2_pohon-f page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/6.png')}}">
+		</div>
+		<div class="s2_tanah page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/5.png')}}">
+		</div>
+		<div class="s2_pohon-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/3.png')}}">
+		</div>
+		<div class="s2_pohon-b page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/9.png')}}">
+		</div>
+		<div class="s2_pohon-g page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/10.png')}}">
+		</div>
+		<div class="s2_semak page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/3.png')}}">
+		</div>
+		<div class="s2_batu-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/6.png')}}">
+		</div>
+		<div class="s2_batu-b page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/4.png')}}">
+		</div>
+		<div class="s2_batu-c page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/5.png')}}">
+		</div>
+		<div class="s2_teks-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/text/4.png')}}">
+		</div>
+	</div>
+	<!-- width: 113000px; z-index: 505; -->
+	<div class="l03 scroll">
+		<div class="s2_pohon-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/2.png')}}">
+		</div>
+		<div class="s2_pohon-b page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/1.png')}}">
+		</div>
+		<div class="s2_batu-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/2.png')}}">
+		</div>
+		<div class="s2_teks-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/text/3.png')}}">
+		</div>
+	</div>
+	<!-- width: 17967px; z-index: 480; -->
+	<div class="l04 scroll">
+		<div class="s2_awan-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/awan_belakang.png')}}">
+		</div>
+	</div>
+	<!-- width: 21000px; z-index: 485; -->
+	<div class="l05 scroll">
+		<div class="s2_awan-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/awan_tengah.png')}}">
+		</div>
+	</div>
+	<!-- width: 20000px; z-index: 490; -->
+	<div class="l06 scroll">
+		<div class="s2_awan-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/awan_depan.png')}}">
+		</div>
+	</div>
+	<!-- width: 123000px; z-index: 495; -->
+	<div class="l07 scroll">
+		<div class="s2_pohon-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/9.png')}}">
+		</div>
+		<div class="s2_pohon-b page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/7.png')}}">
+		</div>
+		<div class="s2_batu-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/8.png')}}">
+		</div>
+		<div class="s2_batu-b page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/7.png')}}">
+		</div>
+		<div class="s2_teks-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/text/2.png')}}">
+		</div>
+	</div>
+	<!-- width: 21000px; z-index: 2; -->
+	<div class="l10 scroll">
+		<div class="s3_awan-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/8.png')}}">
+		</div>
+	</div>
+	<!-- width: 23000px; z-index: 2; -->
+	<div class="l09 scroll">
+		<div class="s3_awan-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/5.png')}}">
+		</div>
+		<div class="s3_a1 page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/1.png')}}">
+		</div>
+		<div class="s3_a2 page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/2.png')}}">
+		</div>
+		<div class="s3_a3 page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/3.png')}}">
+		</div>
+		<div class="s3_a4 page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/1.png')}}">
+		</div>
+	</div>
+	<!-- width: 19500px; z-index: 2; -->
+	<div class="l08 scroll">
+		<div class="s3_awan-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/6.png')}}">
+		</div>
+	</div>
+	<!-- width: 20000px; z-index: 4; -->
+	<div class="l11 scroll">
+		<div class="s3_awan-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/1.png')}}">
+		</div>
+	</div>
+	
 @stop
 
