@@ -90,6 +90,9 @@
 		<div class="s3_b page">
 			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/2.png')}}">
 		</div>
+		<div class="s3_teks-a page">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/11.png')}}">
+		</div>
 	</div>
 	<!-- width: 110000px; z-index: 495; -->
 	<div class="l02 scroll">
@@ -160,13 +163,13 @@
 	<!-- width: 21000px; z-index: 485; -->
 	<div class="l05 scroll">
 		<div class="s2_awan-a page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/awan_tengah.png')}}">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/awan_tengah2.png')}}">
 		</div>
 	</div>
 	<!-- width: 20000px; z-index: 490; -->
 	<div class="l06 scroll">
 		<div class="s2_awan-a page">
-			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/awan_depan.png')}}">
+			<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/2/awan_depan2.png')}}">
 		</div>
 	</div>
 	<!-- width: 123000px; z-index: 495; -->

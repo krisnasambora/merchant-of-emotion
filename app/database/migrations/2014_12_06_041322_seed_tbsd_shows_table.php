@@ -35,7 +35,7 @@ class SeedTbsdShowsTable extends Migration {
 	 */
 	public function down()
 	{
-		DB::table('tbsd_shows')->delete();
+		DB::table('TBSD_shows')->delete();
 	}
 
 }

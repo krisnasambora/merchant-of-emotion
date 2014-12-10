@@ -23,7 +23,7 @@ class SunsetController extends BaseController{
 		        Cookie::queue('page-2_viewed', true, 60 * 24 * 30);
 		    }
 		    
-			return View::make('sunset.the-beginning-of-sunset-deity-02');
+			return View::make('sunset.the-beginning-of-sunset-deity-02-scalable');
 		}
 
 		public function showTBSDtix(){
@@ -43,15 +43,14 @@ class SunsetController extends BaseController{
 			        'phone' => 'required'
 			    )
 			);
-			if ($validation->fails())
-			{
+			if ($validation->fails()){
 			    Session::flash('failure', 'Please enter the required information.');
 				return Redirect::to('the-beginning-of-sunset-deity/tickets');
 			}
 			else{
 				$show = DB::table('TBSD_shows')->where('show_id', (int)Input::get('show_id'))->where('class', (int)Input::get('class'))->get();
 				if(($show[0]->confirmed + (int)Input::get('amount')) > $show[0]->capacity){
-					Session::flash('failure', 'The show you ordered ticket for is full');
+					Session::flash('failure', 'The show you ordered ticket for is full.');
 					return Redirect::to('the-beginning-of-sunset-deity/tickets');
 				}else{
 					$order = DB::table('TBSD_orders')
@@ -67,8 +66,20 @@ class SunsetController extends BaseController{
 						$order->show_id = (int)Input::get('show_id');
 						$order->class = (int)Input::get('class');
 						$order->amount = (int)Input::get('amount');
-						$order->confirmed = false;				
+						$order->status = 'Pending';				
 						$order->save();
+
+						$order->order_id = str_pad($order->id, 4, '0', STR_PAD_LEFT);
+						//REGULAR TIX
+						if($order->class == 1){
+							$order->price = $order->amount * 50000 + $order->id;
+						}else{
+							$order->price = $order->amount * 100000 + $order->id;
+						}
+
+						$order->save();
+
+						$this->mailOrderSubmission($order->mail, $order->name, $order->order_id, $order->phone, $order->show_id, $order->class, $order->amount);
 
 						Session::flash('success', 'Your order has been successfully registered!');
 						return Redirect::to('the-beginning-of-sunset-deity/tickets');
@@ -78,13 +89,14 @@ class SunsetController extends BaseController{
 					}
 				}
 			}
-			
 		}
 
 		public function ticketing(){
 			$orders = Tbsd_order::all();
+			$shows = Tbsd_show::all();
 			$view = View::make('sunset.the-beginning-of-sunset-deity-ticketing', array(
-				'orders' => $orders
+				'orders' => $orders,
+				'shows' => $shows
 			));
 
 			return $view;
@@ -98,7 +110,7 @@ class SunsetController extends BaseController{
 
 		public function confirmOrder($show_id, $class, $amount, $mail){
 			DB::table('TBSD_shows')->where('show_id', $show_id)->where('class', $class)->increment('confirmed', $amount);
-			DB::table('TBSD_orders')->where('mail', $mail)->update(array('confirmed' => true));
+			DB::table('TBSD_orders')->where('mail', $mail)->update(array('status' => 'Confirmed'));
 			
 			return Redirect::route('ticketing');
 		}
@@ -124,6 +136,44 @@ class SunsetController extends BaseController{
 			Auth::logout();
 
 			return Redirect::route('ticketing');
+		}
+
+		public function mailOrderSubmission($mail, $name, $order_id, $phone, $show_id, $class, $amount){
+			Mail::send('sunset.the-beginning-of-sunset-deity-mail-a', array(
+				'mail' => $mail, 
+				'name' => $name, 
+				'order_id' => $order_id,
+				'phone' => $phone,
+				'show_id' => $show_id,
+				'class' => $class,
+				'amount' => $amount
+				), function($msg) use ($mail, $order_id){
+					$msg->from('info@merchantofemotion.com', 'Online Ticketing MOE');
+					$msg->to($mail)->subject('Pesanan Tiket #' . $order_id);
+				}
+			);
+		}
+
+		public function mailOrderCancellation(){
+
+		}
+
+		public function mailOrderConfirmation(){
+
+		}
+
+		public function MailExample(){
+			$member = new Subscriber;
+			$member->name = Input::get('name');
+			$member->mail = Input::get('mail');
+			$member->save();
+
+			Mail::send('emails.homesite.greetsubscriber', array('recipient' => Input::get('name')), function($msg) {
+				$msg->from('merchantofemotiondummy@gmail.com', 'MoE Admin');
+				$msg->to(Input::get('mail'))->subject('Thank you for subscribing to MOE!');
+			});
+
+			return Redirect::route('/');
 		}
 }
 

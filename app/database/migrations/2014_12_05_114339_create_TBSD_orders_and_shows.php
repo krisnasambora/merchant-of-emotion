@@ -14,15 +14,18 @@ class CreateTBSDOrdersAndShows extends Migration {
 	{
 		Schema::create('TBSD_orders', function(Blueprint $table)
 		{
+			$table->increments('id');
 			$table->timestamps();
 
+			$table->string('order_id');
 			$table->integer('show_id');
 			$table->integer('class');
 			$table->integer('amount');
 			$table->string('name');
 			$table->string('mail');
 			$table->string('phone');
-			$table->boolean('confirmed');
+			$table->integer('price');
+			$table->string('status');
 		});
 
 		Schema::create('TBSD_shows', function(Blueprint $table)

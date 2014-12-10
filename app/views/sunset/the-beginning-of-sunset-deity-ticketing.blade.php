@@ -12,36 +12,82 @@
 	</head>
     <body>
 		{{-- */$i=1;/* --}}
+		{{-- */$j=1;/* --}}
+		{{-- */$k=1;/* --}}
     	<div class="container-fluid">
 			<div class="col-xs-10 col-xs-offset-1">
-				<h4>logged in as {{Auth::user()->username}}, {{HTML::linkRoute('tbsd_admin/destroy', 'log out')}}</h4>
-				<h2>TBSD CONTROL PANEL</h2>
+				<h4>Logged in as {{Auth::user()->username}}, {{HTML::linkRoute('tbsd_admin/destroy', 'log out')}}.</h4>
+				<h2>THE BEGINNING OF SUNSET DEITY CONTROL PANEL</h2>
+
+				<h4>Seats</h4>
+				<table class="table table-striped">
+					<tr>
+						<td><b>num</b></td>
+						<td><b>date and time</b></td>
+						<td><b>class</b></td>
+						<td><b>confirmed</b></td>
+						<td><b>capacity</b></td>
+					</tr>
+					@foreach($shows as $show)
+				        <tr>
+				        	<td>{{$k}}</td>
+				        	@if ($show->show_id == 1)
+				        		<td>23 Januari 2014, 16:00 </td>
+				        	@elseif ($show->show_id == 2)
+				        		<td>23 Januari 2014, 19:30 </td>
+				        	@elseif ($show->show_id == 3)
+				        		<td>24 Januari 2014, 16:00 </td>
+				        	@elseif ($show->show_id == 4)
+				        		<td>24 Januari 2014, 19:30 </td>
+				        	@elseif ($show->show_id == 5)
+				        		<td>25 Januari 2014, 16:00 </td>
+				        	@elseif ($show->show_id == 6)
+				        		<td>25 Januari 2014, 19:30 </td>
+				        	@endif
+				        	@if ($show->class == 1)
+				        		<td>REGULER </td>
+				        	@elseif ($show->class == 2)
+				        		<td>VIP </td>
+				        	@endif
+				        	<td>{{$show->confirmed}}</td>
+				        	<td>{{$show->capacity}}</td>
+				        </tr>
+				        {{-- */$k++;/* --}}
+				    @endforeach
+				</table>
 
 				<h4>Pending Order</h4>
 				<table class="table table-striped">
 					<tr>
 						<td><b>num</b></td>
 						<td><b>date</b></td>
+						<td><b>order id</b></td>
 						<td><b>name</b></td>
 						<td><b>mail</b></td>
 						<td><b>phone</b></td>
 						<td><b>show id</b></td>
 						<td><b>class</b></td>
 						<td><b>amount</b></td>
+						<td><b>price</b></td>
+						<td><b>status</b></td>
 						<td><b>confirm</b></td>
 						<td><b>cancel</b></td>
 					</tr>
 					@foreach($orders as $order)
-						@if ($order->confirmed == false)
+						@if ($order->status != 'Confirmed')
 					        <tr>
 					        	<td>{{$i}}</td>
 					        	<td>{{$order->created_at}}</td>
+					        	<td>{{$order->order_id}}</td>
 					        	<td>{{$order->name}}</td>
 					        	<td>{{$order->mail}}</td>
 					        	<td>{{$order->phone}}</td>
 					        	<td>{{$order->show_id}}</td>
 					        	<td>{{$order->class}}</td>
 					        	<td>{{$order->amount}}</td>
+					        	<td>{{$order->price}}</td>
+					        	<!-- set expiration -->
+					        	<td>{{$order->status}}</td>
 					        	<td>{{ Form::button('Confirm', array('class' => 'btn btn-primary', 'data-toggle' => 'modal', 'data-target' => '#confirm')) }}</td>
 					        	<td>{{ Form::button('Cancel', array('class' => 'btn btn-danger', 'data-toggle' => 'modal', 'data-target' => '#cancel')) }}</td>
 					        </tr>
@@ -83,26 +129,30 @@
 					<tr>
 						<td><b>num</b></td>
 						<td><b>date</b></td>
+						<td><b>order id</b></td>
 						<td><b>name</b></td>
 						<td><b>mail</b></td>
 						<td><b>phone</b></td>
 						<td><b>show id</b></td>
 						<td><b>class</b></td>
 						<td><b>amount</b></td>
+						<td><b>price</b></td>
 					</tr>
 					@foreach($orders as $order)
-						@if ($order->confirmed == true)
+						@if ($order->status == 'Confirmed')
 					        <tr>
-					        	<td>{{$i}}</td>
+					        	<td>{{$j}}</td>
 					        	<td>{{$order->created_at}}</td>
+					        	<td>{{$order->order_id}}</td>
 					        	<td>{{$order->name}}</td>
 					        	<td>{{$order->mail}}</td>
 					        	<td>{{$order->phone}}</td>
 					        	<td>{{$order->show_id}}</td>
 					        	<td>{{$order->class}}</td>
 					        	<td>{{$order->amount}}</td>
+					        	<td>{{$order->price}}</td>
 					        </tr>
-					        {{-- */$i++;/* --}}
+					        {{-- */$j++;/* --}}
 					    @endif
 				    @endforeach
 				</table>

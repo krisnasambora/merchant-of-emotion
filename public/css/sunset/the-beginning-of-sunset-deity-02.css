@@ -2,27 +2,25 @@
 .page{position: absolute;}
 
 @media only screen and (min-width : 1100px) {
-
 	.main_bg{line-height: 0;z-index: 1;width: 17967px;}
 	.transition_bg1{line-height: 0;z-index: 2;width: 17967px;}
-	.transition_bg1 img{margin-left: 3858px;top: 0px; z-index: 500;}
+	.transition_bg1 img{margin-left: 3858px;top: 0px;}
 	.shirt{line-height: 0;z-index: 3;width: 17967px;}
-	.shirt img{margin-left: 8567px;margin-top: 165px; z-index: 500;}
+	.shirt img{margin-left: 8567px;margin-top: 165px;}
 	.arms{line-height: 0;z-index: 3;width: 18700px;}
-	.arms img{margin-left: 8900px;margin-top: 30px; z-index: 500;}
+	.arms img{margin-left: 8900px;margin-top: 30px;}
 	.head{line-height: 0;z-index: 3;width: 19000px;}
-	.head img{margin-left: 9020px;margin-top: 175px; z-index: 500;}
+	.head img{margin-left: 9020px;margin-top: 175px;}
 	.transition_bg3{line-height: 0;z-index: 3;width: 17967px;}
-	.transition_bg3 img{margin-left: 10170px;margin-top: 129px; z-index: 500;}
+	.transition_bg3 img{margin-left: 10580px;margin-top: 129px;}
 	.transition_bg2{line-height: 0;z-index: 3;width: 17967px;}
-	.transition_bg2 img{margin-left: 10530px;margin-top: -60px; z-index: 500;}
+	.transition_bg2 img{margin-left: 10620px;margin-top: -60px;}
 	.sun{line-height: 0;z-index: 3;width: 17967px;}
-	.sun img{margin-left: 11555px;margin-top: 0px; z-index: 500;}
+	.sun img{margin-left: 11555px;margin-top: 0px;}
 	.transition_bg4{line-height: 0;z-index: 3;width: 17967px;}
-	.transition_bg4 img{margin-left: 12625px;margin-top: 0px; z-index: 500;}
+	.transition_bg4 img{margin-left: 12625px;margin-top: 0px;}
 	.transition_bg5{line-height: 0;z-index: 5;width: 21000px;}
-	.transition_bg5 img{margin-left: 16100px;px;margin-top: 0px; z-index: 500;}
-	.middle {width: 3200px;z-index: 250;top: 0px;}
+	.transition_bg5 img{margin-left: 16100px;px;margin-top: 0px;}
 
 	.l01 {width: 100000px;z-index: 500;top: 0px;}
 	.l01 .s1_a{left: 599px;top: 398px;}
@@ -33,11 +31,11 @@
 	.l01 .s1_boy img{opacity: 0.5;}
 	.l01 .s1_c{left: 2590px;top: 0px;}
 	.l01 .s1_c img{opacity: 0.5;}
-	.l01 .s1_d1{left: 4240px;top: 160px;}
+	.l01 .s1_d1{left: 4240px;top: 222px;}
 	.l01 .s1_d1 img{opacity: 0.5;}
-	.l01 .s1_d2{left: 4748px;top: 127px;}
+	.l01 .s1_d2{left: 4748px;top: 189px;}
 	.l01 .s1_d2 img{opacity: 0.5;}
-	.l01 .s1_d3{left: 7195px;top: 253px;}
+	.l01 .s1_d3{left: 7195px;top: 315px;}
 	.l01 .s1_d3 img{opacity: 0.5;}
 	.l01 .s2_a{left: 24695px;top: 0px;}
 	.l01 .s2_b{left: 25249px;top: 392px;}
@@ -50,6 +48,7 @@
 	.l01 .s2_e1{left: 33209px;top: 624px;}
 	.l01 .s2_e2{left: 35380px;top: 0px;}
 	.l01 .s3_b{left: 70529px;top: 274px;}
+	.l01 .s3_teks-a{left: 63250px;top: -95px;}
 
 	.l02 {width: 110000px;z-index: 495;top: 0px;}
 	.l02 .s2_sun{left: 27779px;top: 392px;}
@@ -61,7 +60,7 @@
 	.l02 .s2_pohon-f{left: 32600px;top: 10px;}
 	.l02 .s2_pohon-g{left: 29260px;top: 670px;}
 	.l02 .s2_tanah{left: 30150px;top: 568px;}
-	.l02 .s2_semak{left: 31750px;top: 330px;}
+	.l02 .s2_semak{left: 31960px;top: 330px;}
 	.l02 .s2_batu-a{left: 36659px;top: 0px;}
 	.l02 .s2_batu-b{left: 37970px;top: 0px;}
 	.l02 .s2_batu-c{left: 38740px;top: 0px;}
@@ -77,10 +76,10 @@
 	.l04 .s2_awan-a{left: 4200px;top: 0px;}
 
 	.l05 {width: 21000px;z-index: 485;top: 0px;}
-	.l05 .s2_awan-a{left: 4990px;top: 380px;}
+	.l05 .s2_awan-a{left: 4990px;top: 394px;}
 
 	.l06 {width: 20000px;z-index: 490;top: 0px;}
-	.l06 .s2_awan-a{left: 4140px;top: 68px;}
+	.l06 .s2_awan-a{left: 4790px;top: 81px;}
 
 	.l07 {width: 123000px;z-index: 495;top: 0px;}	
 	.l07 .s2_pohon-a{left: 37000px;top: 210px;}
