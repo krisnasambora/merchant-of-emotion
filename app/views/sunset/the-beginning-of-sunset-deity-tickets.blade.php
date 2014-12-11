@@ -13,10 +13,10 @@
 	</head>
 	<body>
 		<div class="col-md-12 text-center padding-0">
-    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/header ticketing.png')}}" class="center-block img-responsive">
+    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/header ticketing.png')}}" class="center-block img-responsive"></a>
 		</div>
 		<div class="col-md-12 text-center padding-0">
-    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/logo.png')}}" class="center-block img-responsive">
+    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/logo.png')}}" class="center-block img-responsive"></a>
 		</div>
 		<div class="col-md-8 col-md-offset-2 text-center padding-0">
 			<p>
@@ -27,7 +27,7 @@
 			<div class="row sub">
 				<div class="container-fluid">
 					<div class="row form">
-						<div class="col-sm-10 col-sm-offset-1 text-center" style="margin-top:55px;margin-bottom:30px;">
+						<div class="col-xs-12 text-center" style="margin-top:55px;margin-bottom:30px;">
 				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/1 get.png')}}" class="center-block img-responsive">
 						</div>
 					</div>
@@ -46,33 +46,53 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1 text-center" style="margin-top:55px;margin-bottom:30px;">
+						<div class="col-xs-12 text-center" style="margin-top:55px;margin-bottom:30px;">
 				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/2 show.png')}}" class="center-block img-responsive">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-xs-8 col-xs-offset-2 text-center">
+						<div class="col-xs-12 col-sm-1 col-sm-offset-3 text-center padding-0">
 				    		<div class="form-group shows">
 								<label class="radio-inline">
 								 	{{Form::radio('show_id', '1', true)}}
 								 	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/a.png')}}" class="center-block img-responsive"><br/>
-								</label>	
+								</label>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-1 text-center padding-0">
+				    		<div class="form-group shows">
 								<label class="radio-inline">
 									{{Form::radio('show_id', '2')}}
 									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/b.png')}}" class="center-block img-responsive"><br/>
 								</label>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-1 text-center padding-0">
+				    		<div class="form-group shows">	
 								<label class="radio-inline">
 									{{Form::radio('show_id', '3')}}
 									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/c.png')}}" class="center-block img-responsive"><br/>
 								</label>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-1 text-center padding-0">
+				    		<div class="form-group shows">
 								<label class="radio-inline">
 								 	{{Form::radio('show_id', '4')}}
 								 	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/d.png')}}" class="center-block img-responsive"><br/>
 								</label>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-1 text-center padding-0">
+				    		<div class="form-group shows">
 								<label class="radio-inline">
 									{{Form::radio('show_id', '5')}}
 									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/e.png')}}" class="center-block img-responsive"><br/>
 								</label>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-1 text-center padding-0">
+				    		<div class="form-group shows">
 								<label class="radio-inline">
 									{{Form::radio('show_id', '6')}}
 									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/f.png')}}" class="center-block img-responsive"><br/>
@@ -81,7 +101,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-10 col-sm-offset-1 text-center" style="margin-top:20px;margin-bottom:30px;">
+						<div class="col-xs-12 text-center" style="margin-top:20px;margin-bottom:30px;">
 				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/3 class.png')}}" class="center-block img-responsive">
 						</div>
 					</div>
@@ -94,7 +114,7 @@
 								</label>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-3 text-center" style="margin-top:5px;margin-bottom:30px;">
+						<div class="col-xs-12 col-sm-2 text-center" style="margin-top:5px;margin-bottom:30px;">
 							<div class="form-group class">
 								<label class="radio-inline">
 									{{Form::radio('class', '2')}}
@@ -102,7 +122,7 @@
 								</label>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-2">
+						<div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
 				    		<div class="form-group">
 								{{Form::select('amount', array('1' => '1', '2' => '2', '3' => '3', '4' => '4'), '1', ['class' => 'form-control'])}}
 							</div>
@@ -117,10 +137,6 @@
 						</div>
 					</div>
 					<div class="row">
-					</div>
-					<div class="row">
-					</div>
-					<div class="row">
 						<div class="col-xs-8 col-xs-offset-2 text-center">
 							@if(Session::has('success'))
 							    <div class="alert-box success">
@@ -133,11 +149,16 @@
 							@endif
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-xs-12 text-center" style="margin-top:20px;margin-bottom:30px;">
+				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/border.png')}}" class="center-block img-responsive">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-12 text-center padding-0" style="margin-top:0px;margin-bottom:30px;">
-    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/gif-1.gif')}}" class="center-block img-responsive">
+    		<a href="http://recollectionofsunset.blogspot.com/"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/gif-1.gif')}}" class="center-block img-responsive"></a>
 		</div>
 		<div class="row sub-line">
 			<div class="col-md-6 col-md-offset-3 text-center" style="margin-top:0px;margin-bottom:0px;">

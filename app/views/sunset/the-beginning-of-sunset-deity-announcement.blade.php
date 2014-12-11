@@ -13,7 +13,7 @@
 	</head>
     <body>
     	<div class="col-md-12 text-center padding-0">
-    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/banner.jpg')}}" class="center-block img-responsive">
+    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/poster.jpg')}}" class="center-block img-responsive">
 		</div>
 		</div>
     	<div class="container">
@@ -33,7 +33,7 @@
 		    		</p>
 				</div>
 				<div class="col-md-2 storybook">
-		    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button.png')}}" class="center-block img-responsive"></a>
+		    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/tickets"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button ticket.png')}}" class="center-block img-responsive"></a>
 				</div>
 			</div>
 			<div class="row line">
@@ -44,40 +44,13 @@
 			<div class="row sub-line">
 				<div class="col-md-6 col-md-offset-3 text-center">
 		    		<p>
-		    			Subscribe your email to catch updates on Sunset Deity's developments.
+		    			Sunset Deity's tale takes the form of an online storybook that will unfold gradually.
 		    		</p>
 				</div>
 			</div>
-			<div class="row form">
-		    	<div class="col-xs-8 col-xs-offset-2 text-center">
-		    		{{Form::open(array('url' => 'newtbsdsub', 'method' => 'POST', 'class' => 'form-inline'))}}
-						<div class="form-group">	
-							{{Form::text('mail','', array('class' => 'form-control underlined', 'placeholder' => 'email address'))}}
-						</div>
-						{{Form::submit('Submit', array('class' => 'submit-button'))}}
-					{{Form::close()}}
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2 text-center">
-					@if(Session::has('success'))
-					    <div class="alert-box success">
-					        <h6>{{ Session::get('success') }}</h6>
-					    </div>
-					@elseif(Session::has('failure'))
-					    <div class="alert-box failure">
-					        <h6>{{ Session::get('failure') }}</h6>
-					    </div>
-					@endif
-				</div>
-			</div>
-			<div class="row socmed">
-				<div class="col-xs-8 col-xs-offset-2 text-center">
-					<a href="http://facebook.com/pages/Merchant-of-Emotion/917903188237791"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/facebook.png')}}" class="socmed"></a>
-					<a href="http://instagram.com/merchofemotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/instagram.png')}}" class="socmed"></a>
-					<a href="http://twitter.com/MerchofEmotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/twitter.png')}}" class="socmed"></a>
-				</div>
-			</div>
+		</div>
+		<div class="col-md-12 text-center padding-0">
+    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/1"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 1.png')}}" class="center-block img-responsive"></a>
 		</div>
     </body>
 </html>
