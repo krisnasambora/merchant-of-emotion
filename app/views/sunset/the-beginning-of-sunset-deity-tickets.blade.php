@@ -13,10 +13,10 @@
 	</head>
 	<body>
 		<div class="col-md-12 text-center padding-0">
-    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/header ticketing.png')}}" class="center-block img-responsive"></a>
+    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/header ticketing.png')}}" class="center-block img-responsive"></a>
 		</div>
 		<div class="col-md-12 text-center padding-0">
-    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/logo.png')}}" class="center-block img-responsive"></a>
+    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/logo.png')}}" class="center-block img-responsive"></a>
 		</div>
 		<div class="col-md-8 col-md-offset-2 text-center padding-0">
 			<p>

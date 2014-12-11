@@ -33,7 +33,7 @@
 		    		</p>
 				</div>
 				<div class="col-md-2 storybook">
-		    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/tickets"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button ticket.png')}}" class="center-block img-responsive"></a>
+		    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/tickets"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/button ticket.png')}}" class="center-block img-responsive"></a>
 				</div>
 			</div>
 			<div class="row line">
@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="col-md-12 text-center padding-0">
-    		<a href="http://128.199.220.145/the-beginning-of-sunset-deity/1"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 1.png')}}" class="center-block img-responsive"></a>
+    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 1.png')}}" class="center-block img-responsive"></a>
 		</div>
     </body>
 </html>
