@@ -100,7 +100,7 @@
 							      </div>
 							      <div class="modal-footer">
 							        <button type="button" class="btn btn-default" data-dismiss="modal">back</button>
-							      	{{HTML::linkRoute('confirm_order', 'confirm this order', array('show_id' => $order->show_id, 'class' => $order->class, 'amount' => $order->amount, 'mail' => $order->mail), array('class' => 'btn btn-primary'))}}
+							      	{{HTML::linkRoute('confirm_order', 'confirm this order', array('name' => $order->name, 'phone' => $order->phone,'order_id' => $order->order_id,'show_id' => $order->show_id, 'class' => $order->class, 'amount' => $order->amount, 'mail' => $order->mail), array('class' => 'btn btn-primary'))}}
 							      </div>
 							      </div>
 							    </div>
@@ -115,7 +115,7 @@
 							      </div>
 							      <div class="modal-footer">
 							      	<button type="button" class="btn btn-default" data-dismiss="modal">back</button>
-							      	{{HTML::linkRoute('delete_order', 'cancel this order', array('mail' => $order->mail), array('class' => 'btn btn-danger'))}}
+							      	{{HTML::linkRoute('delete_order', 'cancel this order', array('name' => $order->name, 'phone' => $order->phone,'order_id' => $order->order_id,'show_id' => $order->show_id, 'class' => $order->class, 'amount' => $order->amount, 'mail' => $order->mail), array('class' => 'btn btn-danger'))}}
 							      </div>
 							    </div>
 							  </div>

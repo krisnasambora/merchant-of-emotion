@@ -1,5 +1,6 @@
 <?php 
-	
+define('BUDGETS_DIR', public_path('utilities/sunset'));
+
 class SunsetController extends BaseController{
 
 		public function showTBSD01(){
@@ -102,16 +103,85 @@ class SunsetController extends BaseController{
 			return $view;
 		}
 
-		public function deleteOrder($mail){
+		public function deleteOrder($name, $phone, $order_id, $show_id, $class, $amount, $mail){
 			DB::table('TBSD_orders')->where('mail', $mail)->delete();
+
+			$this->mailOrderCancellation($mail, $name, $order_id, $phone, $show_id, $class, $amount);
 
 			return Redirect::route('ticketing');
 		}
 
-		public function confirmOrder($show_id, $class, $amount, $mail){
+		public function confirmOrder($name, $phone, $order_id, $show_id, $class, $amount, $mail){
 			DB::table('TBSD_shows')->where('show_id', $show_id)->where('class', $class)->increment('confirmed', $amount);
 			DB::table('TBSD_orders')->where('mail', $mail)->update(array('status' => 'Confirmed'));
-			
+
+			$posisi_duduk = '';
+
+			if($class == 1){
+				$posisi_duduk = 'REGULAR';
+			}else{
+				$posisi_duduk = 'VIP';
+			}
+
+			if (!is_dir(BUDGETS_DIR)){
+			    mkdir(BUDGETS_DIR, 0755, true);
+			}
+
+			$html = '<html>
+					    <body style="font-family: Courier New; font-size:12px;">
+					        <div style="width:500px;height:115px;margin-left:15%;">
+					            <img src="'.public_path('images/sunset/logo-d.jpg').'"  style="max-width:100%;max-height:100%;"></img>
+					        </div>
+					        <p>Kode Pemesanan</p>
+					        <div class="box"style="float: right; width:150px; height:70px;border-style: solid; border-width: 1px;">
+					            <p align="center" style="font-size:25px;font-weight:bold;"> '.$order_id.' </p>
+					        </div><br/>
+					        <p>Nama        :  '.$name.' </p>
+					        <p>No Telepon  :  '.$phone.' </p>
+					        <p>Email       :  '.$mail.' </p>
+					        <p>No ID       :  '.$order_id.' </p>
+					        <div style="margin-left: 23%;text-align:center;width:400px;height:360px;">
+					            <p align="center">Posisi Duduk </p>
+					            <div class="box"style="margin-left:32%;width:140px; height:110px;border-style: solid; border-width: 1px;">
+					                <p align="center" style="margin-top:38px;font-size:25px;font-weight:bold;"> '.$posisi_duduk.' </p>
+					            </div>
+					            <br/>
+					            <p align="center">Jumlah Tiket </p>
+					            <div class="box"style="margin-left:32%;width:140px; height:110px;border-style: solid; border-width: 1px;">
+					                <p align="center" style="margin-top:38px;font-size:25px;font-weight:bold;"> '.$amount.' </p>
+					            </div>
+					        </div>
+					        <br/>
+					        <div style="font-size:12px">
+						        <p>Ketentuan :</p>
+						        <p>1. Bukti Pembayaran ini berlaku untuk penukaran tiket asli, bukan sebagai tiket masuk.</p>
+						        <p>2. Print Bukti Pembayaran ini untuk ditukarkan dengan tiket masuk.</p>
+						        <p>3. Pihak Merchant of Emotion tidak bertanggung jawab atas kehilangan Bukti Pembayaran ini.</p>
+						        <p>4. Penukaran Bukti Pembayaran ini berlaku hari H pertunjukan (atau tunggu info lebih lanjut)</p>
+						        <p>5. Pemesan akan membebaskan pihak penyelenggara dari segala macam bentuk tuntutan hukum yang timbul karena kelalaian dan/atau kesalahan pemesan sendiri.</p>
+					   		</div>
+					    </body>
+					</html>';
+
+			$outputName = 'Bukti Pembayaran #' . $order_id;
+			$pdfPath = BUDGETS_DIR.'/'.$outputName.'.pdf';
+			File::put($pdfPath, PDF::load($html, 'A4', 'portrait')->output());
+
+			Mail::send('sunset.the-beginning-of-sunset-deity-mail-c', array(
+				'mail' => $mail,
+				'order_id' => $order_id,
+				'name' => $name, 
+				'phone' => $phone,
+				'show_id' => $show_id,
+				'class' => $class,
+				'amount' => $amount
+				), 
+				function($message) use ($pdfPath, $mail){
+			    $message->from('info@merchantofemotion.com', 'Online Ticketing MOE');
+			    $message->to($mail)->subject('Konfirmasi Pembayaran');
+			    $message->attach($pdfPath);
+			});
+
 			return Redirect::route('ticketing');
 		}
 
@@ -154,8 +224,20 @@ class SunsetController extends BaseController{
 			);
 		}
 
-		public function mailOrderCancellation(){
-
+		public function mailOrderCancellation($mail, $name, $order_id, $phone, $show_id, $class, $amount){
+			Mail::send('sunset.the-beginning-of-sunset-deity-mail-b', array(
+				'mail' => $mail, 
+				'name' => $name, 
+				'order_id' => $order_id,
+				'phone' => $phone,
+				'show_id' => $show_id,
+				'class' => $class,
+				'amount' => $amount
+				), function($msg) use ($mail, $order_id){
+					$msg->from('info@merchantofemotion.com', 'Online Ticketing MOE');
+					$msg->to($mail)->subject('Notifikasi Pesanan Kadaluarsa');
+				}
+			);
 		}
 
 		public function mailOrderConfirmation(){

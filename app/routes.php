@@ -32,8 +32,8 @@ Route::post('new_TBSD_order', 'SunsetController@insertNewTBSDorder');
 Route::group(array('before' => 'tbsd_admins'), function()
 {
 	Route::get('ticketing', array('as' =>'ticketing', 'uses' => 'SunsetController@ticketing'));
-	Route::get('delete_order/{mail}', array('as' =>'delete_order', 'uses' => 'SunsetController@deleteOrder'));
-	Route::get('confirm_order/{show_id}/{class}/{amount}/{mail}', array('as' =>'confirm_order', 'uses' => 'SunsetController@confirmOrder'));
+	Route::get('delete_order/{name}/{phone}/{order_id}/{show_id}/{class}/{amount}/{mail}', array('as' =>'delete_order', 'uses' => 'SunsetController@deleteOrder'));
+	Route::get('confirm_order/{name}/{phone}/{order_id}/{show_id}/{class}/{amount}/{mail}', array('as' =>'confirm_order', 'uses' => 'SunsetController@confirmOrder'));
 });
 Route::get('tbsd_admin/login', array('as' => 'tbsd_admin/login', 'uses' => 'SunsetController@showLoginPage'));
 Route::post('tbsd_admin/store', array('as' => 'tbsd_admin/store', 'uses' => 'SunsetController@store'));
