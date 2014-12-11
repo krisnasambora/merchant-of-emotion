@@ -80,7 +80,7 @@ class SunsetController extends BaseController{
 
 						$order->save();
 
-						$this->mailOrderSubmission($order->mail, $order->name, $order->order_id, $order->phone, $order->show_id, $order->class, $order->amount);
+						$this->mailOrderSubmission($order->price, $order->mail, $order->name, $order->order_id, $order->phone, $order->show_id, $order->class, $order->amount);
 
 						Session::flash('success', 'Your order has been successfully registered!');
 						return Redirect::to('the-beginning-of-sunset-deity/tickets');
@@ -123,6 +123,28 @@ class SunsetController extends BaseController{
 				$posisi_duduk = 'VIP';
 			}
 
+			$when = '';
+			switch($show_id){
+				case 1:
+					$when = 'Jumat, 23 Januari 2014, 16:00';
+					break;
+				case 2:
+					$when = 'Jumat, 23 Januari 2014, 19:30';
+					break;
+				case 3:
+					$when = 'Sabtu, 24 Januari 2014, 16:00';
+					break;
+				case 4:
+					$when = 'Sabtu, 24 Januari 2014, 19:30';
+					break;
+				case 5:
+					$when = 'Minggu, 25 Januari 2014, 16:00';
+					break;
+				case 6:
+					$when = 'Minggu, 25 Januari 2014, 19:30';
+					break;					
+			}
+
 			if (!is_dir(BUDGETS_DIR)){
 			    mkdir(BUDGETS_DIR, 0755, true);
 			}
@@ -132,33 +154,38 @@ class SunsetController extends BaseController{
 					        <div style="width:500px;height:115px;margin-left:15%;">
 					            <img src="'.public_path('images/sunset/logo-d.jpg').'"  style="max-width:100%;max-height:100%;"></img>
 					        </div>
+					        <div style="width:500px;margin-left:15%;">
+					            <p align="center">Teater Tertutup Dago Tea House</p>
+					            <p align="center">Jalan Bukit Dago Utara no. 53, Bandung</p>
+					            <p align="center">23 -25 Januari 2015</p>
+					        </div>
 					        <p>Kode Pemesanan</p>
 					        <div class="box"style="float: right; width:150px; height:70px;border-style: solid; border-width: 1px;">
 					            <p align="center" style="font-size:25px;font-weight:bold;"> '.$order_id.' </p>
-					        </div><br/>
+					        </div>
 					        <p>Nama        :  '.$name.' </p>
 					        <p>No Telepon  :  '.$phone.' </p>
 					        <p>Email       :  '.$mail.' </p>
 					        <p>No ID       :  '.$order_id.' </p>
-					        <div style="margin-left: 23%;text-align:center;width:400px;height:360px;">
+					        <p>Jadwal Pertunjukkan       :  '.$when.' </p>
+					        <div style="margin-left: 23%;text-align:center;width:400px;height:330px;">
 					            <p align="center">Posisi Duduk </p>
-					            <div class="box"style="margin-left:32%;width:140px; height:110px;border-style: solid; border-width: 1px;">
+					            <div class="box"style="margin-left:32%;width:140px; height:78px;border-style: solid; border-width: 1px;">
 					                <p align="center" style="margin-top:38px;font-size:25px;font-weight:bold;"> '.$posisi_duduk.' </p>
-					            </div>
-					            <br/>
+					            </div><br/>
 					            <p align="center">Jumlah Tiket </p>
-					            <div class="box"style="margin-left:32%;width:140px; height:110px;border-style: solid; border-width: 1px;">
+					            <div class="box"style="margin-left:32%;width:140px; height:78px;border-style: solid; border-width: 1px;">
 					                <p align="center" style="margin-top:38px;font-size:25px;font-weight:bold;"> '.$amount.' </p>
 					            </div>
 					        </div>
-					        <br/>
 					        <div style="font-size:12px">
 						        <p>Ketentuan :</p>
 						        <p>1. Bukti Pembayaran ini berlaku untuk penukaran tiket asli, bukan sebagai tiket masuk.</p>
-						        <p>2. Print Bukti Pembayaran ini untuk ditukarkan dengan tiket masuk.</p>
-						        <p>3. Pihak Merchant of Emotion tidak bertanggung jawab atas kehilangan Bukti Pembayaran ini.</p>
-						        <p>4. Penukaran Bukti Pembayaran ini berlaku hari H pertunjukan (atau tunggu info lebih lanjut)</p>
-						        <p>5. Pemesan akan membebaskan pihak penyelenggara dari segala macam bentuk tuntutan hukum yang timbul karena kelalaian dan/atau kesalahan pemesan sendiri.</p>
+						        <p>2. Print atau tunjukkan Bukti Pembayaran ini untuk ditukarkan dengan tiket masuk.</p>
+						        <p>3. Penonton dianjurkan membawa kartu identitas (KTP/SIM) asli yang sesuai dengan nama pada saat melakukan pembelian</p>
+						        <p>4. Pihak Merchant of Emotion tidak bertanggung jawab atas kehilangan Bukti Pembayaran ini.</p>
+						        <p>5. Penukaran Bukti Pembayaran ini berlaku hari H pertunjukan (atau tunggu info lebih lanjut)</p>
+						        <p>6. Pemesan akan membebaskan pihak penyelenggara dari segala macam bentuk tuntutan hukum yang timbul karena kelalaian dan/atau kesalahan pemesan sendiri.</p>
 					   		</div>
 					    </body>
 					</html>';
@@ -208,8 +235,9 @@ class SunsetController extends BaseController{
 			return Redirect::route('ticketing');
 		}
 
-		public function mailOrderSubmission($mail, $name, $order_id, $phone, $show_id, $class, $amount){
+		public function mailOrderSubmission($price, $mail, $name, $order_id, $phone, $show_id, $class, $amount){
 			Mail::send('sunset.the-beginning-of-sunset-deity-mail-a', array(
+				'price' => $price,
 				'mail' => $mail, 
 				'name' => $name, 
 				'order_id' => $order_id,

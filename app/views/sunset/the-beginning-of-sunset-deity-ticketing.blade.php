@@ -96,7 +96,7 @@
 							  <div class="modal-dialog">
 							    <div class="modal-content">
 							      <div class="modal-body">
-							      	<h3>Confirm order?</h3>
+							      	<p>Confirm order {{$order->order_id}} ({{$order->name}})?</p>
 							      </div>
 							      <div class="modal-footer">
 							        <button type="button" class="btn btn-default" data-dismiss="modal">back</button>
@@ -111,7 +111,7 @@
 							  <div class="modal-dialog">
 							    <div class="modal-content">
 							      <div class="modal-body">
-							      	<p>Cancel order?</p>
+							      	<p>Cancel order {{$order->order_id}}  ({{$order->name}})?</p>
 							      </div>
 							      <div class="modal-footer">
 							      	<button type="button" class="btn btn-default" data-dismiss="modal">back</button>

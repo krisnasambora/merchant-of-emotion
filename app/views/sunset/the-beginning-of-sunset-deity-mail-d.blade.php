@@ -1,5 +1,5 @@
 <html>
-    <body style="font-family: 'Courier New';">
+    <body style="font-family: Courier New;">
         <div style="margin-left:31%;width:500px;height:200px;">
             <img src="http://news.bbcimg.co.uk/media/images/71832000/jpg/_71832498_71825880.jpg" align="center" style="max-width:100%;max-height:100%;"></img>
         </div>
@@ -25,7 +25,7 @@
         </div>
         <p>Ketentuan :</p><br/>
         <p>1. Bukti Pembayaran ini berlaku untuk penukaran tiket asli, bukan sebagai tiket masuk.</p>
-        <p>2. Print Bukti Pembayaran ini untuk ditukarkan dengan tiket masuk.</p>
+        <p>2. Print atau tunjukkan Bukti Pembayaran ini untuk ditukarkan dengan tiket masuk.</p>
         <p>3. Pihak Merchant of Emotion tidak bertanggung jawab atas kehilangan Bukti Pembayaran ini.</p>
         <p>4. Penukaran Bukti Pembayaran ini berlaku hari H pertunjukan (atau tunggu info lebih lanjut)</p>
         <p>5. Pemesan akan membebaskan pihak penyelenggara dari segala macam bentuk tuntutan hukum yang timbul karena kelalaian dan/atau kesalahan pemesan sendiri.</p>

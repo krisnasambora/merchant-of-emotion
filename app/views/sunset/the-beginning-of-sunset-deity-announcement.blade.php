@@ -7,7 +7,7 @@
 		{{ HTML::style('css/bootstrap.min.css'); }}
 		{{ HTML::script('js/bootstrap.min.js'); }}
 		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-announcement.css'); }}
-		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-announcement/favicon.jpg') }}">
+		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 		<link href='http://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
 		<title>Announcement</title>
 	</head>

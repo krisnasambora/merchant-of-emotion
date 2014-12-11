@@ -44,9 +44,9 @@
     	@endif
     	<p>Kode Pembayaran : {{$order_id}}</p>
     	@if ($class == 1)
-    		<p><b>JUMLAH TRANSFER :  {{number_format((string)($amount * 50000))}} + {{ltrim($order_id ,'0')}} </b></p><br/>
+    		<p><b>JUMLAH TRANSFER :  {{number_format((string)($amount * 50000))}} + {{ltrim($order_id ,'0')}} = Rp. {{number_format($price)}} </b></p><br/>
     	@elseif ($class == 2)
-    		<p><b>JUMLAH TRANSFER :  {{number_format((string)($amount * 100000))}} + {{ltrim($order_id, '0')}} </b></p><br/>
+    		<p><b>JUMLAH TRANSFER :  {{number_format((string)($amount * 100000))}} + {{ltrim($order_id, '0')}} = Rp. {{number_format($price)}} </b></p><br/>
     	@endif
 
     	<p><b>CARA PEMBAYARAN</b></p>
