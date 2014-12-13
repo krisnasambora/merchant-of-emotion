@@ -49,7 +49,7 @@ $(document).ready( function () {
 	scaleElement($('#l05 > #s2_awan-a'), 394, 4990, 294);
 
 	scaleLayer($('#l06'), 20000, 490);
-	scaleElement($('#l06 > #s2_awan-a'), 81, 4790, 608);
+	scaleElement($('#l06 > #s2_awan-a'), 89, 4790, 608);
 
 	scaleLayer($('#l07'), 123000, 495);
 	scaleElement($('#l07 > #s2_pohon-a'), 210, 37000, 558);
@@ -66,7 +66,6 @@ $(document).ready( function () {
 	scaleElement($('#l09 > #s3_a1'), 100, 11500, 279);
 	scaleElement($('#l09 > #s3_a2'), 553, 12000, 184);
 	scaleElement($('#l09 > #s3_a3'), 250, 12500, 276);
-	scaleElement($('#l09 > #s3_a4'), 0, 13000, 279);
 
 	scaleLayer($('#l10'), 21000, 2);
 	scaleElement($('#l10 > #s3_awan-a'), 0, 13750, 627);

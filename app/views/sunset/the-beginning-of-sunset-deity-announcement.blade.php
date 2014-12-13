@@ -52,5 +52,26 @@
 		<div class="col-md-12 text-center padding-0">
     		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 1.png')}}" class="center-block img-responsive"></a>
 		</div>
+		<div class="col-md-12 text-center padding-0">
+    		<a href="" data-toggle="modal" data-target="#prompt-ch2"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 2.png')}}" class="center-block img-responsive"></a>
+		</div>
+		<!-- ch2 Modal -->
+		<div class="modal fade" id="prompt-ch2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div>
+							<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/animation.png')}}" class="center-block img-responsive"></a>
+						</div>
+						<br/>
+						<br/>
+						<div>
+							<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-a"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/light.png')}}" class="center-block img-responsive"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
     </body>
 </html>

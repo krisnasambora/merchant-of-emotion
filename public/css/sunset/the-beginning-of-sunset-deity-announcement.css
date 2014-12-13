@@ -1,5 +1,7 @@
 body{
 	font-family: 'Radley', serif !important;
+  background-color: rgb(247,245,240);
+  color: rgb(84,84,84);
 }
 br {
    display: block;

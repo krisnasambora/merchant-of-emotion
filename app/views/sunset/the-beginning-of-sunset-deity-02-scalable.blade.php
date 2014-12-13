@@ -8,7 +8,7 @@
 		{{ HTML::style('css/jInvertScroll.css'); }}
 		{{ HTML::script('js/scale.js'); }}
 		{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-02.js'); }}
-		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-02.css'); }}
+		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-02-scalable.css'); }}
 		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Her warm hands pulled me up, her bright feature opened the world for us to play with.">
@@ -186,9 +186,6 @@
 				</div>
 				<div id="s3_a3" class="page">
 					<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/3.png')}}">
-				</div>
-				<div id="s3_a4" class="page">
-					<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/8/1.png')}}">
 				</div>
 			</div>
 			<!-- width: 19500px; z-index: 2; -->

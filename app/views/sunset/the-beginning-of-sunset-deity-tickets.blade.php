@@ -20,7 +20,7 @@
 		</div>
 		<div class="col-md-8 col-md-offset-2 text-center padding-0">
 			<p>
-		    	We are thrilled to welcome you to the show. Through Sunset Deity's production, we inquire to find what's fresh and bringing it to the stage for wide appreciation; and you are part of the magic that make everything happens. Production Blog Visit Merchant of Emotion's Production Blog to get to know the story behind Sunset Deity's theatrical show. 
+		    	We are thrilled to welcome you to the show. Through Sunset Deity's production, we inquire to find what's fresh and bringing it to the stage for wide appreciation; and you are part of the magic that make everything happens. 
 		    </p>
 		</div>
     	<div class="container sunset-sub">
@@ -111,6 +111,7 @@
 								<label class="radio-inline">
 								 	{{Form::radio('class', '1', true)}}
 								 	<p>REGULAR</p>
+								 	<p>Rp 50.000</p>
 								</label>
 							</div>
 						</div>
@@ -119,6 +120,7 @@
 								<label class="radio-inline">
 									{{Form::radio('class', '2')}}
 									<p>VIP</p>
+									<p>Rp 100.000</p>
 								</label>
 							</div>
 						</div>
@@ -162,6 +164,9 @@
 		</div>
 		<div class="row sub-line">
 			<div class="col-md-6 col-md-offset-3 text-center" style="margin-top:0px;margin-bottom:0px;">
+	    		<p>
+	    			Visit Merchant of Emotion's Production Blog to get to know the story behind Sunset Deity's theatrical show.
+	    		</p>
 	    		<p>
 	    			Subscribe your email to catch updates on Sunset Deity's developments.
 	    		</p>

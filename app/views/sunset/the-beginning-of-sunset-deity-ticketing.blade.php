@@ -88,38 +88,9 @@
 					        	<td>{{$order->price}}</td>
 					        	<!-- set expiration -->
 					        	<td>{{$order->status}}</td>
-					        	<td>{{ Form::button('Confirm', array('class' => 'btn btn-primary', 'data-toggle' => 'modal', 'data-target' => '#confirm')) }}</td>
-					        	<td>{{ Form::button('Cancel', array('class' => 'btn btn-danger', 'data-toggle' => 'modal', 'data-target' => '#cancel')) }}</td>
+					        	<td>{{HTML::linkRoute('confirm_order', 'confirm', array('name' => $order->name, 'phone' => $order->phone,'order_id' => $order->order_id,'show_id' => $order->show_id, 'class' => $order->class, 'amount' => $order->amount, 'mail' => $order->mail), array('class' => 'btn btn-primary'))}}</td>
+					        	<td>{{HTML::linkRoute('delete_order', 'cancel', array('name' => $order->name, 'phone' => $order->phone,'order_id' => $order->order_id,'show_id' => $order->show_id, 'class' => $order->class, 'amount' => $order->amount, 'mail' => $order->mail), array('class' => 'btn btn-danger'))}}</td>
 					        </tr>
-					        <!-- Confirm Modal -->
-							<div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">
-							      <div class="modal-body">
-							      	<p>Confirm order {{$order->order_id}} ({{$order->name}})?</p>
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn btn-default" data-dismiss="modal">back</button>
-							      	{{HTML::linkRoute('confirm_order', 'confirm this order', array('name' => $order->name, 'phone' => $order->phone,'order_id' => $order->order_id,'show_id' => $order->show_id, 'class' => $order->class, 'amount' => $order->amount, 'mail' => $order->mail), array('class' => 'btn btn-primary'))}}
-							      </div>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-					        <!-- Cancel Modal -->
-							<div class="modal fade" id="cancel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">
-							      <div class="modal-body">
-							      	<p>Cancel order {{$order->order_id}}  ({{$order->name}})?</p>
-							      </div>
-							      <div class="modal-footer">
-							      	<button type="button" class="btn btn-default" data-dismiss="modal">back</button>
-							      	{{HTML::linkRoute('delete_order', 'cancel this order', array('name' => $order->name, 'phone' => $order->phone,'order_id' => $order->order_id,'show_id' => $order->show_id, 'class' => $order->class, 'amount' => $order->amount, 'mail' => $order->mail), array('class' => 'btn btn-danger'))}}
-							      </div>
-							    </div>
-							  </div>
-							</div>
 					        {{-- */$i++;/* --}}
 					    @endif
 				    @endforeach

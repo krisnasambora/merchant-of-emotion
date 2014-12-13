@@ -20,6 +20,11 @@ Route::any('the-beginning-of-sunset-deity/announcement', array('as' =>'the-begin
 }));
 Route::get('the-beginning-of-sunset-deity/01', array('as' =>'the-beginning-of-sunset-deity/01', 'uses' => 'SunsetController@showTBSD01'));
 Route::get('the-beginning-of-sunset-deity/02', array('as' =>'the-beginning-of-sunset-deity/02', 'uses' => 'SunsetController@showTBSD02'));
+Route::get('the-beginning-of-sunset-deity/02-m-a', array('as' =>'the-beginning-of-sunset-deity/02-m-a', 'uses' => 'SunsetController@showTBSD02ma'));
+Route::get('the-beginning-of-sunset-deity/02-m-b', array('as' =>'the-beginning-of-sunset-deity/02-m-b', 'uses' => 'SunsetController@showTBSD02mb'));
+Route::get('the-beginning-of-sunset-deity/02-m-c', array('as' =>'the-beginning-of-sunset-deity/02-m-c', 'uses' => 'SunsetController@showTBSD02mc'));
+Route::get('the-beginning-of-sunset-deity/02-m-d', array('as' =>'the-beginning-of-sunset-deity/02-m-c', 'uses' => 'SunsetController@showTBSD02md'));
+
 
 Route::post('newtbsdsub', 'HomesiteController@insertNewSubscriber');
 
