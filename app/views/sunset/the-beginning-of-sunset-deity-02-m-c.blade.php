@@ -22,10 +22,10 @@
 			</div>
 			<div id="l01" class="scroll">
 				<div id="next" class="page">
-					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-d"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next.png')}}"></a>
+					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-d"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next2.png')}}"></a>
 				</div>
 				<div id="back" class="page">
-					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-b"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back.png')}}"></a>
+					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-b"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
 				</div>
 			</div>
         </div>

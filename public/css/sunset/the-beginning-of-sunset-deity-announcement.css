@@ -3,6 +3,11 @@ body{
   background-color: rgb(247,245,240);
   color: rgb(84,84,84);
 }
+
+#prompt-ch2-content{
+  background-color: rgb(247,245,240) !important;
+}
+
 br {
    display: block;
    margin: 7px 0;
@@ -12,6 +17,7 @@ br {
 .storybook{padding-top: 52px;}
 .line{padding-top: 25px;line-height: 150%;}
 .sub-line{padding-top: 25px;padding-bottom: 20px;line-height: 150%;}
+.to-ch2{margin-top: 15px;}
 
 .row .form{
 	margin-top: 10px;

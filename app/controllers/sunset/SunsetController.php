@@ -102,40 +102,30 @@ class SunsetController extends BaseController{
 					Session::flash('failure', 'The show you ordered ticket for is full.');
 					return Redirect::to('the-beginning-of-sunset-deity/tickets');
 				}else{
-					$order = DB::table('TBSD_orders')
-					    ->where('mail', Input::get('mail'))
-					    ->first();
+				    $order = new Tbsd_order;
+					$order->name = Input::get('name');
+					$order->mail = Input::get('mail');
+					$order->phone = Input::get('phone');					
+					$order->show_id = (int)Input::get('show_id');
+					$order->class = (int)Input::get('class');
+					$order->amount = (int)Input::get('amount');
+					$order->status = 'Pending';				
+					$order->save();
 
-					if (is_null($order)) {
-						//validasi available seats dulu
-					    $order = new Tbsd_order;
-						$order->name = Input::get('name');
-						$order->mail = Input::get('mail');
-						$order->phone = Input::get('phone');					
-						$order->show_id = (int)Input::get('show_id');
-						$order->class = (int)Input::get('class');
-						$order->amount = (int)Input::get('amount');
-						$order->status = 'Pending';				
-						$order->save();
-
-						$order->order_id = str_pad($order->id, 4, '0', STR_PAD_LEFT);
-						//REGULAR TIX
-						if($order->class == 1){
-							$order->price = $order->amount * 50000 + $order->id;
-						}else{
-							$order->price = $order->amount * 100000 + $order->id;
-						}
-
-						$order->save();
-
-						$this->mailOrderSubmission($order->price, $order->mail, $order->name, $order->order_id, $order->phone, $order->show_id, $order->class, $order->amount);
-
-						Session::flash('success', 'Your order has been successfully registered!');
-						return Redirect::to('the-beginning-of-sunset-deity/tickets');
-					} else {
-					    Session::flash('failure', 'The email you entered has already been registered.');
-						return Redirect::to('the-beginning-of-sunset-deity/tickets');
+					$order->order_id = str_pad($order->id, 4, '0', STR_PAD_LEFT);
+					//REGULAR TIX
+					if($order->class == 1){
+						$order->price = $order->amount * 50000 + $order->id;
+					}else{
+						$order->price = $order->amount * 100000 + $order->id;
 					}
+
+					$order->save();
+
+					$this->mailOrderSubmission($order->price, $order->mail, $order->name, $order->order_id, $order->phone, $order->show_id, $order->class, $order->amount);
+
+					Session::flash('success', 'Your order has been successfully registered!');
+					return Redirect::to('the-beginning-of-sunset-deity/tickets');
 				}
 			}
 		}
@@ -152,7 +142,7 @@ class SunsetController extends BaseController{
 		}
 
 		public function deleteOrder($name, $phone, $order_id, $show_id, $class, $amount, $mail){
-			DB::table('TBSD_orders')->where('mail', $mail)->delete();
+			DB::table('TBSD_orders')->where('order_id', $order_id)->delete();
 
 			$this->mailOrderCancellation($mail, $name, $order_id, $phone, $show_id, $class, $amount);
 
@@ -161,7 +151,7 @@ class SunsetController extends BaseController{
 
 		public function confirmOrder($name, $phone, $order_id, $show_id, $class, $amount, $mail){
 			DB::table('TBSD_shows')->where('show_id', $show_id)->where('class', $class)->increment('confirmed', $amount);
-			DB::table('TBSD_orders')->where('mail', $mail)->update(array('status' => 'Confirmed'));
+			DB::table('TBSD_orders')->where('order_id', $order_id)->update(array('status' => 'Confirmed'));
 
 			$posisi_duduk = '';
 

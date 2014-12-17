@@ -105,5 +105,147 @@ $(document).ready( function () {
 });
 
 $(window).load(function() {
-    $("body").css("overflow-y", "scroll");
+    
+
+    var preload = [$('#main_bg > img'), 
+    			   $('#l01 > #s1_a > img'),
+    			   $('#l01 > #s1_b > img'), 
+    			   $('#l01 > #s1_boy > img'), 
+    			   $('#l01 > #s1_c > img'),
+    			   $('#l01 > #s1_d1 > img'), 
+    			   $('#l01 > #s1_d2 > img'),
+    			   $('#l01 > #s1_d3 > img'), 
+				   $('#l04 > #s2_awan-a > img'), 
+				   $('#l05 > #s2_awan-a > img'), 
+				   $('#l06 > #s2_awan-a > img'),   
+				   $('#l12 > #transition-bg2 > img'), 
+				   $('#l12 > #transition-bg3 > img'), 
+				   $('#l12 > #transition-bg4 > img'), 
+				   $('#l13 > #transition-bg5 > img'),// 
+				   $('#l12 > #transition-bg1 > img'),
+				   $('#l01 > #s2_a > img'), 
+				   $('#l01 > #s2_c1 > img'), 
+				   $('#l01 > #s2_c3 > img'), 
+				   $('#l01 > #s2_c6 > img'), 
+				   $('#l01 > #s2_d > img'), 
+				   $('#l01 > #s2_e1 > img'),
+				   $('#l01 > #s2_e2 > img'),
+				   $('#l01 > #s3_b > img'),
+				   $('#l01 > #s3_teks-a > img'),
+				   $('#l02 > #s2_sun > img'),
+				   $('#l02 > #s2_pohon-c > img'),
+				   $('#l02 > #s2_pohon-d > img'),
+				   $('#l02 > #s2_pohon-e > img'),
+				   $('#l02 > #s2_pohon-f > img')]; //array of object yg mau diload sebelum page bisa dibaca
+
+	var postload = [
+				    $('#l10 > #s3_awan-a > img'), 
+				    $('#l09 > #s3_awan-a > img'), 
+				    $('#l08 > #s3_awan-a > img'), 
+				    $('#l11 > #s3_awan-a > img'), 
+					$('#l02 > #s2_tanah > img'),
+					$('#l02 > #s2_pohon-a > img'),
+					$('#l02 > #s2_pohon-b > img'),
+					$('#l02 > #s2_pohon-g > img'),
+					$('#l02 > #s2_semak > img'),
+					$('#l02 > #s2_batu-a > img'),
+					$('#l02 > #s2_batu-b > img'), 
+					$('#l02 > #s2_batu-c > img'), 
+					$('#l02 > #s2_teks-a > img'), 
+					$('#l03 > #s2_pohon-a > img'), 
+					$('#l03 > #s2_pohon-b > img'), 
+					$('#l03 > #s2_batu-a > img'), 
+					$('#l03 > #s2_teks-a > img'),
+					$('#l07 > #s2_pohon-a > img'), 
+					$('#l07 > #s2_pohon-b > img'), 
+					$('#l07 > #s2_batu-a > img'), 
+					$('#l07 > #s2_batu-b > img'), 
+					$('#l07 > #s2_teks-a > img'), 
+					$('#l09 > #s3_a1 > img'), 
+					$('#l09 > #s3_a2 > img'), 
+					$('#l09 > #s3_a3 > img'), 
+					$('#l12 > #sun > img'),
+					$('#l12 > #shirt > img'), 
+					$('#l14 > #arms > img'), 
+					$('#l15 > #head > img')]; //array of object yg mau diload setelah page bisa dibaca
+
+	function afterPreload() { //callback, fungsi dipanggil setelah preload beres
+		$('#loader').hide();
+		priorityLoad(postload, null); //postload, loading asset setelah page bisa dibaca
+		$("#loader").fadeOut("slow");
+    	$("body").css("overflow-y", "scroll");
+    	$('#l01 > #s1_b > img').hide();
+    	$('#l01 > #s1_c > img').hide();
+    	$('#l01 > #s1_d1 > img').hide();
+    	$('#l01 > #s1_d2 > img').hide();
+    	$('#l01 > #s1_d3 > img').hide();
+		$('#l12 > #transition-bg1 > img').hide();
+		$('#l01 > #s2_a > img').hide();
+		$('#l01 > #s2_c1 > img').hide();
+		$('#l01 > #s2_c3 > img').hide();
+		$('#l01 > #s2_c6 > img').hide();
+		$('#l01 > #s2_d > img').hide();
+		$('#l01 > #s2_e1 > img').hide();
+		$('#l01 > #s2_e2 > img').hide();
+		$('#l01 > #s3_b > img').hide();
+		$('#l01 > #s3_teks-a > img').hide();
+		$('#l02 > #s2_sun > img').hide();
+		$('#l02 > #s2_pohon-c > img').hide();
+		$('#l02 > #s2_pohon-d > img').hide();
+		$('#l02 > #s2_pohon-e > img').hide();
+		$('#l02 > #s2_pohon-f > img').hide();
+		$('#l04 > #s2_awan-a > img').hide();
+	    $('#l05 > #s2_awan-a > img').hide();
+	    $('#l06 > #s2_awan-a > img').hide();
+    	$(document).scroll(function () {
+    		if ($(document).scrollTop() >= getDip(228) & $('#l01 > #s1_b > img').css('display') == 'none') {
+    			var src = $('#l01 > #s1_b > img').attr('src');
+    			$('#l01 > #s1_b > img').removeAttr('src').attr('src', src).show();
+    		}
+    		else if ($(document).scrollTop() >= getDip(1710) & $('#l01 > #s1_c > img').css('display') == 'none') {
+    			var src = $('#l01 > #s1_c > img').attr('src');
+    			$('#l01 > #s1_c > img').removeAttr('src').attr('src', src).show();
+    		}
+    		else if ($(document).scrollTop() >= getDip(4500) & $('#l01 > #s1_d1 > img').css('display') == 'none') {
+    			var src1 = $('#l01 > #s1_d1 > img').attr('src');
+    			var src2 = $('#l01 > #s1_d2 > img').attr('src');
+    			var src3 = $('#l01 > #s1_d3 > img').attr('src');
+    			$('#l01 > #s1_d1 > img').removeAttr('src').attr('src', src1).show();
+    			setTimeout(function() {
+    				$('#l01 > #s1_d2 > img').removeAttr('src').attr('src', src2).show();
+    			}, 3500);
+    			setTimeout(function() {
+    				$('#l01 > #s1_d3 > img').removeAttr('src').attr('src', src3).show();
+    			}, 6160);
+    			$('html, body')
+    				.animate({scrollTop: getDip(4800)}, 4000)
+    				.animate({scrollTop: getDip(8190)}, 3000);
+				setTimeout(function () {
+    				$('html, body').animate({scrollTop: getDip(30402)}, 2000);
+				}, 7200);
+    		}
+    		else if ($(document).scrollTop() >= getDip(30402) & $('#l12 > #transition-bg1 > img').css('display') == 'none') {
+				$('#l12 > #transition-bg1 > img').fadeIn(10000);
+				$('#l01 > #s2_a > img').fadeIn(10000);
+				$('#l01 > #s2_c1 > img').fadeIn(10000);
+				$('#l01 > #s2_c3 > img').fadeIn(10000);
+				$('#l01 > #s2_c6 > img').fadeIn(10000);
+				$('#l01 > #s2_d > img').fadeIn(10000);
+				$('#l01 > #s2_e1 > img').fadeIn(10000);
+				$('#l01 > #s2_e2 > img').fadeIn(10000);
+				$('#l01 > #s3_b > img').fadeIn(10000);
+				$('#l01 > #s3_teks-a > img').fadeIn(10000);
+				$('#l02 > #s2_sun > img').fadeIn(10000);
+				$('#l02 > #s2_pohon-c > img').fadeIn(10000);
+				$('#l02 > #s2_pohon-d > img').fadeIn(10000);
+				$('#l02 > #s2_pohon-e > img').fadeIn(10000);
+				$('#l02 > #s2_pohon-f > img').fadeIn(10000);
+				$('#l04 > #s2_awan-a > img').fadeIn(10000);
+	   			$('#l05 > #s2_awan-a > img').fadeIn(10000);
+	            $('#l06 > #s2_awan-a > img').fadeIn(10000);
+    		}
+    	});
+	}
+
+	priorityLoad(preload, afterPreload); //preload, loading asset sebelum page bisa dibaca
 });

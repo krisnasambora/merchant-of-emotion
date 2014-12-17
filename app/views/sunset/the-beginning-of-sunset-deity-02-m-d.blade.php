@@ -25,7 +25,7 @@
 					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/tickets"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next.png')}}"></a>
 				</div>
 				<div id="back" class="page">
-					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-c"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back.png')}}"></a>
+					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-c"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
 				</div>
 			</div>
         </div>

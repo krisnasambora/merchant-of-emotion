@@ -1,7 +1,7 @@
 @extends('layouts.sunset.the-beginning-of-sunset-deity')
 
 @section('head-data')
-	{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-02.js'); }}
+	{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-02.js'); }}z
 	{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-02.css'); }}
 	<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
