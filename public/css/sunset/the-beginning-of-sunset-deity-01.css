@@ -1,7 +1,7 @@
 /*UTILITIES*/
 .horizon img{opacity: 0.1;}
 .page{position: absolute;}
-#loader{position:fixed;top:65%;width:100%;background-color:rgba(0,0,0,0); ;height:100%;text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
+#loader{position:fixed;top:65%;width:100%;background-color:rgba(0,0,0,0);height:100%;text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
 #loader img{opacity: 0.4;width: 20%;}
 /*DEFAULT: 1366 * 768*/
 @media only screen and (max-width : 1366px) {

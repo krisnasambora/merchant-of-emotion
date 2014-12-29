@@ -27,6 +27,18 @@ class SunsetController extends BaseController{
 			return View::make('sunset.the-beginning-of-sunset-deity-02-scalable');
 		}
 
+		public function showTBSD02horizon(){
+			if ( !Cookie::get('page-2_viewed') ) {
+		        // Update view counter of post
+				DB::table('viewcounts')->where('page', 'tbsd-02')->increment('count', 1);
+
+		        // Create a cookie before the response and set it for 30 days
+		        Cookie::queue('page-2_viewed', true, 60 * 24 * 30);
+		    }
+		    
+			return View::make('sunset.the-beginning-of-sunset-deity-02-horizon');
+		}
+
 		public function showTBSD02ma(){
 			if ( !Cookie::get('page-2_viewed') ) {
 		        // Update view counter of post
@@ -164,22 +176,22 @@ class SunsetController extends BaseController{
 			$when = '';
 			switch($show_id){
 				case 1:
-					$when = 'Jumat, 23 Januari 2014, 16:00';
+					$when = 'Jumat, 23 Januari 2015, 16:00';
 					break;
 				case 2:
-					$when = 'Jumat, 23 Januari 2014, 19:30';
+					$when = 'Jumat, 23 Januari 2015, 19:30';
 					break;
 				case 3:
-					$when = 'Sabtu, 24 Januari 2014, 16:00';
+					$when = 'Sabtu, 24 Januari 2015, 16:00';
 					break;
 				case 4:
-					$when = 'Sabtu, 24 Januari 2014, 19:30';
+					$when = 'Sabtu, 24 Januari 2015, 19:30';
 					break;
 				case 5:
-					$when = 'Minggu, 25 Januari 2014, 16:00';
+					$when = 'Minggu, 25 Januari 2015, 16:00';
 					break;
 				case 6:
-					$when = 'Minggu, 25 Januari 2014, 19:30';
+					$when = 'Minggu, 25 Januari 2015, 19:30';
 					break;					
 			}
 

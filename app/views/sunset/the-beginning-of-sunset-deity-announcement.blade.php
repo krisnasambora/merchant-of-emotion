@@ -9,7 +9,7 @@
 		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-announcement.css'); }}
 		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 		<link href='http://fonts.googleapis.com/css?family=Radley' rel='stylesheet' type='text/css'>
-		<title>Announcement</title>
+		<title>The Beginning of Sunset Deity</title>
 	</head>
     <body>
     	<div class="col-md-12 text-center padding-0">
@@ -66,14 +66,14 @@
 						<br/>
 						<br/>
 						<div>
-							<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/animation.png')}}" class="center-block img-responsive"></a>
+							<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/animation.png')}}" class="center-block img-responsive"></a>
 						</div>
 						<br/>
 						<br/>
 						<br/>
 						<br/>
 						<div>
-							<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-a"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/light.png')}}" class="center-block img-responsive"></a>
+							<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-m-a"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/light.png')}}" class="center-block img-responsive"></a>
 						</div>
 						<br/>
 						<br/>

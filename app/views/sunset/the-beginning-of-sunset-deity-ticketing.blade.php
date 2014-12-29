@@ -32,17 +32,17 @@
 				        <tr>
 				        	<td>{{$k}}</td>
 				        	@if ($show->show_id == 1)
-				        		<td>23 Januari 2014, 16:00 </td>
+				        		<td>23 Januari 2015, 16:00 </td>
 				        	@elseif ($show->show_id == 2)
-				        		<td>23 Januari 2014, 19:30 </td>
+				        		<td>23 Januari 2015, 19:30 </td>
 				        	@elseif ($show->show_id == 3)
-				        		<td>24 Januari 2014, 16:00 </td>
+				        		<td>24 Januari 2015, 16:00 </td>
 				        	@elseif ($show->show_id == 4)
-				        		<td>24 Januari 2014, 19:30 </td>
+				        		<td>24 Januari 2015, 19:30 </td>
 				        	@elseif ($show->show_id == 5)
-				        		<td>25 Januari 2014, 16:00 </td>
+				        		<td>25 Januari 2015, 16:00 </td>
 				        	@elseif ($show->show_id == 6)
-				        		<td>25 Januari 2014, 19:30 </td>
+				        		<td>25 Januari 2015, 19:30 </td>
 				        	@endif
 				        	@if ($show->class == 1)
 				        		<td>REGULER </td>

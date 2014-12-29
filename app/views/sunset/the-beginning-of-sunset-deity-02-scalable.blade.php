@@ -68,11 +68,20 @@
 				<div id="s2_e2" class="page">
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/1.png')}}">
 				</div>
+				<div id="s2_e3" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/7/5.gif')}}">
+				</div>
+				<div id="s2_e4" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/7/4.gif')}}">
+				</div>
 				<div id="s3_b" class="page">
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/2.png')}}">
 				</div>
 				<div id="s3_teks-a" class="page">
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/9/11.png')}}">
+				</div>
+				<div id="next" class="page">
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-horizon"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next2.png')}}"></a>
 				</div>
 			</div>
 			<!-- width: 110000px; z-index: 495; -->
@@ -117,7 +126,7 @@
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/5.png')}}">
 				</div>
 				<div id="s2_teks-a" class="page">
-					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/text/4.png')}}">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/5/2.gif')}}">
 				</div>
 			</div>
 			<!-- width: 113000px; z-index: 505; -->
@@ -132,7 +141,7 @@
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/2.png')}}">
 				</div>
 				<div id="s2_teks-a" class="page">
-					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/text/3.png')}}">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/4/11.gif')}}">
 				</div>
 			</div>
 			<!-- width: 17967px; z-index: 480; -->
@@ -168,7 +177,7 @@
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/6/7.png')}}">
 				</div>
 				<div id="s2_teks-a" class="page">
-					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/text/2.png')}}">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/3/11.gif')}}">
 				</div>
 			</div>
 			<!-- width: 21000px; z-index: 2; -->
@@ -223,6 +232,9 @@
 				</div>
 				<div id="shirt" class="page">
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/7/3.png')}}">
+				</div>
+				<div id="kipas" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-02/7/6.gif')}}">
 				</div>
 			</div>
 			<div id="l13" class="scroll">

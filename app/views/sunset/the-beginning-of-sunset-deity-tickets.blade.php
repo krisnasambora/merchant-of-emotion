@@ -13,9 +13,6 @@
 	</head>
 	<body>
 		<div class="col-md-12 text-center padding-0">
-    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/header ticketing.png')}}" class="center-block img-responsive"></a>
-		</div>
-		<div class="col-md-12 text-center padding-0">
     		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/logo.png')}}" class="center-block img-responsive"></a>
 		</div>
 		<div class="col-md-8 col-md-offset-2 text-center padding-0">
@@ -23,7 +20,7 @@
 		    	We are thrilled to welcome you to the show. Through Sunset Deity's production, we inquire to find what's fresh and bringing it to the stage for wide appreciation; and you are part of the magic that make everything happens. 
 		    </p>
 		</div>
-    	<div class="container sunset-sub">
+    	<div class="container-fluid sunset-sub">
 			<div class="row sub">
 				<div class="container-fluid">
 					<div class="row form">
@@ -162,45 +159,40 @@
 		<div class="col-md-12 text-center padding-0" style="margin-top:0px;margin-bottom:30px;">
     		<a href="http://recollectionofsunset.blogspot.com/"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/gif-1.gif')}}" class="center-block img-responsive"></a>
 		</div>
-		<div class="row sub-line">
-			<div class="col-md-6 col-md-offset-3 text-center" style="margin-top:0px;margin-bottom:0px;">
-	    		<p>
-	    			Visit Merchant of Emotion's Production Blog to get to know the story behind Sunset Deity's theatrical show.
-	    		</p>
-	    		<p>
-	    			Subscribe your email to catch updates on Sunset Deity's developments.
-	    		</p>
-			</div>
-			</div>
-			<div class="row form">
-		    	<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:10px;margin-bottom:0px;">
-		    		{{Form::open(array('url' => 'newtbsdsub', 'method' => 'POST', 'class' => 'form-inline'))}}
-						<div class="form-group">	
-							{{Form::text('mail','', array('class' => 'form-control underlined', 'placeholder' => 'email address'))}}
-						</div>
-						{{Form::submit('Submit', array('class' => 'submit-button'))}}
-					{{Form::close()}}
+		<div class="col-md-6 col-md-offset-3 text-center" style="margin-top:0px;margin-bottom:0px;">
+    		<p>
+    			Visit Merchant of Emotion's Production Blog to get to know the story behind Sunset Deity's theatrical show.
+    		</p>
+    		<p>
+    			Subscribe your email to catch updates on Sunset Deity's developments.
+    		</p>
+		</div>
+    	<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:10px;margin-bottom:0px;">
+    		{{Form::open(array('url' => 'newtbsdsub', 'method' => 'POST', 'class' => 'form-inline'))}}
+				<div class="form-group">	
+					{{Form::text('mail','', array('class' => 'form-control underlined', 'placeholder' => 'email address'))}}
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:10px;margin-bottom:10px;">
-					@if(Session::has('success'))
-					    <div class="alert-box success">
-					        <h6>{{ Session::get('success') }}</h6>
-					    </div>
-					@elseif(Session::has('failure'))
-					    <div class="alert-box failure">
-					        <h6>{{ Session::get('failure') }}</h6>
-					    </div>
-					@endif
-				</div>
-			</div>
-			<div class="row socmed" style="margin-top:0px;margin-bottom:40px;">
-				<div class="col-xs-8 col-xs-offset-2 text-center">
-					<a href="http://facebook.com/pages/Merchant-of-Emotion/917903188237791"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/facebook.png')}}" class="socmed"></a>
-					<a href="http://instagram.com/merchofemotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/instagram.png')}}" class="socmed"></a>
-					<a href="http://twitter.com/MerchofEmotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/twitter.png')}}" class="socmed"></a>
-				</div>
-			</div>
-    </body>
+				{{Form::submit('Submit', array('class' => 'submit-button'))}}
+			{{Form::close()}}
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:10px;margin-bottom:10px;">
+			@if(Session::has('success'))
+			    <div class="alert-box success">
+			        <h6>{{ Session::get('success') }}</h6>
+			    </div>
+			@elseif(Session::has('failure'))
+			    <div class="alert-box failure">
+			        <h6>{{ Session::get('failure') }}</h6>
+			    </div>
+			@endif
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 text-center">
+			<a href="http://facebook.com/pages/Merchant-of-Emotion/917903188237791"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/facebook.png')}}" class="socmed"></a>
+			<a href="http://instagram.com/merchofemotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/instagram.png')}}" class="socmed"></a>
+			<a href="http://twitter.com/MerchofEmotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/twitter.png')}}" class="socmed"></a>
+		</div>
+		<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:25px;margin-bottom:25px;">
+			<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/home.png')}}" class="to-home"></a>
+		</div>
+</body>
 </html>

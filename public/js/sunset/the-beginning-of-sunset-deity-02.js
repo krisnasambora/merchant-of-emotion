@@ -17,8 +17,11 @@ $(document).ready( function () {
 	scaleElement($('#s2_d'), 363, 31709, 405);
 	scaleElement($('#s2_e1'), 624, 33209, 143);
 	scaleElement($('#s2_e2'), 0, 35380, 768);
+	scaleElement($('#s2_e3'), 0, 34270, 370);
+	scaleElement($('#s2_e4'), 340, 35100, 284);
 	scaleElement($('#s3_b'), 274, 70529, 492);
 	scaleElement($('#s3_teks-a'), -95, 63250, 768);
+	scaleElement($('#next'), 350, 99910, 34);
 
 	scaleLayer($('#l02'), 110000, 495);
 	scaleElement($('#l02 > #s2_sun'), 392, 27779, 374);
@@ -70,7 +73,7 @@ $(document).ready( function () {
 	scaleLayer($('#l10'), 21000, 2);
 	scaleElement($('#l10 > #s3_awan-a'), 0, 13750, 627);
 
-	scaleLayer($('#l11'), 20000, 4);
+	scaleLayer($('#l11'), 20000, 6);
 	scaleElement($('#l11 > #s3_awan-a'), 0, 13750, 768);
 
 	scaleLayer($('#l12'), 17967, 5);
@@ -80,8 +83,9 @@ $(document).ready( function () {
 	scaleElement($('#l12 > #transition-bg4'), 0, 12625, 768);
 	scaleElement($('#l12 > #sun'), 0, 11555, 768);
 	scaleElement($('#l12 > #shirt'), 165, 8567, 474);
+	scaleElement($('#l12 > #kipas'), 165, 8850, 466);
 
-	scaleLayer($('#l13'), 21000, 5);
+	scaleLayer($('#l13'), 21000, 7);
 	scaleElement($('#l13 > #transition-bg5'), 0, 16100, 768);
 
 	scaleLayer($('#l14'), 18700, 6);
@@ -130,6 +134,8 @@ $(window).load(function() {
 				   $('#l01 > #s2_d > img'), 
 				   $('#l01 > #s2_e1 > img'),
 				   $('#l01 > #s2_e2 > img'),
+				   $('#l03 > #s2_teks-a > img'),
+				   $('#l07 > #s2_teks-a > img'), 
 				   $('#l01 > #s3_b > img'),
 				   $('#l01 > #s3_teks-a > img'),
 				   $('#l02 > #s2_sun > img'),
@@ -139,6 +145,8 @@ $(window).load(function() {
 				   $('#l02 > #s2_pohon-f > img')]; //array of object yg mau diload sebelum page bisa dibaca
 
 	var postload = [
+					$('#l01 > #s2_e3 > img'), 
+				    $('#l01 > #s2_e4 > img'),
 				    $('#l10 > #s3_awan-a > img'), 
 				    $('#l09 > #s3_awan-a > img'), 
 				    $('#l08 > #s3_awan-a > img'), 
@@ -155,19 +163,19 @@ $(window).load(function() {
 					$('#l03 > #s2_pohon-a > img'), 
 					$('#l03 > #s2_pohon-b > img'), 
 					$('#l03 > #s2_batu-a > img'), 
-					$('#l03 > #s2_teks-a > img'),
 					$('#l07 > #s2_pohon-a > img'), 
 					$('#l07 > #s2_pohon-b > img'), 
 					$('#l07 > #s2_batu-a > img'), 
 					$('#l07 > #s2_batu-b > img'), 
-					$('#l07 > #s2_teks-a > img'), 
 					$('#l09 > #s3_a1 > img'), 
 					$('#l09 > #s3_a2 > img'), 
 					$('#l09 > #s3_a3 > img'), 
 					$('#l12 > #sun > img'),
 					$('#l12 > #shirt > img'), 
+					$('#l12 > #kipas > img'),
 					$('#l14 > #arms > img'), 
-					$('#l15 > #head > img')]; //array of object yg mau diload setelah page bisa dibaca
+					$('#l15 > #head > img'),
+					$('#l01 > #next > img')]; //array of object yg mau diload setelah page bisa dibaca
 
 	function afterPreload() { //callback, fungsi dipanggil setelah preload beres
 		$('#loader').hide();
@@ -197,6 +205,8 @@ $(window).load(function() {
 		$('#l04 > #s2_awan-a > img').hide();
 	    $('#l05 > #s2_awan-a > img').hide();
 	    $('#l06 > #s2_awan-a > img').hide();
+	    $('#l03 > #s2_teks-a > img').hide();
+    	$('#l07 > #s2_teks-a > img').hide();
     	$(document).scroll(function () {
     		if ($(document).scrollTop() >= getDip(228) & $('#l01 > #s1_b > img').css('display') == 'none') {
     			var src = $('#l01 > #s1_b > img').attr('src');
@@ -221,28 +231,36 @@ $(window).load(function() {
     				.animate({scrollTop: getDip(4800)}, 4000)
     				.animate({scrollTop: getDip(8190)}, 3000);
 				setTimeout(function () {
-    				$('html, body').animate({scrollTop: getDip(30402)}, 2000);
+    				$('html, body').animate({scrollTop: getDip(30410)}, 2000);
 				}, 7200);
     		}
     		else if ($(document).scrollTop() >= getDip(30402) & $('#l12 > #transition-bg1 > img').css('display') == 'none') {
-				$('#l12 > #transition-bg1 > img').fadeIn(10000);
-				$('#l01 > #s2_a > img').fadeIn(10000);
-				$('#l01 > #s2_c1 > img').fadeIn(10000);
-				$('#l01 > #s2_c3 > img').fadeIn(10000);
-				$('#l01 > #s2_c6 > img').fadeIn(10000);
-				$('#l01 > #s2_d > img').fadeIn(10000);
-				$('#l01 > #s2_e1 > img').fadeIn(10000);
-				$('#l01 > #s2_e2 > img').fadeIn(10000);
-				$('#l01 > #s3_b > img').fadeIn(10000);
-				$('#l01 > #s3_teks-a > img').fadeIn(10000);
-				$('#l02 > #s2_sun > img').fadeIn(10000);
-				$('#l02 > #s2_pohon-c > img').fadeIn(10000);
-				$('#l02 > #s2_pohon-d > img').fadeIn(10000);
-				$('#l02 > #s2_pohon-e > img').fadeIn(10000);
-				$('#l02 > #s2_pohon-f > img').fadeIn(10000);
-				$('#l04 > #s2_awan-a > img').fadeIn(10000);
-	   			$('#l05 > #s2_awan-a > img').fadeIn(10000);
-	            $('#l06 > #s2_awan-a > img').fadeIn(10000);
+				$('#l12 > #transition-bg1 > img').fadeIn(5000);
+				$('#l01 > #s2_a > img').fadeIn(5000);
+				$('#l01 > #s2_c1 > img').fadeIn(5000);
+				$('#l01 > #s2_c3 > img').fadeIn(5000);
+				$('#l01 > #s2_c6 > img').fadeIn(5000);
+				$('#l01 > #s2_d > img').fadeIn(5000);
+				$('#l01 > #s2_e1 > img').fadeIn(5000);
+				$('#l01 > #s2_e2 > img').fadeIn(5000);
+				$('#l01 > #s3_b > img').fadeIn(5000);
+				$('#l01 > #s3_teks-a > img').fadeIn(5000);
+				$('#l02 > #s2_sun > img').fadeIn(5000);
+				$('#l02 > #s2_pohon-c > img').fadeIn(5000);
+				$('#l02 > #s2_pohon-d > img').fadeIn(5000);
+				$('#l02 > #s2_pohon-e > img').fadeIn(5000);
+				$('#l02 > #s2_pohon-f > img').fadeIn(5000);
+				$('#l04 > #s2_awan-a > img').fadeIn(5000);
+	   			$('#l05 > #s2_awan-a > img').fadeIn(5000);
+	            $('#l06 > #s2_awan-a > img').fadeIn(5000);
+    		}
+    		else if ($(document).scrollTop() >= getDip(31892) & $('#l07 > #s2_teks-a > img').css('display') == 'none') {
+    			var src = $('#l07 > #s2_teks-a > img').attr('src');
+    			$('#l07 > #s2_teks-a > img').removeAttr('src').attr('src', src).show();
+    		}
+    		else if ($(document).scrollTop() >= getDip(34900) & $('#l03 > #s2_teks-a > img').css('display') == 'none') {
+    			var src = $('#l03 > #s2_teks-a > img').attr('src');
+    			$('#l03 > #s2_teks-a > img').removeAttr('src').attr('src', src).show();
     		}
     	});
 	}

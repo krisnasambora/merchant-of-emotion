@@ -17,15 +17,18 @@
 	</head>
     <body>
 	    <div id="content">
+	    	<div id="loader">
+			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/loading.gif')}}" width="40%">
+			</div> 
 	    	<div id="main_bg" class="scroll">
-				<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/3.png')}}">
+				<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/3.jpg')}}">
 			</div>
 			<div id="l01" class="scroll">
 				<div id="next" class="page">
-					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-d"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next2.png')}}"></a>
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-m-d"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next2.png')}}"></a>
 				</div>
 				<div id="back" class="page">
-					<a href="http://localhost/merchant-of-emotion/public/index.php/the-beginning-of-sunset-deity/02-m-b"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-m-b"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
 				</div>
 			</div>
         </div>
