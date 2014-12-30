@@ -1,9 +1,10 @@
 /*UTILITIES*/
-.horizon img{opacity: 0.1;}
+#main_bg > img{opacity:0.1; width: 100%;}
 .page{position: absolute;}
 #loader{position:fixed;top:65%;width:100%;background-color:rgba(0,0,0,0);height:100%;text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
 #loader img{opacity: 0.4;width: 20%;}
-/*DEFAULT: 1366 * 768*/
+
+/*DEFAULT: 1366 * 768
 @media only screen and (max-width : 1366px) {
 	.horizon{line-height: 0;z-index: 1;width: 2509px;}
 	.horizon img{opacity: 0.1;}
@@ -17,7 +18,7 @@
 	.element06{top: 335px;left: 6360px;} 
 }
 
-/* Large screens ----------- */
+/* Large screens ----------- 
 @media only screen and (min-width : 1367px) {
 	.horizon{width: 5006px;}
 	.horizon img{width: 5006px;}
@@ -37,7 +38,7 @@
 	.element06 img{width: 91px;} 
 }
 
-/* Smartphones (iphone landscape) ----------- */
+/* Smartphones (iphone landscape) ----------- 
 @media only screen and (max-width : 480px){
 	.horizon{width: 878px;}
 	.horizon img{width: 878px;}
@@ -57,7 +58,7 @@
 	.element06 img{width: 22px;} 
 }
 
-/* Smartphones (iphone portrait) ----------- */
+/* Smartphones (iphone portrait) ----------- 
 @media only screen and (max-width : 320px){
 	.horizon{width: 1405px;}
 	.horizon img{width: 1405px;}
@@ -98,7 +99,7 @@
 	.element06 img{width: 38px;}
 } */
 
-/* Smartphones (iphone5 landscape) ----------- */
+/* Smartphones (iphone5 landscape) ----------- 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation: landscape){
 	.horizon{width: 878px;}
 	.horizon img{width: 878px;}
@@ -118,7 +119,7 @@
 	.element06 img{width: 23px;} 
 }
 
-/* Smartphones (iphone5 portrait) ----------- */
+/* Smartphones (iphone5 portrait) ----------- 
 @media only screen (max-device-width : 320px) and (max-device-height : 568px){
 	.horizon{width: 577px;}
 	.horizon img{width: 577px;}
@@ -136,5 +137,4 @@
 	.element05 img{width: 38px;} 
 	.element06{top: 40px;left: 2544px;} 
 	.element06 img{width: 22px;} 
-}
-}
+}*/

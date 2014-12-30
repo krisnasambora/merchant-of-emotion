@@ -19,6 +19,7 @@ Route::any('the-beginning-of-sunset-deity/announcement', array('as' =>'the-begin
 	return View::make('sunset.the-beginning-of-sunset-deity-announcement');
 }));
 Route::get('the-beginning-of-sunset-deity/01', array('as' =>'the-beginning-of-sunset-deity/01', 'uses' => 'SunsetController@showTBSD01'));
+Route::get('the-beginning-of-sunset-deity/01-m', array('as' =>'the-beginning-of-sunset-deity/01-m', 'uses' => 'SunsetController@showTBSD01m'));
 Route::get('the-beginning-of-sunset-deity/02', array('as' =>'the-beginning-of-sunset-deity/02', 'uses' => 'SunsetController@showTBSD02'));
 Route::get('the-beginning-of-sunset-deity/02-horizon', array('as' =>'the-beginning-of-sunset-deity/02-horizon', 'uses' => 'SunsetController@showTBSD02horizon'));
 Route::get('the-beginning-of-sunset-deity/02-m-a', array('as' =>'the-beginning-of-sunset-deity/02-m-a', 'uses' => 'SunsetController@showTBSD02ma'));

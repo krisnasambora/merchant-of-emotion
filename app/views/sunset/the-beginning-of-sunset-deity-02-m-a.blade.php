@@ -27,6 +27,9 @@
 				<div id="next" class="page">
 					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-m-b"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next.png')}}"></a>
 				</div>
+				<div id="back" class="page">
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01-m"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
+				</div>
 			</div>
         </div>
     </body>

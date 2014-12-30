@@ -1,10 +1,9 @@
 $(document).ready( function () {
 
-	scaleLayer($('#main_bg'), 12228, 1);
+	scaleLayer($('#main_bg'), 3000, 1);
 
-	scaleLayer($('#l01'), 12228, 5);
-	scaleElement($('#next'), 350, 12119, 34);
-	scaleElement($('#back'), 350, 40, 34);
+	scaleLayer($('#l01'), 3000, 5);
+	scaleElement($('#next'), 341, 2900, 36);
 	
 	//$.jInvertScroll(['.scroll']);
 	$.jInvertScroll(['.scroll'], {

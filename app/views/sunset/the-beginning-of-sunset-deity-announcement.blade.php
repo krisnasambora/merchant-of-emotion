@@ -15,7 +15,6 @@
     	<div class="col-md-12 text-center padding-0">
     		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/poster.jpg')}}" class="center-block img-responsive">
 		</div>
-		</div>
     	<div class="container">
     		<div class="row">
 	    		<div class="col-md-4 col-md-offset-1 desc">
@@ -50,7 +49,36 @@
 			</div>
 		</div>
 		<div class="col-md-12 text-center padding-0">
-    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 1.png')}}" class="center-block img-responsive"></a>
+    		<a href="" data-toggle="modal" data-target="#prompt-ch1"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 1.png')}}" class="center-block img-responsive"></a>
+		</div>
+		<!-- ch1 Modal -->
+		<div class="modal fade" id="prompt-ch1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div id="prompt-ch-content" class="modal-content">
+					<div class="modal-body">
+						<div>
+							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/border.png')}}" class="center-block img-responsive">
+						</div>
+						<br/>
+						<br/>
+						<div>
+							<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/animation.png')}}" class="center-block img-responsive"></a>
+						</div>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<div>
+							<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01-m"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/light.png')}}" class="center-block img-responsive"></a>
+						</div>
+						<br/>
+						<br/>
+						<div>
+							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/border.png')}}" class="center-block img-responsive">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-12 text-center padding-0 to-ch2">
     		<a href="" data-toggle="modal" data-target="#prompt-ch2"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/chapter 2.png')}}" class="center-block img-responsive"></a>
@@ -58,7 +86,7 @@
 		<!-- ch2 Modal -->
 		<div class="modal fade" id="prompt-ch2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
-				<div id="prompt-ch2-content" class="modal-content">
+				<div id="prompt-ch-content" class="modal-content">
 					<div class="modal-body">
 						<div>
 							<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/border.png')}}" class="center-block img-responsive">
@@ -83,7 +111,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
     </body>
 </html>

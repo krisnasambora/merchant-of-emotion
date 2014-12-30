@@ -135,6 +135,29 @@
 							{{Form::close()}}
 						</div>
 					</div>
+					<div id="row">
+						<div class="col-md-2 col-md-offset-5 text-center padding-0 faq">
+				    		<a href="" data-toggle="modal" data-target="#faq"><p>Read FAQ</p></a>
+						</div>
+						<div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div id="faq-content" class="modal-content">
+									<div class="modal-body">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><br>
+										<p class="text-left"><b>1. Saya sudah memesan dan memasukkan data dalam website merchantofemotion.com, tetapi belum mendapatkan email konfirmasi. Apa yang harus saya lakukan?</b></p>
+										<p class="text-left">Anda bisa mencoba untuk memasukkan ulang data pemesanan dalam website (ada kemungkinan tidak stabilnya koneksi internet mempengaruhi input dalam website kami). Apabila email konfirmasi masih belum diterima setelah Anda memasukkan data kembali, silakan hubungi Dea di +6281910064981 atau email ke info@merchantofemotion.com. Kami akan hubungi Anda untuk konfirmasi dalam 1x24 jam.</p>
+										<p class="text-left"><b>2. Apakah saya dapat memilih tempat duduk di hari pertunjukan dalam kelas tiket yang telah saya beli?</b></p>
+										<p class="text-left">Tempat duduk untuk Pementasan Sunset Deity tersedia dalam dua kelas, yaitu VIP dan Reguler. Setelah mengecek kelas tiket yang Anda beli, pemilihan kursi dilakukan dengan sistem first-come, first-served—ada baiknya Anda datang lebih awal untuk mendapatkan tempat duduk menonton yang ideal menurut Anda.</p>
+										<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/seats.jpg')}}" class="center-block img-responsive">
+										<p class="text-left"><b>3. Apakah ada diskon pembelian tiket untuk pementasan ini?</b><p>
+										<p class="text-left">Kami memberikan promo diskon untuk dua kategori pembelian, khusus pemesanan offline (melalui  narahubung Dea di +6281910064981 atau LINE ID: deacm). Dapatkan diskon 10% untuk pelajar (dengan menyertakan kartu pelajar) untuk seluruh pertunjukan petang (16.00) pada 23-25 Januari 2015, juga diskon akhir tahun sebesar 10% untuk seluruh kelas tiket di seluruh pertunjukan (petang dan malam) mulai dari 25 Desember 2014 hingga 1 Januari 2015. <p>
+										<p class="text-left"><b>4. Jika saya telah memesan tiket pada hari dan waktu pertunjukan tertentu, apakah dapat saya tukar dengan hari dan waktu pertunjukan lain?</b><p>
+										<p class="text-left">Sehubungan dengan terbatasnya kursi yang tersebar dalam 6 kali pertunjukan berbeda (23-25 Januari 2015, petang dan malam untuk masing-masing harinya), dengan menyesal kami tidak menerima penukaran tiket untuk hari dan waktu pertunjukan berbeda. Mohon pastikan jadwal Anda sebelum memesan kelas tiket. <p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-xs-8 col-xs-offset-2 text-center">
 							@if(Session::has('success'))

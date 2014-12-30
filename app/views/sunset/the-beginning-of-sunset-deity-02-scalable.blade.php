@@ -83,6 +83,9 @@
 				<div id="next" class="page">
 					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-horizon"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next2.png')}}"></a>
 				</div>
+				<div id="back" class="page">
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/01"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
+				</div>
 			</div>
 			<!-- width: 110000px; z-index: 495; -->
 			<div id="l02" class="scroll">

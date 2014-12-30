@@ -22,6 +22,7 @@ $(document).ready( function () {
 	scaleElement($('#s3_b'), 274, 70529, 492);
 	scaleElement($('#s3_teks-a'), -95, 63250, 768);
 	scaleElement($('#next'), 350, 99910, 34);
+	scaleElement($('#back'), 350, 40, 34);
 
 	scaleLayer($('#l02'), 110000, 495);
 	scaleElement($('#l02 > #s2_sun'), 392, 27779, 374);
