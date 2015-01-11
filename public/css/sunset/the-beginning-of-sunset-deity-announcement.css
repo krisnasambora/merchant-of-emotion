@@ -1,32 +1,48 @@
-body{
-	font-family: 'Radley', serif !important;
-  background-color: rgb(247,245,240);
-  color: rgb(84,84,84);
+@font-face {
+    font-family: MrsEaves;
+    src: url(../../fonts/MrsEavesRoman_Regular.ttf);
 }
 
-#prompt-ch-content{
-  background-color: rgb(247,245,240) !important;
+body{
+	font-family: 'MrsEaves', serif !important;
+  font-size: 16px;
+  background-color: rgb(247,245,240);
+  color: rgb(84,84,84);
 }
 
 br {
    display: block;
    margin: 7px 0;
 }
+
 .padding-0 {padding: 0;}
-.desc{padding-top: 50px;line-height: 150%;}
-.storybook{padding-top: 52px;}
-.line{padding-top: 25px;line-height: 150%;}
-.sub-line{padding-top: 25px;padding-bottom: 20px;line-height: 150%;}
-.to-ch2{margin-top: 15px;}
 
-.row .form{
-	margin-top: 10px;
-}
+.poster{margin-bottom:20px;}
 
-.row .socmed{
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
+.header{margin-top: 0px;margin-bottom:0px;}
+.header-border{margin-top:5px;margin-bottom: 5px;}
+.header-elem{margin-top: 10px;margin-bottom:10px;}
+
+.tanggal{margin-top: 20px;margin-bottom:10px;}
+.desc{padding-top: 30px;line-height: 150%;}
+.get-tickets{margin-top: 50px;margin-bottom:50px;}
+
+#video-trailer{background-color: rgb(84,85,84); margin-bottom:50px;}
+.video-border-top{margin-top:30px;margin-bottom: 30px;}
+.video-trailer-content{margin-top:30px;margin-bottom: 30px;margin-left: 0px !important; margin-right: 0px !important;}
+.trailer-desc{color: rgb(245,244,239); padding-top: 50px; padding-left:50px; }
+.video-border-bottom{margin-bottom: 30px;}
+
+.to-blog{margin-top: 15px;margin-bottom:30px;}
+.to-blog-desc{margin-top: 30px;margin-bottom:30px;}
+.subscription-form{margin-top: 30px;margin-bottom:30px;}
+.subscription-notification{margin-top: 15px;margin-bottom:15px;}
+.social-medias{margin-top: 30px;margin-bottom:30px;}
+.credits{margin-top: 60px;margin-bottom:15px;}
+.sponsors{margin-top: 15px;}
+
+.row .form{margin-top: 10px;}
+.row .socmed{padding-top: 20px;padding-bottom: 20px;}
 
 input[type="text"].underlined
 {

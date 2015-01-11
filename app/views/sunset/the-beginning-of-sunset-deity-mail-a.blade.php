@@ -18,17 +18,17 @@
 
 		<p><b>DETAIL PEMESANAN TIKET</b></p>
 		@if ($show_id == 1)
-			<p>HARI, TANGGAL, WAKTU PENTAS: <b>Jumat, 23 Januari 2014, 16:00</b></p>
+			<p>HARI, TANGGAL, WAKTU PENTAS: <b>Jumat, 23 Januari 2015, 16:00</b></p>
     	@elseif ($show_id == 2)
-    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Jumat, 23 Januari 2014, 19:30</b></p>
+    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Jumat, 23 Januari 2015, 19:30</b></p>
     	@elseif ($show_id == 3)
-    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Sabtu, 24 Januari 2014, 16:00</b></p>
+    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Sabtu, 24 Januari 2015, 16:00</b></p>
     	@elseif ($show_id == 4)
-    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Sabtu, 24 Januari 2014, 19:30</b></p>
+    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Sabtu, 24 Januari 2015, 19:30</b></p>
     	@elseif ($show_id == 5)
-    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Minggu, 25 Januari 2014, 16:00</b></p>
+    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Minggu, 25 Januari 2015, 16:00</b></p>
     	@elseif ($show_id == 6)
-    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Minggu, 25 Januari 2014, 19:30</b></p>
+    		<p>HARI, TANGGAL, WAKTU PENTAS: <b>Minggu, 25 Januari 2015, 19:30</b></p>
     	@endif
 
 		<p>Jumlah Tiket : {{$amount}}</p>

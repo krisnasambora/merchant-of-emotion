@@ -6,19 +6,52 @@
 		{{ HTML::script('js/jquery.min.js'); }}
 		{{ HTML::style('css/bootstrap.min.css'); }}
 		{{ HTML::script('js/bootstrap.min.js'); }}
-		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-tickets.css'); }}
+		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-tickets-new.css'); }}
 		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 		<link href='http://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
 		<title>Get Tickets!</title>
 	</head>
 	<body>
-		<div class="col-md-12 text-center padding-0">
-    		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/logo.png')}}" class="center-block img-responsive"></a>
+		<div class="col-xs-12 text-center poster padding-0">
+		    <a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/poster.jpg')}}" class="center-block img-responsive"></a>
 		</div>
-		<div class="col-md-8 col-md-offset-2 text-center padding-0">
+		<div class="col-xs-12 text-center header-border">
+		    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/border.png')}}" class="center-block img-responsive">
+		</div>
+		<div class="col-xs-12 text-center header">
+    		<div class="row">
+		    	<div class="col-xs-12 col-sm-12 col-md-2 col-md-offset-2 header-elem">
+		        	<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement">
+		        		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/home.png')}}" onmouseover="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/home_hover.png')}}';" onmouseout="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/home.png')}}';" class="center-block img-responsive">
+		        	</a>
+		      	</div>
+		      	<div class="col-xs-12 col-sm-12 col-md-2 header-elem">
+		      		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/stories">	
+		        		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/story.png')}}" onmouseover="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/story_hover.png')}}';" onmouseout="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/story.png')}}';" class="center-block img-responsive">
+		      		</a>
+		      	</div>
+		      	<div class="col-xs-12 col-sm-12 col-md-2 header-elem">
+		        	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/ticket.png')}}" class="center-block img-responsive">
+		      	</div>
+		      	<div class="col-xs-12 col-sm-12 col-md-2 header-elem">
+		      		<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/store">	
+		        		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/merchandise.png')}}" onmouseover="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/merchandise_hover.png')}}';" onmouseout="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/merchandise.png')}}';" class="center-block img-responsive">
+		      		</a>
+		      	</div>
+    		</div>
+		</div>
+		<div class="col-xs-12 text-center header-border">
+		    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/border.png')}}" class="center-block img-responsive">
+		</div>
+		<div class="col-md-8 col-md-offset-2 text-center preface">
 			<p>
 		    	We are thrilled to welcome you to the show. Through Sunset Deity's production, we inquire to find what's fresh and bringing it to the stage for wide appreciation; and you are part of the magic that make everything happens. 
 		    </p>
+		</div>
+		<div class="col-xs-12 text-center padipay-banner">
+			<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/padipay">
+		    	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/padipay.png')}}" class="center-block img-responsive">
+			</a>
 		</div>
     	<div class="container-fluid sunset-sub">
 			<div class="row sub">
@@ -30,16 +63,15 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-6 col-xs-offset-3 text-right">
-				    		{{Form::open(array('url' => 'new_TBSD_order', 'method' => 'POST', 'role' => 'form'))}}
-								<div class="form-group">	
-									{{Form::text('name','', array('class' => 'form-control underlined', 'placeholder' => 'name'))}}
-								</div>
-								<div class="form-group">	
-									{{Form::text('mail','', array('class' => 'form-control underlined', 'placeholder' => 'email address'))}}
-								</div>
-								<div class="form-group">	
-									{{Form::text('phone','', array('class' => 'form-control underlined', 'placeholder' => 'phone number'))}}
-								</div>
+							<div class="form-group">	
+								<input type="text" class="form-control underlined" id="name" placeholder="name">
+							</div>
+							<div class="form-group">	
+								<input type="text" class="form-control underlined" id="mail" placeholder="email address">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control underlined" id="phone" placeholder="phone number">	
+							</div>
 						</div>
 					</div>
 					<div class="row">
@@ -49,50 +81,31 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-12 col-sm-1 col-sm-offset-3 text-center padding-0">
-				    		<div class="form-group shows">
+							<p>Date</p>
+						</div>
+						<div class="col-xs-12 col-sm-2 text-center padding-0">
+							<div class="form-group date">
 								<label class="radio-inline">
-								 	{{Form::radio('show_id', '1', true)}}
-								 	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/a.png')}}" class="center-block img-responsive"><br/>
+									<input type="radio" name="date" value="1" checked><br/><p>23</p>
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="date" value="2"><br/><p>24</p>
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="date" value="3"><br/><p>25</p>
 								</label>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-1 text-center padding-0">
-				    		<div class="form-group shows">
-								<label class="radio-inline">
-									{{Form::radio('show_id', '2')}}
-									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/b.png')}}" class="center-block img-responsive"><br/>
-								</label>
-							</div>
+							<p>Time</p>
 						</div>
-						<div class="col-xs-12 col-sm-1 text-center padding-0">
-				    		<div class="form-group shows">	
+						<div class="col-xs-12 col-sm-2 text-center padding-0">
+							<div class="form-group time">
 								<label class="radio-inline">
-									{{Form::radio('show_id', '3')}}
-									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/c.png')}}" class="center-block img-responsive"><br/>
+								 	<input type="radio" name="time" value="1" checked><br/><p>16.00</p>
 								</label>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-1 text-center padding-0">
-				    		<div class="form-group shows">
 								<label class="radio-inline">
-								 	{{Form::radio('show_id', '4')}}
-								 	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/d.png')}}" class="center-block img-responsive"><br/>
-								</label>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-1 text-center padding-0">
-				    		<div class="form-group shows">
-								<label class="radio-inline">
-									{{Form::radio('show_id', '5')}}
-									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/e.png')}}" class="center-block img-responsive"><br/>
-								</label>
-							</div>
-						</div>
-						<div class="col-xs-12 col-sm-1 text-center padding-0">
-				    		<div class="form-group shows">
-								<label class="radio-inline">
-									{{Form::radio('show_id', '6')}}
-									<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/tanggal/f.png')}}" class="center-block img-responsive"><br/>
+									<input type="radio" name="time" value="2"><br/><p>19.00</p>
 								</label>
 							</div>
 						</div>
@@ -106,7 +119,7 @@
 						<div class="col-xs-12 col-sm-2 col-sm-offset-3 text-center" style="margin-top:5px;margin-bottom:30px;">
 							<div class="form-group class">
 								<label class="radio-inline">
-								 	{{Form::radio('class', '1', true)}}
+									<input type="radio" name="class" value="1" checked>
 								 	<p>REGULAR</p>
 								 	<p>Rp 50.000</p>
 								</label>
@@ -115,7 +128,7 @@
 						<div class="col-xs-12 col-sm-2 text-center" style="margin-top:5px;margin-bottom:30px;">
 							<div class="form-group class">
 								<label class="radio-inline">
-									{{Form::radio('class', '2')}}
+									<input type="radio" name="class" value="2">
 									<p>VIP</p>
 									<p>Rp 100.000</p>
 								</label>
@@ -123,21 +136,25 @@
 						</div>
 						<div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
 				    		<div class="form-group">
-								{{Form::select('amount', array('1' => '1', '2' => '2', '3' => '3', '4' => '4'), '1', ['class' => 'form-control'])}}
+								<select class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
 							</div>
 						</div>
 					</div><br/>
 					<div class="row">
 						<div class="col-xs-10 col-xs-offset-1 text-center" style="margin-top:-10px;margin-bottom:30px;">
 							<div class="form-group">
-								{{Form::submit('Order', array('class' => 'buy-tickets'))}}
+								<input class="buy-tickets" type="submit" value="Order">
 							</div>
-							{{Form::close()}}
 						</div>
 					</div>
 					<div id="row">
 						<div class="col-md-2 col-md-offset-5 text-center padding-0 faq">
-				    		<a href="" data-toggle="modal" data-target="#faq"><p>Read FAQ</p></a>
+				    		<a href="" data-toggle="modal" data-target="#faq"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/FAQ.png')}}" class="center-block img-responsive"></a>
 						</div>
 						<div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
@@ -160,64 +177,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-xs-8 col-xs-offset-2 text-center">
-							@if(Session::has('success'))
-							    <div class="alert-box success">
-							        <h5>{{ Session::get('success') }}</h5>
-							    </div>
-							@elseif(Session::has('failure'))
-							    <div class="alert-box failure">
-							        <h5>{{ Session::get('failure') }}</h5>
-							    </div>
-							@endif
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 text-center" style="margin-top:20px;margin-bottom:30px;">
-				    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/border.png')}}" class="center-block img-responsive">
-						</div>
-					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-12 text-center padding-0" style="margin-top:0px;margin-bottom:30px;">
-    		<a href="http://recollectionofsunset.blogspot.com/"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/gif-1.gif')}}" class="center-block img-responsive"></a>
-		</div>
-		<div class="col-md-6 col-md-offset-3 text-center" style="margin-top:0px;margin-bottom:0px;">
-    		<p>
-    			Visit Merchant of Emotion's Production Blog to get to know the story behind Sunset Deity's theatrical show.
-    		</p>
-    		<p>
-    			Subscribe your email to catch updates on Sunset Deity's developments.
-    		</p>
-		</div>
-    	<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:10px;margin-bottom:0px;">
-    		{{Form::open(array('url' => 'newtbsdsub', 'method' => 'POST', 'class' => 'form-inline'))}}
-				<div class="form-group">	
-					{{Form::text('mail','', array('class' => 'form-control underlined', 'placeholder' => 'email address'))}}
-				</div>
-				{{Form::submit('Submit', array('class' => 'submit-button'))}}
-			{{Form::close()}}
-		</div>
-		<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:10px;margin-bottom:10px;">
-			@if(Session::has('success'))
-			    <div class="alert-box success">
-			        <h6>{{ Session::get('success') }}</h6>
-			    </div>
-			@elseif(Session::has('failure'))
-			    <div class="alert-box failure">
-			        <h6>{{ Session::get('failure') }}</h6>
-			    </div>
-			@endif
-		</div>
-		<div class="col-xs-8 col-xs-offset-2 text-center">
-			<a href="http://facebook.com/pages/Merchant-of-Emotion/917903188237791"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/facebook.png')}}" class="socmed"></a>
-			<a href="http://instagram.com/merchofemotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/instagram.png')}}" class="socmed"></a>
-			<a href="http://twitter.com/MerchofEmotion"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/sub/twitter.png')}}" class="socmed"></a>
-		</div>
-		<div class="col-xs-8 col-xs-offset-2 text-center" style="margin-top:25px;margin-bottom:25px;">
-			<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets/home.png')}}" class="to-home"></a>
 		</div>
 </body>
 </html>
