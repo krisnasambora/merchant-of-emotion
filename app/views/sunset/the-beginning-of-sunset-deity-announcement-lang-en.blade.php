@@ -17,17 +17,17 @@
 	    		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/poster.jpg')}}" class="center-block img-responsive">
 			</div>
 			<div class="col-xs-3 col-xs-offset-8 text-right lang padding-0">
-				<span>
-					<u>ind</u>
-				</span>
+				<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement">
+					<span>
+						ind
+					</span>
+				</a>
 				<span>
 					|
 				</span>
-				<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement/lang-en">
-					<span>
-						eng
-					</span>
-				</a>
+				<span>
+					<u>eng</u>
+				</span>
 			</div>
 			<div class="col-xs-12 text-center header-border">
 			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/border.png')}}" class="center-block img-responsive">
@@ -38,7 +38,7 @@
 			        	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/home.png')}}" class="center-block img-responsive">
 			      	</div>
 			      	<div class="col-xs-12 col-sm-12 col-md-2 header-elem">
-				      	<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/stories">	
+				      	<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/stories/lang-en">	
 				        	<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/story.png')}}" onmouseover="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/story_hover.png')}}';" onmouseout="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/story.png')}}';" class="center-block img-responsive">
 				        </a>
 			      	</div>
@@ -58,22 +58,22 @@
 			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/border.png')}}" class="center-block img-responsive">
 			</div>
 		</div>
-		<div class="container">
+    	<div class="container">
 			<div class="col-xs-12 text-center tanggal">
 			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/tanggal.png')}}" class="center-block img-responsive">
 			</div>
-			<div class="col-md-5 col-md-offset-1 desc">
+    		<div class="col-md-5 col-md-offset-1 desc">
 	    		<p class="text-justify">
-	    			Merchant of Emotion, sebagai sebuah transformasi dari tim Teater EPIK yang sukses dengan pementasan Taraksa 2013 lalu, akan menghadirkan pertunjukan teatrikal terbarunya, Sunset Deity, Januari 2015 mendatang. Sunset Deity adalah Pementasan Teater Lintasmedia yang mengusung penggabungan teater, koreografi serta video mapping sebagai sebuah bahasa pementasan baru.
+	    			Merchant of Emotion, as a transformation from Teater EPIK team that previously brought you Taraksa last 2013, is coming back with its new theatrical performance Sunset Deity this January. Sunset Deity is a transmedia storytelling that will include video mapping technology, along with the known elements of theatrical performance, such as dialogue, music, and choreography, for an immersive theatrical experience.
 	    		</p>
 			</div>
 			<div class="col-md-5 desc">
 	    		<p class="text-justify">
-					“Waktu” menjadi tema besar dari rangkaian cerita yang akan diangkat pada pementasan. Cerita berputar pada proses pendewasaan yang dialami seorang Bocah Tanpa Nama sebagai entitas pertama yang hadir di awal penciptaan dunia.
+					‘Time’ will be the main keyword for the coming-of-age story in Sunset Deity, embodied in the presence of a Nameless Boy who was thrown as the first entity ever lived on Earth.
 	    		</p>
 	    		<br/>
 	    		<p class="text-justify">
-	    			Pementasan perdana dari Sunset Deity akan dilaksanakan dari tanggal 23 - 25 Januari 2015, bertempat di Teater Tertutup Taman Budaya Jawa Barat, Bandung.
+	    			Sunset Deity will be performed in Teater Tertutup Dago Tea House, from January 23 to 25 2015. Book your tickets now.
 	    		</p>
 			</div>
 			<div class="col-md-2 col-md-offset-5 get-tickets">
@@ -96,7 +96,7 @@
 					<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/video title.png')}}" class="center-block img-responsive">
 					<br/>
 					<p class="text-justify">
-		    			Mentari sudah turun, dan sang bocah akan berkenalan dengan malam yang hadir dalam cekam. Makhluk-makhluk bertaring tajam menggeliat muncul dari seluruh penjuru gelap, terpandu oleh nyanyian Bulan yang mengiris; dan sang bocah dihadapkan pada pelajaran hidup yang mesti ia lewati sepenuhnya sendiri untuk dapat menjadi dewasa.
+		    			The dusk has settled upon Earth; and the boy was left with a cold, dark, harrowing night. Vicious creatures crawled from very dark corners of the land and sky, dancing all around the macabre tune of the Moon. The boy had to face his grimly fate, as the world taught him the harsh lessons of growing up.
 		    		</p>
 				</div>
 			</div>
@@ -112,10 +112,10 @@
 			</div>
 			<div class="col-md-6 col-md-offset-3 text-center to-blog-desc" style="margin-top:0px;margin-bottom:0px;">
 	    		<p>
-	    			Kunjungi Production Blog Merchant of Emotion untuk mendapatkan cerita lebih lanjut di balik produksi pementasan Sunset Deity.
+	    			Visit Merchant of Emotion's Production Blog to get to know the story behind Sunset Deity's theatrical show.
 	    		</p>
 	    		<p>
-	    			Jadilah yang pertama mengetahui perkembangan teater Sunset Deity dengan mendaftarkan email anda.
+	    			Subscribe your email to catch updates on Sunset Deity's developments.
 	    		</p>
 			</div>
 	    	<div class="col-xs-8 col-xs-offset-2 text-center subscription-form" style="margin-top:10px;margin-bottom:0px;">

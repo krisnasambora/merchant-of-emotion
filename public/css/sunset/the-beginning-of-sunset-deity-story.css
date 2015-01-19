@@ -13,6 +13,8 @@ br {display: block;margin: 7px 0;}
 .padding-0 {padding: 0;}
 
 .poster{margin-bottom:20px;}
+.lang {color: rgb(84,84,84);font-size:18px;}
+.lang a{color: rgb(84,84,84);text-decoration: none;}
 
 .header{margin-top: 0px;margin-bottom:0px;}
 .header-border{margin-top:5px;margin-bottom: 5px;}

@@ -18,9 +18,9 @@ br {display: block;margin: 7px 0;}
 .header-border{margin-top:5px;margin-bottom: 5px;}
 .header-elem{margin-top: 10px;margin-bottom:10px;}
 
-.padipay-info{padding-top: 50px;margin-bottom:30px;}
-
-#padipay-tagline{margin-top: 30px; margin-bottom: 20px;}
+.faq-title{margin-bottom:20px;}
+.faq-content{padding-top: 10px;margin-bottom:30px;}
+.after-seats{margin-top:20px;}
 
 .back-button{margin-top: 40px;color:rgb(84,84,84);}
 .bottom-border{margin-top: 0px;margin-bottom:15px;}

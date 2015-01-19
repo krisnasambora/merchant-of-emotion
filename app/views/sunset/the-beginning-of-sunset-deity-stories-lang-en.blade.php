@@ -17,17 +17,17 @@
 			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/poster.jpg')}}" class="center-block img-responsive">
 			</div>
 			<div class="col-xs-3 col-xs-offset-8 text-right lang padding-0">
-				<span>
-					<u>ind</u>
-				</span>
+				<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/stories">
+					<span>
+						ind
+					</span>
+				</a>
 				<span>
 					|
 				</span>
-				<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/stories/lang-en">
-					<span>
-						eng
-					</span>
-				</a>
+				<span>
+					<u>eng</u>
+				</span>
 			</div>
 			<div class="col-xs-12 text-center header-border">
 			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/border.png')}}" class="center-block img-responsive">
@@ -35,7 +35,7 @@
 			<div class="col-xs-12 text-center header">
 	    		<div class="row">
 			    	<div class="col-xs-12 col-sm-12 col-md-2 col-md-offset-2 header-elem">
-			        	<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement">
+			        	<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement/lang-en">
 			        		<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/home.png')}}" onmouseover="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/home_hover.png')}}';" onmouseout="this.src='{{asset('images/sunset/the-beginning-of-sunset-deity-tickets-new/header/home.png')}}';" class="center-block img-responsive">
 			        	</a>
 			      	</div>
@@ -61,10 +61,10 @@
 		<div class="container-fluid padding-0">
 			<div class="col-md-8 col-md-offset-2 text-center preface">
 				<p>
-	    			Online storybook ini akan menceritakan kisah Sunset Deity dalam bab yang berkembang secara berkala.
+	    			Sunset Deity's tale takes the form of an online storybook that will unfold gradually.
 	    		</p>
 	    		<p>
-	    			Versi penuh dari storybook ini akan membutuhkan waktu lebih lama untuk dapat termuat lengkap.
+	    			The full version of the storybook might require your PC/laptop to load the contents longer.
 	    		</p>
 			</div>
 			<div class="col-xs-12 text-center thumb padding-0">

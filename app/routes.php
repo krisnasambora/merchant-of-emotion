@@ -27,6 +27,16 @@ Route::any('the-beginning-of-sunset-deity/store', array('as' =>'the-beginning-of
 Route::any('the-beginning-of-sunset-deity/padipay', array('as' =>'the-beginning-of-sunset-deity/padipay', function(){
 	return View::make('sunset.the-beginning-of-sunset-deity-moexpadipay');
 }));
+Route::any('the-beginning-of-sunset-deity/faq', array('as' =>'the-beginning-of-sunset-deity/faq', function(){
+	return View::make('sunset.the-beginning-of-sunset-deity-faq');
+}));
+Route::any('the-beginning-of-sunset-deity/announcement/lang-en', array('as' =>'the-beginning-of-sunset-deity/announcement/lang-en', function(){
+	return View::make('sunset.the-beginning-of-sunset-deity-announcement-lang-en');
+}));
+Route::any('the-beginning-of-sunset-deity/stories/lang-en', array('as' =>'the-beginning-of-sunset-deity/stories/lang-en', function(){
+	return View::make('sunset.the-beginning-of-sunset-deity-stories-lang-en');
+}));
+
 Route::get('the-beginning-of-sunset-deity/01', array('as' =>'the-beginning-of-sunset-deity/01', 'uses' => 'SunsetController@showTBSD01'));
 Route::get('the-beginning-of-sunset-deity/01-m', array('as' =>'the-beginning-of-sunset-deity/01-m', 'uses' => 'SunsetController@showTBSD01m'));
 Route::get('the-beginning-of-sunset-deity/02', array('as' =>'the-beginning-of-sunset-deity/02', 'uses' => 'SunsetController@showTBSD02'));
@@ -35,6 +45,7 @@ Route::get('the-beginning-of-sunset-deity/02-m-a', array('as' =>'the-beginning-o
 Route::get('the-beginning-of-sunset-deity/02-m-b', array('as' =>'the-beginning-of-sunset-deity/02-m-b', 'uses' => 'SunsetController@showTBSD02mb'));
 Route::get('the-beginning-of-sunset-deity/02-m-c', array('as' =>'the-beginning-of-sunset-deity/02-m-c', 'uses' => 'SunsetController@showTBSD02mc'));
 Route::get('the-beginning-of-sunset-deity/02-m-d', array('as' =>'the-beginning-of-sunset-deity/02-m-c', 'uses' => 'SunsetController@showTBSD02md'));
+Route::get('the-beginning-of-sunset-deity/03', array('as' =>'the-beginning-of-sunset-deity/02', 'uses' => 'SunsetController@showTBSD03'));
 
 Route::post('newtbsdsub', 'HomesiteController@insertNewSubscriber');
 
