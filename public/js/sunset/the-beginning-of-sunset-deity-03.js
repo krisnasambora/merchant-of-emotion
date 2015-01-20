@@ -23,15 +23,58 @@ $(document).ready( function () {
 	scaleElement($('#text-07'), 350, 12000, 76);
 
 	scaleLayer($('#l06'), 18500, 10);
-	scaleElement($('#1-siluet-1'), 440, 3500, 394);
-	scaleElement($('#1-siluet-2'), 440, 4500, 389);
-	scaleElement($('#1-siluet-3'), 440, 5500, 330);
+	scaleElement($('#1-siluet-1'), 440, 3400, 394);
+	scaleElement($('#1-siluet-2'), 440, 4350, 389);
+	scaleElement($('#1-siluet-3'), 440, 5300, 330);
 
 	scaleLayer($('#l07'), 20000, 10);
-	scaleElement($('#1-siluet-4'), 440, 6750, 375);
+	scaleElement($('#1-siluet-4'), 440, 6550, 375);
 
 	scaleLayer($('#l08'), 12000, 15);
 	scaleElement($('#petal_2'), 0, 2500, 768);
+
+	scaleLayer($('#l09'), 13000, 5);
+	scaleElement($('#mata-2-a'), 660, 9500, 51);
+	scaleElement($('#mata-3-b'), 200, 9600, 85);
+	scaleElement($('#mata-2-d'), 70, 9720, 51);
+	scaleElement($('#mata-3-e'), 450, 10030, 85);
+	scaleElement($('#mata-2-f'), 630, 10050, 51);
+	scaleElement($('#mata-3-f'), 210, 10450, 85);
+
+	scaleLayer($('#l10'), 14000, 5);
+	scaleElement($('#mata-2-b'), 350, 10300, 51);
+
+	scaleLayer($('#l12'), 12000, 5);
+	scaleElement($('#mata-3-a'), 420, 8820, 85);
+	scaleElement($('#mata-1-a'), 120, 8980, 124);
+	scaleElement($('#mata-2-e'), 350, 9000, 75);
+	scaleElement($('#mata-1-b'), 500, 8950, 124);
+	scaleElement($('#mata-3-c'), 250, 9150, 85);
+	scaleElement($('#mata-3-d'), 10, 9060, 85);
+	scaleElement($('#mata-1-c'), 70, 9270, 124);
+	scaleElement($('#mata-1-d'), 290, 9350, 124);
+	scaleElement($('#mata-2-g'), 590, 9400, 75);
+	scaleElement($('#mata-2-h'), 40, 9640, 51);
+	scaleElement($('#mata-2-i'), 430, 9570, 51);
+	scaleElement($('#mata-2-j'), 350, 9800, 51);
+	scaleElement($('#mata-2-k'), 650, 9700, 51);
+	scaleElement($('#mata-2-c'), 150, 8730, 51);
+
+	scaleLayer($('#l13'), 14000, 10);
+	scaleElement($('#kelabang'), 0, 11410, 780);
+
+	scaleLayer($('#l14'), 16000, 5);
+	scaleElement($('#monsters'), 99, 13310, 668);
+
+	scaleLayer($('#l15'), 12000, 15);
+	scaleElement($('#NB'), 680, 10605, 78);
+
+	scaleLayer($('#l16'), 12000, 15);
+	scaleElement($('#moon'), 50, 10390, 534);
+
+	scaleLayer($('#l17'), 12000, 15);
+	scaleElement($('#back'), 350, 25, 34);
+	scaleElement($('#next'), 350, 11900, 34);
 
 	//$.jInvertScroll(['.scroll']);
 	$.jInvertScroll(['.scroll'], {
@@ -45,6 +88,16 @@ $(document).ready( function () {
 		}
 		});
 	$("body").css("overflow-y", "hidden");
+
+	function anim(){
+		$("#l15 img").animate({
+			opacity : 0.4
+		}, 1000).animate({
+			opacity : 1
+		},1000, anim);
+	}
+
+	anim();
 });
 
 $(window).load(function() {
@@ -63,7 +116,34 @@ $(window).load(function() {
     			   $('#l06 > #1-siluet-2 > img'),
     			   $('#l06 > #1-siluet-3 > img'),
     			   $('#l07 > #1-siluet-4 > img'),
-    			   $('#l08 > #petal_2 > img')]; //array of object yg mau diload sebelum page bisa dibaca
+    			   $('#l08 > #petal_2 > img'),
+    			   $('#l09 > #mata-2-a > img'),
+    			   $('#l09 > #mata-3-b > img'),
+    			   $('#l09 > #mata-2-d > img'),
+    			   $('#l09 > #mata-3-e > img'),
+    			   $('#l09 > #mata-2-f > img'),
+    			   $('#l09 > #mata-3-f > img'),
+    			   $('#l10 > #mata-2-b > img'),
+    			   $('#l12 > #mata-3-a > img'),
+    			   $('#l12 > #mata-1-a > img'),
+    			   $('#l12 > #mata-2-e > img'),
+    			   $('#l12 > #mata-1-b > img'),
+    			   $('#l12 > #mata-3-c > img'),
+    			   $('#l12 > #mata-3-d > img'),
+    			   $('#l12 > #mata-1-c > img'),
+    			   $('#l12 > #mata-1-d > img'),
+    			   $('#l12 > #mata-2-g > img'),
+    			   $('#l12 > #mata-2-h > img'),
+    			   $('#l12 > #mata-2-i > img'),
+    			   $('#l12 > #mata-2-j > img'),
+    			   $('#l12 > #mata-2-k > img'),
+				   $('#l12 > #mata-2-c > img'),
+				   $('#l13 > #kelabang > img'),
+				   $('#l14 > #monsters > img'),
+				   $('#l15 > #NB > img'),
+				   $('#l16 > #moon > img'),
+				   $('#l17 > #back > img'),
+				   $('#l17 > #next > img')]; //array of object yg mau diload sebelum page bisa dibaca
 
 	var postload = []; //array of object yg mau diload setelah page bisa dibaca
 

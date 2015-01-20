@@ -7,13 +7,12 @@
 		{{ HTML::script('js/jquery.jInvertScroll.js'); }}
 		{{ HTML::style('css/jInvertScroll.css'); }}
 		{{ HTML::script('js/scale.js'); }}
-		{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-02-m-d.js'); }}
-		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-02-m-d.css'); }}
+		{{ HTML::script('js/sunset/the-beginning-of-sunset-deity-03-m.js'); }}
+		{{ HTML::style('css/sunset/the-beginning-of-sunset-deity-03-m.css'); }}
 		<link rel="shortcut icon" href="{{ asset('images/sunset/the-beginning-of-sunset-deity-01/nameless.png') }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Her warm hands pulled me up, her bright feature opened the world for us to play with.">
-
-		<title>The Beginning of Sunset Deity: 02</title>
+		<meta name="description" content="Yet it was never meant to be forever.">
+		<title>The Beginning of Sunset Deity: 03</title>
 	</head>
     <body>
 	    <div id="content">
@@ -21,14 +20,14 @@
 			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-01/loading.gif')}}" width="40%">
 			</div> 
 	    	<div id="main_bg" class="scroll">
-				<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/4.jpg')}}">
+				<img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/ch3.jpg')}}">
 			</div>
 			<div id="l01" class="scroll">
 				<div id="next" class="page">
-					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/03-m"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next.png')}}"></a>
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next.png')}}"></a>
 				</div>
 				<div id="back" class="page">
-					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-m-c"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-m-d"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
 				</div>
 			</div>
         </div>

@@ -131,6 +131,38 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 text-center thumb padding-0">
+			    <a href="" data-toggle="modal" data-target="#prompt-ch3"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-story/ch3.png')}}" class="center-block img-responsive"></a>
+			</div>
+			<!-- ch2 Modal -->
+			<div class="modal fade" id="prompt-ch3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div id="prompt-ch-content" class="modal-content">
+						<div class="modal-body">
+							<div>
+								<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/border.png')}}" class="center-block img-responsive">
+							</div>
+							<br/>
+							<br/>
+							<div>
+								<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/03"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/animation.png')}}" class="center-block img-responsive"></a>
+							</div>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<div>
+								<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/03-m"><img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/light.png')}}" class="center-block img-responsive"></a>
+							</div>
+							<br/>
+							<br/>
+							<div>
+								<img src="{{asset('images/sunset/the-beginning-of-sunset-deity-announcement/border.png')}}" class="center-block img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="col-xs-12 text-center credits">
 			    <img src="{{asset('images/sunset/the-beginning-of-sunset-deity-story/creds.png')}}" class="center-block img-responsive">
 			</div>

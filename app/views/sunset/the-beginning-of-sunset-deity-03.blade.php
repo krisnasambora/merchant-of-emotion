@@ -93,6 +93,112 @@
 					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/petal_3.gif')}}">
 				</div>
 			</div>
+			<!-- width: 13000px; z-index: 5; -->
+			<div id="l09" class="scroll">
+				<div id="mata-2-a" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-2.gif')}}">
+				</div>
+				<div id="mata-3-b" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-3.gif')}}">
+				</div>
+				<div id="mata-2-d" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-4.gif')}}">
+				</div>
+				<div id="mata-3-e" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-3.gif')}}">
+				</div>
+				<div id="mata-2-f" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-4.gif')}}">
+				</div>
+				<div id="mata-3-f" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-3.gif')}}">
+				</div>
+			</div>
+			<!-- width: 14000px; z-index: 5; -->
+			<div id="l10" class="scroll">
+				<div id="mata-2-b" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-4.gif')}}">
+				</div>
+			</div>
+			<!-- l11 dihapus ditengah pengembangan -->
+			<!-- width: 12000px; z-index: 5; -->
+			<div id="l12" class="scroll">
+				<div id="mata-3-a" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-3.gif')}}">
+				</div>
+				<div id="mata-1-a" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-1.gif')}}">
+				</div>
+				<div id="mata-2-e" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-4.gif')}}">
+				</div>
+				<div id="mata-1-b" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-1.gif')}}">
+				</div>
+				<div id="mata-3-c" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-3.gif')}}">
+				</div>
+				<div id="mata-3-d" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-3.gif')}}">
+				</div>
+				<div id="mata-1-c" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-1.gif')}}">
+				</div>
+				<div id="mata-1-d" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-1.gif')}}">
+				</div>
+				<div id="mata-2-g" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-4.gif')}}">
+				</div>
+				<div id="mata-2-h" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-4.gif')}}">
+				</div>
+				<div id="mata-2-i" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-4.gif')}}">
+				</div>
+				<div id="mata-2-j" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-2.gif')}}">
+				</div>
+				<div id="mata-2-k" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-2.gif')}}">
+				</div>
+				<div id="mata-2-c" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/gif/mata-2.gif')}}">
+				</div>
+			</div>
+			<!-- width: 14000px; z-index: 10; -->
+			<div id="l13" class="scroll">
+				<div id="kelabang" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/ending/kelabang.png')}}">
+				</div>
+			</div>
+			<!-- width: 16000px; z-index: 5; -->
+			<div id="l14" class="scroll">
+				<div id="monsters" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/ending/monsters.png')}}">
+				</div>
+			</div>
+			<!-- width: 12000px; z-index: 15; -->
+			<div id="l15" class="scroll">
+				<div id="NB" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/ending/NB.png')}}">
+				</div>
+			</div>
+			<!-- width: 12000px; z-index: 4; -->
+			<div id="l16" class="scroll">
+				<div id="moon" class="page">
+					<img alt="" data-src="{{asset('images/sunset/the-beginning-of-sunset-deity-03/ending/moon.png')}}">
+				</div>
+			</div>
+			<!-- width: 12000px; z-index: 20; -->
+			<div id="l17" class="scroll">
+				<div id="back" class="page">
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/02-horizon"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/back2.png')}}"></a>
+				</div>
+				<div id="next" class="page">
+					<a href="http://merchantofemotion.com/the-beginning-of-sunset-deity/announcement"><img alt="" src="{{asset('images/sunset/the-beginning-of-sunset-deity-02-m/next.png')}}"></a>
+				</div>
+			</div>
         </div>
     </body>
 </html>

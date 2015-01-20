@@ -115,6 +115,18 @@ class SunsetController extends BaseController{
 			return View::make('sunset.the-beginning-of-sunset-deity-03');
 		}
 
+		public function showTBSD03m(){
+			if ( !Cookie::get('page-3_viewed') ) {
+		        // Update view counter of post
+				DB::table('viewcounts')->where('page', 'tbsd-03')->increment('count', 1);
+
+		        // Create a cookie before the response and set it for 30 days
+		        Cookie::queue('page-3_viewed', true, 60 * 24 * 30);
+		    }
+		    
+			return View::make('sunset.the-beginning-of-sunset-deity-03-m');
+		}
+
 		public function insertNewTBSDorder(){
 			$validation = Validator::make(
 			    array(
