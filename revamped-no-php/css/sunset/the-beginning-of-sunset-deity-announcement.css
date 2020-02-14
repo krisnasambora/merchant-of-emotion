@@ -1,0 +1,73 @@
+@font-face {
+    font-family: MrsEaves;
+    src: url(../../fonts/MrsEavesRoman_Regular.ttf);
+}
+
+body{
+	font-family: 'MrsEaves', serif !important;
+  font-size: 16px;
+  background-color: rgb(247,245,240);
+  color: rgb(84,84,84);
+}
+
+br {
+   display: block;
+   margin: 7px 0;
+}
+
+.padding-0 {padding: 0;}
+
+.poster{margin-bottom:20px;}
+.lang {color: rgb(84,84,84);font-size:18px;}
+.lang a{color: rgb(84,84,84);text-decoration: none;}
+
+.header{margin-top: 0px;margin-bottom:0px;}
+.header-border{margin-top:5px;margin-bottom: 5px;}
+.header-elem{margin-top: 10px;margin-bottom:10px;}
+
+.tanggal{margin-top: 20px;margin-bottom:10px;}
+.desc{padding-top: 30px;line-height: 150%;}
+.get-tickets{margin-top: 50px;margin-bottom:50px;}
+
+#video-trailer{background-color: rgb(84,85,84); margin-bottom:20px;}
+.video-border-top{margin-top:30px;margin-bottom: 30px;}
+.video-trailer-content{margin-top:30px;margin-bottom: 30px;margin-left: 0px !important; margin-right: 0px !important;}
+.trailer-desc{color: rgb(245,244,239); padding-top: 50px;}
+.video-border-bottom{margin-bottom: 30px;}
+
+.to-blog{margin-top: 15px;margin-bottom:30px;}
+.to-blog-desc{margin-top: 30px;margin-bottom:30px;}
+.subscription-form{margin-top: 30px;margin-bottom:30px;}
+.subscription-notification{margin-top: 15px;margin-bottom:15px;}
+.social-medias{margin-top: 30px;margin-bottom:30px;}
+.credits{margin-top: 60px;margin-bottom:15px;}
+.sponsors{margin-top: 15px;}
+
+.row .form{margin-top: 10px;}
+.row .socmed{padding-top: 20px;padding-bottom: 20px;}
+
+input[type="text"].underlined
+{
+   background-color: rgba(0,0,0,0) !important;
+   border-radius: 0px !important;
+   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) inset !important;
+   border:0;
+   border-bottom:solid 1px #000;
+   border-top: 0px !important;
+   outline:none; /* prevents textbox highlight in chrome */
+}
+
+.submit-button{
+   background: url(../../images/sunset/the-beginning-of-sunset-deity-01/sub/sub.png) no-repeat;
+   width: 114px;
+   height: 45px;
+   color: rgba(0,0,0,0);
+   margin      : 0;
+   padding     : 0;
+   border      : 0;
+}
+
+.submit-button::-moz-focus-inner{
+  padding : 0;
+  border  : 0;
+}

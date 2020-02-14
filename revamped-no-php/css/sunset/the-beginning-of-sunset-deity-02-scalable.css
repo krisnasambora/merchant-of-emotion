@@ -1,0 +1,15 @@
+/*UTILITIES*/
+.page{position: absolute;}
+#loader{position:fixed;height:100%;width:100%;background-color:rgba(0,0,0,255);text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
+#loader img{margin-top:25%;opacity: 0.4;width: 20%;}
+#main_bg > img{width: 100%;}
+#l01 > #s1_a > img{opacity: 0.5;}
+#l01 > #s1_b > img{opacity: 0.5;}
+#l01 > #s1_boy > img{opacity: 0.5;}
+#l01 > #s1_c > img{opacity: 0.5;}
+#l01 > #s1_d1 > img{opacity: 0.5;}
+#l01 > #s1_d2 > img{opacity: 0.5;}
+#l01 > #s1_d3 > img{opacity: 0.5;}
+#l01 > #s2_e3 > img{opacity: 0.7;}
+#l01 > #s2_e4 > img{opacity: 0.7;}
+#l12 > #kipas > img{opacity: 0.7;}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../../css/homesite/header.css">
+
+    <script type="text/javascript" src="../../js/homesite/home.js"></script>
+    <link rel="stylesheet" href="../../css/homesite/home.css">
+
+  	<title>Welcome</title>
+	</head>
+  <body>
+    <div class="container-fluid header">
+      <div class="row">
+      <div class="col-md-2 nopadding">
+        <div class="header-tab home">
+          <a href="{{URL::route('/')}}">
+            <h1 class="text-center nopadding">home</h1>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 nopadding">
+        <div class="header-tab about">
+          <a href="{{URL::route('about')}}">
+            <h1 class="text-center nopadding">about</h1>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 nopadding">
+        <div class="header-tab collaborate">
+          <a href="{{URL::route('collaborate')}}">
+            <h1 class="text-center nopadding">collaborate</h1>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 nopadding">
+        <div class="header-tab press">
+          <a href="{{URL::route('press')}}">
+            <h1 class="text-center nopadding">press</h1>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 nopadding">
+        <div class="header-tab shop">
+          <a href="{{URL::route('shop')}}">
+            <h1 class="text-center nopadding">shop</h1>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2 nopadding">
+        <div class="header-tab partners">
+          <a href="{{URL::route('partners')}}">
+            <h1 class="text-center nopadding">partners</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+      <div class="content">
+        <div class="col-md-4 col-md-offset-4">
+          <h1 class="text-center">home content</h1>
+          <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
+              <!-- Slides Container -->
+              <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 350px; height: 300px;">
+                  <div><img u="image" src="images/3.jpg" class="img-responsive" alt="Responsive image" ></div>
+                  <div><img u="image" src="images/4.jpg" class="img-responsive" alt="Responsive image" ></div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
+

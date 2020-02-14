@@ -1,0 +1,11 @@
+video#bgvid { 
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background-size: cover; 
+}
+
+#under_construction h1,h4{
+	color: rgb(190,190,190);
+	font-family: 'Hammersmith One', sans-serif;
+}

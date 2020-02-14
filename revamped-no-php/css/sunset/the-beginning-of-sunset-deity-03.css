@@ -1,0 +1,31 @@
+/*UTILITIES*/
+html, body {
+	height: 100%;
+	margin: 0;
+}
+.page{position: absolute;}
+#loader{position:fixed;height:100%;width:100%;background-color:rgba(0,0,0,255);text-align:center;margin:0;padding:0;overflow:hidden;z-index: 600;}
+#loader img{margin-top:25%;opacity: 0.4;width: 20%;}
+#main_bg > img{width: 100%;}
+
+#l09 > #mata-2-a > img{opacity: 0.5;}
+#l09 > #mata-3-b > img{opacity: 0.5;}
+#l09 > #mata-2-d > img{opacity: 0.5;}
+#l09 > #mata-3-e > img{opacity: 0.5;}
+#l09 > #mata-2-f > img{opacity: 0.5;}
+#l09 > #mata-3-f > img{opacity: 0.5;}
+#l10 > #mata-2-b > img{opacity: 0.5;}
+#l12 > #mata-3-a > img{opacity: 0.5;}
+#l12 > #mata-1-a > img{opacity: 0.5;}
+#l12 > #mata-2-e > img{opacity: 0.5;}
+#l12 > #mata-1-b > img{opacity: 0.5;}
+#l12 > #mata-3-c > img{opacity: 0.5;}
+#l12 > #mata-3-d > img{opacity: 0.5;}
+#l12 > #mata-1-c > img{opacity: 0.5;}
+#l12 > #mata-1-d > img{opacity: 0.5;}
+#l12 > #mata-2-g > img{opacity: 0.5;}
+#l12 > #mata-2-h > img{opacity: 0.5;}
+#l12 > #mata-2-i > img{opacity: 0.5;}
+#l12 > #mata-2-j > img{opacity: 0.5;}
+#l12 > #mata-2-k > img{opacity: 0.5;}
+#l12 > #mata-2-c > img{opacity: 0.5;}

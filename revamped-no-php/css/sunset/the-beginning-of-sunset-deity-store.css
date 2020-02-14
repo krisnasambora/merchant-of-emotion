@@ -1,0 +1,21 @@
+@font-face {
+    font-family: MrsEaves;
+    src: url(../../fonts/MrsEavesRoman_Regular.ttf);
+}
+
+body{
+  font-family: 'MrsEaves', serif !important;
+  font-size: 16px;
+  background-color: rgb(247,245,240);
+  color: rgb(84,84,84);
+}
+br {display: block;margin: 7px 0;}
+.padding-0 {padding: 0;}
+
+.poster{margin-bottom:20px;}
+
+.header{margin-top: 0px;margin-bottom:0px;}
+.header-border{margin-top:5px;margin-bottom: 5px;}
+.header-elem{margin-top: 10px;margin-bottom:10px;}
+
+.coming-soon{margin-top: 50px;margin-bottom:30px;}

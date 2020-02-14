@@ -1,0 +1,107 @@
+/*UTILITIES*/
+.page{position: absolute;}
+
+@media only screen and (min-width : 1100px) {
+	.main_bg{line-height: 0;z-index: 1;width: 17967px;}
+	.transition_bg1{line-height: 0;z-index: 2;width: 17967px;}
+	.transition_bg1 img{margin-left: 3858px;top: 0px;}
+	.shirt{line-height: 0;z-index: 3;width: 17967px;}
+	.shirt img{margin-left: 8567px;margin-top: 165px;}
+	.arms{line-height: 0;z-index: 3;width: 18700px;}
+	.arms img{margin-left: 8900px;margin-top: 30px;}
+	.head{line-height: 0;z-index: 3;width: 19000px;}
+	.head img{margin-left: 9020px;margin-top: 175px;}
+	.transition_bg3{line-height: 0;z-index: 3;width: 17967px;}
+	.transition_bg3 img{margin-left: 10580px;margin-top: 129px;}
+	.transition_bg2{line-height: 0;z-index: 3;width: 17967px;}
+	.transition_bg2 img{margin-left: 10620px;margin-top: -60px;}
+	.sun{line-height: 0;z-index: 3;width: 17967px;}
+	.sun img{margin-left: 11555px;margin-top: 0px;}
+	.transition_bg4{line-height: 0;z-index: 3;width: 17967px;}
+	.transition_bg4 img{margin-left: 12625px;margin-top: 0px;}
+	.transition_bg5{line-height: 0;z-index: 5;width: 21000px;}
+	.transition_bg5 img{margin-left: 16100px;px;margin-top: 0px;}
+
+	.l01 {width: 100000px;z-index: 500;top: 0px;}
+	.l01 .s1_a{left: 599px;top: 398px;}
+	.l01 .s1_a img{opacity: 0.5;}
+	.l01 .s1_b{left: 1530px;top: -39px;}
+	.l01 .s1_b img{opacity: 0.5;}
+	.l01 .s1_boy{left: 1890px;top: 499px;}
+	.l01 .s1_boy img{opacity: 0.5;}
+	.l01 .s1_c{left: 2590px;top: 0px;}
+	.l01 .s1_c img{opacity: 0.5;}
+	.l01 .s1_d1{left: 4240px;top: 222px;}
+	.l01 .s1_d1 img{opacity: 0.5;}
+	.l01 .s1_d2{left: 4748px;top: 189px;}
+	.l01 .s1_d2 img{opacity: 0.5;}
+	.l01 .s1_d3{left: 7195px;top: 315px;}
+	.l01 .s1_d3 img{opacity: 0.5;}
+	.l01 .s2_a{left: 24695px;top: 0px;}
+	.l01 .s2_b{left: 25249px;top: 392px;}
+	.l01 .s2_c1{left: 26749px;top: 151px;}
+	.l01 .s2_c3{left: 27760px;top: 356px;}
+	.l01 .s2_c6{left: 29419px;top: 230px;}
+	.l01 .s2_c7{left: 30209px;top: 0px;}
+	.l01 .s2_c8{left: 30209px;top: 0px;}
+	.l01 .s2_d{left: 31709px;top: 363px;}
+	.l01 .s2_e1{left: 33209px;top: 624px;}
+	.l01 .s2_e2{left: 35380px;top: 0px;}
+	.l01 .s3_b{left: 70529px;top: 274px;}
+	.l01 .s3_teks-a{left: 63250px;top: -95px;}
+
+	.l02 {width: 110000px;z-index: 495;top: 0px;}
+	.l02 .s2_sun{left: 27779px;top: 392px;}
+	.l02 .s2_pohon-a{left: 30120px;top: 0px;}
+	.l02 .s2_pohon-b{left: 29760px;top: 580px;}
+	.l02 .s2_pohon-c{left: 30950px;top: 240px;}
+	.l02 .s2_pohon-d{left: 31350px;top: 20px;}
+	.l02 .s2_pohon-e{left: 32270px;top: 160px;}
+	.l02 .s2_pohon-f{left: 32600px;top: 10px;}
+	.l02 .s2_pohon-g{left: 29260px;top: 670px;}
+	.l02 .s2_tanah{left: 30150px;top: 568px;}
+	.l02 .s2_semak{left: 31960px;top: 330px;}
+	.l02 .s2_batu-a{left: 36659px;top: 0px;}
+	.l02 .s2_batu-b{left: 37970px;top: 0px;}
+	.l02 .s2_batu-c{left: 38740px;top: 0px;}
+	.l02 .s2_teks-a{left: 34580px;top: 0px;}
+
+	.l03 {width: 113000px;z-index: 505;top: 0px;}
+	.l03 .s2_pohon-a{left: 34000px;top: 0px;}
+	.l03 .s2_pohon-b{left: 32310px;top: 0px;}
+	.l03 .s2_batu-a{left: 38089px;top: 0px;}
+	.l03 .s2_teks-a{left: 32320px;top: 200px;}
+	
+	.l04 {width: 17967px;z-index: 480;top: 0px;}
+	.l04 .s2_awan-a{left: 4200px;top: 0px;}
+
+	.l05 {width: 21000px;z-index: 485;top: 0px;}
+	.l05 .s2_awan-a{left: 4990px;top: 394px;}
+
+	.l06 {width: 20000px;z-index: 490;top: 0px;}
+	.l06 .s2_awan-a{left: 4790px;top: 81px;}
+
+	.l07 {width: 123000px;z-index: 495;top: 0px;}	
+	.l07 .s2_pohon-a{left: 37000px;top: 210px;}
+	.l07 .s2_pohon-b{left: 37500px;top: 161px;}
+	.l07 .s2_batu-a{left: 42100px;top: 247px;}
+	.l07 .s2_batu-b{left: 42880px;top: 0px;}
+	.l07 .s2_teks-a{left: 32090px;top: 0px;}
+
+	.l08 {width: 19500px;z-index: 2;top: 0px;}
+	.l08 .s3_awan-a{left: 12050px;top: 103px;}
+	.l08 .s3_awan-b{left: 13230px;top: 0px;}
+
+	.l09 {width: 23000px;z-index: 2;top: 0px;}
+	.l09 .s3_awan-a{left: 14740px;top: 0px;}
+	.l09 .s3_a1{left: 11500px;top: 100px;}
+	.l09 .s3_a2{left: 12000px;top: 553px;}
+	.l09 .s3_a3{left: 12500px;top: 250px;}
+	.l09 .s3_a4{left: 13000px;top: 0px;}
+
+	.l10 {width: 21000px;z-index: 2;top: 0px;}
+	.l10 .s3_awan-a{left: 13750px;top: 0px;}
+	
+	.l11 {width: 20000px;z-index: 4;top: 0px;}
+	.l11 .s3_awan-a{left: 13750px;top: 0px;}
+}
